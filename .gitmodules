@@ -1,0 +1,3 @@
+[submodule "releng-tool"]
+	path = releng-tool
+	url = https://github.com/releng-tool/releng-tool.git
