@@ -24,6 +24,8 @@ A specific language's translation set is updated as follows:
 
 A specific language's documentation is generated as follows:
 
+.. code-block:: shell
+
    sphinx-build -D language=<language> -b html . _build/html
     (or)
    python -m sphinx -D language=<language> -b html . _build/html
