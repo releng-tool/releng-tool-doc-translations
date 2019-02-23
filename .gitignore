@@ -1,0 +1,8 @@
+# built documentation
+_build/*
+
+# gettext generated mo files
+locale/**/*.mo
+
+# sphinx pot build
+locale/pot/.doctrees
