@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-23 17:57-0500\n"
+"POT-Creation-Date: 2019-02-25 00:19-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -349,7 +349,7 @@ msgid "privileged builds"
 msgstr ""
 
 #: ../../releng-tool/Documentation/user-guide.rst:313
-msgid "It is never recommended to invoke a build with elevated (e.g. root) privileges. A builder invoking in an elevated environment runs the risk of a mis-configured releng-tool project dirtying or destroying the builder's host environment."
+msgid "It is never recommended to invoke a build with elevated (e.g. root) privileges. A builder invoking in an elevated environment runs the risk of a misconfigured releng-tool project dirtying or destroying the builder's host environment."
 msgstr ""
 
 #: ../../releng-tool/Documentation/user-guide.rst:318
@@ -446,5 +446,13 @@ msgstr ""
 
 #: ../../releng-tool/Documentation/user-guide.rst:481
 msgid "Environment variables can be used to help override external tool invoked by the releng-tool process. For example, when invoking CMake-based projects, the tool ``cmake`` will be invoked; however, if a builder is running on CentOS and CMake v3.x is desired, the tool ``cmake3`` needs to be invoked instead. To configure this, an environment variable can be set to switch which tool to invoke. Consider the following example:"
+msgstr ""
+
+#: ../../releng-tool/Documentation/user-guide.rst:495
+msgid "quirks"
+msgstr ""
+
+#: ../../releng-tool/Documentation/user-guide.rst:497
+msgid "releng-tool also provides a series of configuration quirks to deal with rare host environment scenarios where releng-tool may be experiencing issues. See :ref:`configuration quirks <quirks>` for more information."
 msgstr ""
 
