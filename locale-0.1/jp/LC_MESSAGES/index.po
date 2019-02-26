@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 releng-tool
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-26 00:59-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FO5CA4AAA183\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../releng-tool/Documentation/index.rst:2
+msgid "releng-tool"
+msgstr ""
+
+#: ../../releng-tool/Documentation/index.rst:4
+#, fuzzy
+msgid ""
+"releng-tool can be used to assist in the release engineering of a "
+"project. This tool allows a user to define one or more packages to "
+"process. Each package has the ability to perform several stages: "
+"fetching, extraction, patching, configuration, building and installation."
+" What a package defines will vary for a given project. The simplest type "
+"of package is script-based that allows a user to define custom scripts on"
+" how to perform various stages of the release engineering process. A "
+"package is not required to handle every stage. releng-tool also provides "
+"helper package types, such as autotools, for projects using common build "
+"capabilities."
+msgstr ""
+"releng-"
+"toolはプロジェクトのリリースエンジニアリングをアシストするために利用する事ができます。このツールを使用する事により、ユーザーは処理する単一もしくは複数のパッケージを定義する事が可能になります。各パッケージには、フェッチ、抽出、パッチ適用、構成、構築、およびインストールといった複数の段階を実行する機能を備えています。パッケージが定義するものは、プロジェクトに応じて異なります。最もシンプルな種類のパッケージはスクリプトベースのものであり、これを使用すると、リリースエンジニアリングプロセスの様々な段階を実行する方法に関連するカスタムスクリプトをユーザーが定義できます。パッケージはすべての段階を処理する必要はありません。autotoolsなど、一般的なビルド機能を使用するプロジェクト用のヘルパーパッケージタイプが提供されています。"
+
+#: ../../releng-tool/Documentation/index.rst:17
+msgid ""
+"While this tool can assist in the configuration and building of a "
+"project, the framework does not attempt to provide a perfect sandbox for "
+"the process. Users defining their projects will have ownership on what "
+"compilers/toolchains are used and the interaction between the "
+"staging/target area and the host system."
+msgstr "こちらツールはプロジェクトにおける構成と構築をアシストしますが、フレームワークは完全なサンドボックスを提供する訳ではありません。プロジェクトを定義するユーザーは、どのコンパイラやツールチェーンが使用されているのか、そしてステージングやターゲット領域とホストシステムとの間の相互作用に関連する所有権を持ちます。"
+
