@@ -1,5 +1,5 @@
 # gettext generated mo files
-locale/**/*.mo
+locale**/**/*.mo
 
 # sphinx pot build
-locale/pot/.doctrees
+locale**/pot/.doctrees

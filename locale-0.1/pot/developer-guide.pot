@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-25 00:19-0500\n"
+"POT-Creation-Date: 2019-02-26 00:59-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -385,7 +385,7 @@ msgid "A transform for cache extension interpreting. This is an advanced configu
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide.rst:505
-msgid "When releng-tool fetches assets from remote sites, the site value can used to determine the resulting filename of a cached asset. For example, downloading an asset from ``https://example.org/my-file.tgz``, the locally downloaded file will result in a ``.tgz`` extension; however, not all defined sites will result in an easily interpreted cache extension. While releng-tool will attempt its best to determine an appropriate extension value to use, some use cases may not be able to be handled. To deal with these cases, a developer can define a transform method to help translate a site value into a known cache extension value."
+msgid "When releng-tool fetches assets from remote sites, the site value can used to determine the resulting filename of a cached asset. For example, downloading an asset from ``https://example.org/my-file.tgz``, the locally downloaded file will result in a ``.tgz`` extension; however, not all defined sites will result in a easily interpreted cache extension. While releng-tool will attempt its best to determine an appropriate extension value to use, some use cases may not be able to be handled. To deal with these cases, a developer can define a transform method to help translate a site value into a known cache extension value."
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide.rst:521
@@ -1206,7 +1206,7 @@ msgid "To define a Bazaar_-based location, the site value must be prefixed with 
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide.rst:1240
-msgid "The value after the prefix is a path which will be provided to a ``bzr export`` call [#bzrexport]_. Content from a Bazaar repository will be fetched and archived into a file during fetch stage. Once a cached archive is made, the fetch stage will be skipped unless the archive is manually removed."
+msgid "The value after the prefix is a path which will be provided to a ``bzr export`` call [#bzrexport]_. Content from a Bazaar repository will be fetched and archived into a file during fetch stage. Once an cached archive is made, the fetch stage will be skipped unless the archive is manually removed."
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide.rst:1246
@@ -1218,7 +1218,7 @@ msgid "To define a CVS_-based location, the site value must be prefixed with a `
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide.rst:1255
-msgid "The value after the prefix is a space-separated pair, where the first part represents the CVSROOT [#cvsroot]_ to use and the second part specifies the CVS module [#cvsmodule]_  to use. Content from a CVS repository will be fetched and archived into a file during fetch stage. Once a cached archive is made, the fetch stage will be skipped unless the archive is manually removed."
+msgid "The value after the prefix is a space-separated pair, where the first part represents the CVSROOT [#cvsroot]_ to use and the second part specifies the CVS module [#cvsmodule]_  to use. Content from a CVS repository will be fetched and archived into a file during fetch stage. Once an cached archive is made, the fetch stage will be skipped unless the archive is manually removed."
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide.rst:1262
@@ -1266,7 +1266,7 @@ msgid "To define a Subversion_-based location, the site value must be prefixed w
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide.rst:1322
-msgid "The value after the prefix is a path which will be provided to a ``svn checkout`` call [#svncheckout]_. Content from a Subversion repository will be fetched and archived into a file during fetch stage. Once a cached archive is made, the fetch stage will be skipped unless the archive is manually removed."
+msgid "The value after the prefix is a path which will be provided to a ``svn checkout`` call [#svncheckout]_. Content from a Subversion repository will be fetched and archived into a file during fetch stage. Once an cached archive is made, the fetch stage will be skipped unless the archive is manually removed."
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide.rst:1328
@@ -1520,7 +1520,7 @@ msgid "LIBFOO_PYTHON_INTERPRETER"
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide.rst:1590
-msgid "Defines a specific Python interpreter when processing the build and installation stages for a package. If not specified, the system's Python interpreter will be used. This field is optional."
+msgid "Defines an specific Python interpreter when processing the build and installation stages for a package. If not specified, the system's Python interpreter will be used. This field is optional."
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide.rst:1599

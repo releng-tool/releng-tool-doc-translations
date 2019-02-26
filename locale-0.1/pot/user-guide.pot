@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-25 00:19-0500\n"
+"POT-Creation-Date: 2019-02-26 00:59-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -349,7 +349,7 @@ msgid "privileged builds"
 msgstr ""
 
 #: ../../releng-tool/Documentation/user-guide.rst:313
-msgid "It is never recommended to invoke a build with elevated (e.g. root) privileges. A builder invoking in an elevated environment runs the risk of a misconfigured releng-tool project dirtying or destroying the builder's host environment."
+msgid "It is never recommended to invoke a build with elevated (e.g. root) privileges. A builder invoking in an elevated environment runs the risk of a mis-configured releng-tool project dirtying or destroying the builder's host environment."
 msgstr ""
 
 #: ../../releng-tool/Documentation/user-guide.rst:318
