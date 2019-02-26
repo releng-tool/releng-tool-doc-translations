@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Copyright 2019 releng-tool
+set -e
+
+# folder with documentation information
+doc_container=releng-tool

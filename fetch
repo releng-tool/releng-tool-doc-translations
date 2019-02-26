@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# Copyright 2019 releng-tool
+set -e
+
+################################################################################
+
+# documentation repository
+doc_repo=https://github.com/releng-tool/releng-tool.git
+
+################################################################################
+
+base="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
+source $base/common
+
+# clone repository
+echo 'ensuring repository exists...'
+[ ! -d "$base/$doc_container" ] && git \
+    clone $doc_repo $base/$doc_container
+
+# fetch all from repository
+echo 'ensuring most recent data from repository...'
+git --git-dir="$base/$doc_container/.git" fetch --all
+
+# disable detached head message
+git --git-dir="$base/$doc_container/.git" config advice.detachedHead false
+
+echo 'ready!'

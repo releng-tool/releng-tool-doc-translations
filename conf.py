@@ -17,7 +17,10 @@ sys.path.insert(0, releng_tool_dir)
 execfile_(os.path.join(releng_tool_doc_dir, 'conf.py'), globals())
 
 # localization options
-locale_dirs = [os.path.join(base_dir, 'locale/')]
+if 'RELENG_LOCALE_DIR' not in os.environ:
+    raise SyntaxError('locale directory not provided')
+
+locale_dirs = [os.environ['RELENG_LOCALE_DIR']]
 gettext_compact = False
 
 def setup(app):

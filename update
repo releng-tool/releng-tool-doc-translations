@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+# Copyright 2019 releng-tool
+set -e
+
+base="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
+source $base/common
+source $base/settings
+
+for version in "${!versions[@]}"; do
+    echo -e "\e[7mupdating $version (pot)...\e[0m"
+
+    # checkout specific documentation version
+    reference=${versions[$version]}
+    git \
+        --git-dir="$base/$doc_container/.git" \
+        --work-tree="$base/$doc_container" \
+        checkout $reference --force
+
+    # generate translation files
+    export RELENG_LOCALE_DIR=$base/locale-$version/
+    python -m sphinx -b gettext . $base/locale-$version/pot
+
+    for ref in $(ls -d $base/locale-$version/*/); do
+        lang_dir=${ref%%/}
+        lang=${lang_dir##*/}
+
+        # skip pot directory
+        if [[ "$lang" == 'pot' ]]; then
+            continue
+        fi
+
+        # update language files
+        echo -e "\e[7mupdating $version ($lang)...\e[0m"
+        python -m sphinx_intl update -p $base/locale-$version/pot -l $lang
+    done
+done

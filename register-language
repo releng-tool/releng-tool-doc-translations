@@ -1,0 +1,68 @@
+#!/usr/bin/env bash
+# Copyright 2019 releng-tool
+
+base="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
+source $base/common
+source $base/settings
+
+# allow user to specify language
+read -p 'Enter language to add: ' lang
+lang="${lang#"${lang%%[![:space:]]*}"}"
+lang="${lang%"${lang##*[![:space:]]}"}"
+if [ -z "$lang" ]; then
+    exit 0
+fi
+
+read -p 'Enter version to generate language for [all]: ' version
+version="${version#"${version%%[![:space:]]*}"}"
+version="${version%"${version##*[![:space:]]}"}"
+if [ -z "$version" ]; then
+    while true; do
+        read -p "Generate $lang for all versions? " yn
+
+        case $yn in
+        [Yy]*) break;;
+        [Nn]*) exit 0;;
+            *) echo "Please answer yes or no.";;
+        esac
+    done
+elif [ ${versions[$version]+z} ]; then
+    while true; do
+        read -p "Generate $lang for version $version? " yn
+
+        case $yn in
+        [Yy]*) break;;
+        [Nn]*) exit 0;;
+            *) echo "Please answer yes or no.";;
+        esac
+    done
+else
+    echo "Provided version '$version' does not exist."
+    exit 1
+fi
+
+# fail on error
+set -e
+
+generate_language_files() {
+    echo -e "\e[7mgenerating $1 ($2)...\e[0m"
+
+    # checkout specific documentation version
+    reference=${versions[$2]}
+    git \
+        --git-dir="$base/$doc_container/.git" \
+        --work-tree="$base/$doc_container" \
+        checkout $reference --force
+
+    # generate language files
+    export RELENG_LOCALE_DIR=$base/locale-$2/
+    python -m sphinx_intl update -p $base/locale-$2/pot -l $1
+}
+
+if [ -z "$version" ]; then
+    for version in "${!versions[@]}"; do
+        generate_language_files $lang $version
+    done
+else
+    generate_language_files $lang $version
+fi

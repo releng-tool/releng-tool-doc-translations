@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Copyright 2019 releng-tool
+set -e
+
+# map of versions to documentation references
+declare -A versions
+versions=(
+    ['master']='master'
+    ['0.1']='v0.1'
+)
+
+# fixed order of versions
+ordered_versions=(
+'master',\
+'0.1'
+)
