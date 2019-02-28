@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-26 00:59-0500\n"
+"POT-Creation-Date: 2019-02-28 01:58-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,63 +68,95 @@ msgstr ""
 msgid "Developers are free to submit contributions for this project. Developers wishing to contribute should consult this project's `CONTRIBUTING`_ document. A reminder that any contributions must be signed off with the `Developer Certificate of Origin`_."
 msgstr ""
 
-#: ../../releng-tool/Documentation/contributor-guide.rst:30
+#: ../../releng-tool/Documentation/contributor-guide.rst:29
+msgid "Implementation (source, comments, commits, etc.) submitted to this project should be provided in English."
+msgstr ""
+
+#: ../../releng-tool/Documentation/contributor-guide.rst:33
 msgid "root directory"
 msgstr ""
 
-#: ../../releng-tool/Documentation/contributor-guide.rst:32
+#: ../../releng-tool/Documentation/contributor-guide.rst:35
 msgid "A user invoking releng-tool will attempt to operate in a project root directory. Any content managed by this tool (e.g. creating directories, downloading sources, etc.) should all be performed inside the root directory. Some exceptions exist where a user requests to adjust the download directory (i.e. providing the ``--dl-dir`` argument)."
 msgstr ""
 
-#: ../../releng-tool/Documentation/contributor-guide.rst:39
+#: ../../releng-tool/Documentation/contributor-guide.rst:42
 msgid "fetching design"
 msgstr ""
 
-#: ../../releng-tool/Documentation/contributor-guide.rst:41
+#: ../../releng-tool/Documentation/contributor-guide.rst:44
 msgid "Packages can describe where external content should be fetched from. The most common fetching method is a simple URI-style fetch such as downloading an archive from an HTTP/FTP location. Assets acquired in this manner are downloaded into the root directory's download folder (e.g. ``<ROOT>/dl``). The extraction phase will later use this folder to find package content to prepare against."
 msgstr ""
 
-#: ../../releng-tool/Documentation/contributor-guide.rst:47
+#: ../../releng-tool/Documentation/contributor-guide.rst:50
 msgid "releng-tool also supports the fetching of content from version control systems. Sources can either be fetched and placed into an archive, in a similar fashion as fetching an archive from HTTP/FTP locations, or sources can be fetched into a \"cache directory\" if supported (typically distributed version controlled sources). For example, Git_ repositories (see also Git's |--git-dir|_) will be stored in the root directory's cache folder (e.g. ``<ROOT>/cache``). During the extraction stage, target revisions will be pulled from the cache location using the ``git`` client."
 msgstr ""
 
-#: ../../releng-tool/Documentation/contributor-guide.rst:56
+#: ../../releng-tool/Documentation/contributor-guide.rst:59
 msgid "Not all packages will fetch content (i.e. placeholder packages)."
 msgstr ""
 
-#: ../../releng-tool/Documentation/contributor-guide.rst:61
+#: ../../releng-tool/Documentation/contributor-guide.rst:64
 msgid "extraction design"
 msgstr ""
 
-#: ../../releng-tool/Documentation/contributor-guide.rst:63
+#: ../../releng-tool/Documentation/contributor-guide.rst:66
 msgid "In most cases, the extraction phase will process archives (e.g. ``.tar.gz``, ``.zip``, etc.) and place their content into a package's build working directory. Implementation will vary for fetching implementation which stores content into a cache directory. For example, Git_ and Mercurial_ sources have their own extraction implementations to pull content from their respective distributed file systems into a package's build working directory."
 msgstr ""
 
-#: ../../releng-tool/Documentation/contributor-guide.rst:71
+#: ../../releng-tool/Documentation/contributor-guide.rst:74
 msgid "host and build environment"
 msgstr ""
 
-#: ../../releng-tool/Documentation/contributor-guide.rst:73
+#: ../../releng-tool/Documentation/contributor-guide.rst:76
 msgid "releng-tool attempts to minimize the impact of a host system's environment on a project's build. For example, the build phase of a package should not be pulling compiler flags provided from the host system's environment. These flags should be provided from the package definition. Tools invoked by releng-tool will attempt to be invoked to ignore these external environment variables. Some exceptions apply such as environment variables dealing with authorization tokens."
 msgstr ""
 
-#: ../../releng-tool/Documentation/contributor-guide.rst:84
+#: ../../releng-tool/Documentation/contributor-guide.rst:87
 msgid "extensions"
 msgstr ""
 
-#: ../../releng-tool/Documentation/contributor-guide.rst:86
+#: ../../releng-tool/Documentation/contributor-guide.rst:89
 msgid "Developers wishing to provide extensions to releng-tool should consult the API implementation found in this tool's repository (|releng/api/__init__.py|_). Implementation in the API folder aims to be \"API safe\" -- there is a strong attempt to prevent the changing of classes, methods, etc. to prevent compatibility issues as both releng-tool and extensions (if any) evolve. A developer for a releng-tool project would register an extension to load using the ``extensions`` configuration option inside the project configuration (``releng.py``):"
 msgstr ""
 
-#: ../../releng-tool/Documentation/contributor-guide.rst:106
+#: ../../releng-tool/Documentation/contributor-guide.rst:109
 msgid "On start, releng-tool will use this extension configuration to find and invoke the setup stage for each available extension."
 msgstr ""
 
-#: ../../releng-tool/Documentation/contributor-guide.rst:109
+#: ../../releng-tool/Documentation/contributor-guide.rst:112
 msgid "An extension will define ``releng_setup`` to be registered into releng-tool. The call will provide an instance to the releng-tool application which allows an extension to register custom fetching, extraction and package implementations."
 msgstr ""
 
-#: ../../releng-tool/Documentation/contributor-guide.rst:133
+#: ../../releng-tool/Documentation/contributor-guide.rst:136
 msgid "For more details for API details, consult the documentation found inside the `API implementation`_."
+msgstr ""
+
+#: ../../releng-tool/Documentation/contributor-guide.rst:142
+msgid "documentation"
+msgstr ""
+
+#: ../../releng-tool/Documentation/contributor-guide.rst:144
+msgid "Improvements to this project's documentation (found inside ``Documentation``) are always welcome -- not only for adding/updating documentation for releng-tool features but also translations."
+msgstr ""
+
+#: ../../releng-tool/Documentation/contributor-guide.rst:148
+msgid "For users interested in translations for this project, please consult the following repositories:"
+msgstr ""
+
+#: ../../releng-tool/Documentation/contributor-guide.rst:0
+msgid "releng-tool - Translations"
+msgstr ""
+
+#: ../../releng-tool/Documentation/contributor-guide.rst:0
+msgid "https://github.com/releng-tool/releng-tool-doc-translations"
+msgstr ""
+
+#: ../../releng-tool/Documentation/contributor-guide.rst:0
+msgid "releng-tool - Translations Builder"
+msgstr ""
+
+#: ../../releng-tool/Documentation/contributor-guide.rst:0
+msgid "https://github.com/releng-tool/releng-tool-doc-translations-builder"
 msgstr ""
 
