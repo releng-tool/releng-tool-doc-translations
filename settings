@@ -6,7 +6,7 @@ set -e
 declare -A versions
 versions=(
     ['master']='master'
-    ['0.1']='v0.1'
+    ['0.1']='0101a7a7ce7d54ab42d5e7c4544afa7881b7cf18' # v0.1 + fix
 )
 
 # fixed order of versions
