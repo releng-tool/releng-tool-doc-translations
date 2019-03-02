@@ -20,7 +20,10 @@ echo 'ensuring repository exists...'
 # fetch all from repository
 echo 'ensuring most recent data from repository...'
 git --git-dir="$base/$doc_container/.git" fetch --all
-git --git-dir="$base/$doc_container/.git" pull --all
+git \
+    --git-dir="$base/$doc_container/.git" \
+    --work-tree="$base/$doc_container" \
+    pull --all
 
 # disable detached head message
 git --git-dir="$base/$doc_container/.git" config advice.detachedHead false
