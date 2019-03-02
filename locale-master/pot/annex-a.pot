@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-26 00:59-0500\n"
+"POT-Creation-Date: 2019-03-02 16:27-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,27 +32,27 @@ msgstr ""
 msgid "Options which are read by releng-tool from a project's configuration script:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/annex-a.rst:28
+#: ../../releng-tool/Documentation/annex-a.rst:29
 msgid "environment variables"
 msgstr ""
 
-#: ../../releng-tool/Documentation/annex-a.rst:30
+#: ../../releng-tool/Documentation/annex-a.rst:31
 msgid "Environment (and script) variables available to context's invoked by releng-tool (may vary per context):"
 msgstr ""
 
-#: ../../releng-tool/Documentation/annex-a.rst:68
+#: ../../releng-tool/Documentation/annex-a.rst:69
 msgid "package options"
 msgstr ""
 
-#: ../../releng-tool/Documentation/annex-a.rst:70
+#: ../../releng-tool/Documentation/annex-a.rst:71
 msgid "Configuration options parsed by releng-tool for a package definition:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/annex-a.rst:106
+#: ../../releng-tool/Documentation/annex-a.rst:107
 msgid "script helpers"
 msgstr ""
 
-#: ../../releng-tool/Documentation/annex-a.rst:108
+#: ../../releng-tool/Documentation/annex-a.rst:109
 msgid "Functions available to scripts invoked by releng-tool or importable via ``from releng import *``:"
 msgstr ""
 
