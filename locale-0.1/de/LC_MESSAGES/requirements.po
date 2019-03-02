@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../releng-tool/Documentation/requirements.rst:2
 msgid "requirements"
-msgstr ""
+msgstr "anforderungen"
 
 #: ../../releng-tool/Documentation/requirements.rst:4
 msgid ""

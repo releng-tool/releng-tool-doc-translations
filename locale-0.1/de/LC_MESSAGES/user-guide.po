@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../releng-tool/Documentation/user-guide.rst:2
 msgid "user guide"
-msgstr ""
+msgstr "benutzerhandbuch"
 
 #: ../../releng-tool/Documentation/user-guide.rst:4
 msgid ""

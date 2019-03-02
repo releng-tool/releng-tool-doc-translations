@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide.rst:2
 msgid "developer guide"
-msgstr ""
+msgstr "entwicklerhandbuch"
 
 #: ../../releng-tool/Documentation/developer-guide.rst:4
 msgid ""
