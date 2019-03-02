@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../releng-tool/Documentation/annex-a.rst:2
 msgid "annex a - quick reference"
-msgstr ""
+msgstr "付録A  - クイックリファレンス"
 
 #: ../../releng-tool/Documentation/annex-a.rst:4
 msgid ""

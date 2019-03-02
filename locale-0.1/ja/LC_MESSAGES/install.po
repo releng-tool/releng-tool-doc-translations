@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../releng-tool/Documentation/install.rst:2
 msgid "installation"
-msgstr ""
+msgstr "インストール"
 
 #: ../../releng-tool/Documentation/install.rst:4
 msgid "The recommended method of installation is using pip_:"

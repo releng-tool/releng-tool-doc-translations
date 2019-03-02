@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../releng-tool/Documentation/tips.rst:2
 msgid "tips"
-msgstr ""
+msgstr "ヒント"
 
 #: ../../releng-tool/Documentation/tips.rst:5
 msgid "requesting help"
