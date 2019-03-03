@@ -6,7 +6,7 @@ set -e
 declare -A versions
 versions=(
     ['master']='master'
-    ['0.1']='0101a7a7ce7d54ab42d5e7c4544afa7881b7cf18' # v0.1 + fix
+    ['0.1']='releng-tool-0.1.x'
 )
 
 # fixed order of versions
