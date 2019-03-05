@@ -1,0 +1,32 @@
+# Copyright (C) 2019 releng-tool
+# This file is distributed under the same license as the releng-tool
+# package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-05 00:18-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FO7E3FBD5BC2\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../releng-tool/Documentation/requirements.rst:2
+msgid "requirements"
+msgstr "要求"
+
+#: ../../releng-tool/Documentation/requirements.rst:4
+msgid ""
+"releng-tool is developed in Python_ is requires either Python_ 2.7 or "
+"3.4+ to run on a host system. A series of optional tools are required if "
+"certain stages and/or features are used. For example, projects fetching "
+"sources from Git_ will require the ``git`` tool installed; projects with "
+"patches will required the ``patch`` tool.  While some features may be "
+"operating system-specific (e.g. autotools features are designed for "
+"Linux-based hosts), releng-tool can work on various operating system "
+"variants."
+msgstr "releng-tool 是在 Python_ 中开发的，需要 Python_ 2.7或3.4+ 才能在主机系统上运行。如果使用某些阶段和/或特征，则需要一系列可选工具。例如，从 Git_ 获取源的项目将需要安装 ``git`` 工具; 带修补程式的项目则需要 ``patch`` 工具。虽然某些功能可能是特定于操作系统的（例如 autotools 功能是为基于 Linux 的主机设计的），但 releng-tool 可以适用于各种操作系统变体。"
+
