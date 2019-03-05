@@ -55,7 +55,7 @@ msgstr "Opcje konfiguracyjne analizowane przez releng-tool dla zdefiniowania pak
 
 #: ../../releng-tool/Documentation/annex-a.rst:107
 msgid "script helpers"
-msgstr "pomocnicy skryptów"
+msgstr ""
 
 #: ../../releng-tool/Documentation/annex-a.rst:109
 msgid ""
