@@ -1,10 +1,7 @@
-# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2019 releng-tool
 # This file is distributed under the same license as the releng-tool
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
@@ -12,7 +9,6 @@ msgstr ""
 "POT-Creation-Date: 2019-02-27 20:53-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FO47E6EC61F1\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
