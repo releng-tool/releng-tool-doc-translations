@@ -6,9 +6,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-28 01:58-0500\n"
+"POT-Creation-Date: 2019-03-05 00:18-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FO3CA985E085\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,7 +25,11 @@ msgid ""
 "project to be used to assist the release engineering of a project. For "
 "details on a user interaction with releng-tool, consult the :doc:`user's "
 "guide <user-guide>`."
-msgstr "Poniżej przedstawiono szczegóły nt. przygotowania projektu z releng-tool, który ma być użyty do wspomagania wydawania projektu. Szczegółowe informacje dot. interakcji z releng-tool można znaleźć w :doc:`poradniku użytkownika <user-guide>`."
+msgstr ""
+"Poniżej przedstawiono szczegóły nt. przygotowania projektu z releng-tool,"
+" który ma być użyty do wspomagania wydawania projektu. Szczegółowe "
+"informacje dot. interakcji z releng-tool można znaleźć w :doc:`poradniku "
+"użytkownika <user-guide>`."
 
 #: ../../releng-tool/Documentation/developer-guide/prelude:2
 msgid "prelude"
@@ -2599,7 +2604,7 @@ msgstr ""
 #: of releng.releng_exists:3
 msgid ""
 "Allows a caller to verify the existence of a file on the file system. "
-"This cal will return ``True`` if the path exists; ``False`` otherwise."
+"This call will return ``True`` if the path exists; ``False`` otherwise."
 msgstr ""
 
 #: of releng.releng_exists:15
@@ -2997,4 +3002,3 @@ msgstr ""
 #: ../../releng-tool/Documentation/developer-guide.rst:25
 msgid "https://docs.python.org/3.7/library/urllib.request.html#urllib.request.urlopen"
 msgstr ""
-
