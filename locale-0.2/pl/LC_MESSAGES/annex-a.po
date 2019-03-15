@@ -1,0 +1,65 @@
+# Copyright (C) 2019 releng-tool
+# This file is distributed under the same license as the releng-tool
+# package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-02 16:27-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FO3CA985E085\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../releng-tool/Documentation/annex-a.rst:2
+msgid "annex a - quick reference"
+msgstr "załącznik a – instrukcja w pigułce"
+
+#: ../../releng-tool/Documentation/annex-a.rst:4
+msgid ""
+"A quick reference document listing available options to developers "
+"building a releng-tool project. Consult the :doc:`developer's guide "
+"<developer-guide>` for more detailed information."
+msgstr "Poniżej przedstawiono instrukcje w pigułce dla programistów korzystających z releng-tool. Szczegółowe informacje można znaleźć w :doc:`poradniku dla programistów <developer-guide>`."
+
+#: ../../releng-tool/Documentation/annex-a.rst:9
+msgid "configuration options"
+msgstr "opcje konfiguracji"
+
+#: ../../releng-tool/Documentation/annex-a.rst:11
+msgid ""
+"Options which are read by releng-tool from a project's configuration "
+"script:"
+msgstr "Opcje, które releng-tool czyta ze skryptu konfiguracyjnego projektu:"
+
+#: ../../releng-tool/Documentation/annex-a.rst:29
+msgid "environment variables"
+msgstr "zmienne środowiskowe"
+
+#: ../../releng-tool/Documentation/annex-a.rst:31
+msgid ""
+"Environment (and script) variables available to context's invoked by "
+"releng-tool (may vary per context):"
+msgstr "Poniżej przedstawiono zmienne środowiskowe (i skryptu) dostępne dla kontekstu wywołane przez releng-tool (może się różnić w zależności od kontekstu):"
+
+#: ../../releng-tool/Documentation/annex-a.rst:69
+msgid "package options"
+msgstr "opcje pakietów"
+
+#: ../../releng-tool/Documentation/annex-a.rst:71
+msgid "Configuration options parsed by releng-tool for a package definition:"
+msgstr "Opcje konfiguracyjne analizowane przez releng-tool dla zdefiniowania pakietu:"
+
+#: ../../releng-tool/Documentation/annex-a.rst:107
+msgid "script helpers"
+msgstr ""
+
+#: ../../releng-tool/Documentation/annex-a.rst:109
+msgid ""
+"Functions available to scripts invoked by releng-tool or importable via "
+"``from releng import *``:"
+msgstr "Funkcje dostępne dla skryptów wywoływanych przez releng-tool lub importowane przez ``from releng import *``:"
+
