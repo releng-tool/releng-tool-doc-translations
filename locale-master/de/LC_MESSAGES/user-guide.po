@@ -6,9 +6,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-27 21:14-0500\n"
+"POT-Creation-Date: 2019-03-15 01:27-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -25,11 +26,11 @@ msgid ""
 "consult the :doc:`developer's guide <developer-guide>`."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:9
+#: ../../releng-tool/Documentation/user-guide/getting-started:2
 msgid "getting started"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:11
+#: ../../releng-tool/Documentation/user-guide/getting-started:4
 msgid ""
 "Depending on the host and how releng-tool has been :doc:`installed "
 "<install>`, the tool can be either executed using the call ``releng-"
@@ -39,18 +40,18 @@ msgid ""
 " can be used instead."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:17
+#: ../../releng-tool/Documentation/user-guide/getting-started:10
 msgid ""
-"A releng-tool project will be defined by a ``releng.py`` configuration "
-"file along with one or more packages found inside a ``package/`` folder. "
-"This location can be referred to as the \"root directory\". When invoking"
-" ``releng-tool``, the tool will look into the current working directory "
+"A releng-tool project will be defined by a ``releng`` configuration file "
+"along with one or more packages found inside a ``package/`` folder. This "
+"location can be referred to as the \"root directory\". When invoking "
+"``releng-tool``, the tool will look into the current working directory "
 "for the project information to process. For example, if a project found "
 "inside ``my-project`` with the single package ``package-a`` defined, the "
 "following output may be observed:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:37
+#: ../../releng-tool/Documentation/user-guide/getting-started:29
 msgid ""
 "On a successful execution, it is common that the release engineering "
 "process will have an asset (or multiple) generated into a ``images/`` "
@@ -58,23 +59,23 @@ msgid ""
 "decide where generated files will be stored."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:42
+#: ../../releng-tool/Documentation/user-guide/getting-started:34
 msgid ""
 "If a user wishes to pass the directory of a project location via command "
 "line, the argument ``--root-dir`` can be used:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:50
+#: ../../releng-tool/Documentation/user-guide/getting-started:42
 msgid ""
 "For a complete list of actions and other argument options provided by the"
 " tool, the ``--help`` option can be used to show this information:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:58
+#: ../../releng-tool/Documentation/user-guide/arguments:2
 msgid "arguments"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:60
+#: ../../releng-tool/Documentation/user-guide/arguments:4
 msgid ""
 "The command line can be used to specify either a single action to perform"
 " and/or provide various options to configure the release engineering "
@@ -84,15 +85,15 @@ msgid ""
 "invoking a clean action is as follows:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:70
+#: ../../releng-tool/Documentation/user-guide/arguments:14
 msgid "The following outlines available actions:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:75
+#: ../../releng-tool/Documentation/user-guide/arguments:19
 msgid "``clean``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:75
+#: ../../releng-tool/Documentation/user-guide/arguments:19
 msgid ""
 "Clean (removes) a series of folders holding content such as extracted "
 "archives, built libraries and more. Images and downloaded assets/cache "
@@ -104,42 +105,42 @@ msgid ""
 "in the root directory."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:87
+#: ../../releng-tool/Documentation/user-guide/arguments:31
 msgid "``extract``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:87
+#: ../../releng-tool/Documentation/user-guide/arguments:31
 msgid ""
 "The release engineering process will process all packages up to the "
 "extraction phase (inclusive)."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:90
+#: ../../releng-tool/Documentation/user-guide/arguments:34
 msgid "``fetch``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:90
+#: ../../releng-tool/Documentation/user-guide/arguments:34
 msgid ""
 "The release engineering process will process all packages up to the fetch"
 " phase (inclusive; see also `offline builds`_)."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:94
+#: ../../releng-tool/Documentation/user-guide/arguments:38
 msgid "``licenses``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:94
+#: ../../releng-tool/Documentation/user-guide/arguments:38
 msgid ""
 "A request to generate all license information for the project. Note that "
 "license information requires acquiring license documents from packages. "
 "Therefore, packages will be fetched/extracted if not already done."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:102
+#: ../../releng-tool/Documentation/user-guide/arguments:46
 msgid "``mrproper``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:102
+#: ../../releng-tool/Documentation/user-guide/arguments:46
 msgid ""
 "Perform a pristine clean of the releng-tool project. This request removes"
 " the ``output/`` directory found in the root directory as well as any "
@@ -147,21 +148,21 @@ msgid ""
 "will remain untouched. See also the |ACTION_CLEAN|_ action."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:109
+#: ../../releng-tool/Documentation/user-guide/arguments:53
 msgid "``patch``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:109
+#: ../../releng-tool/Documentation/user-guide/arguments:53
 msgid ""
 "The release engineering process will process all packages up to the patch"
 " phase (inclusive)."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:112
+#: ../../releng-tool/Documentation/user-guide/arguments:56
 msgid "``<pkg>-build``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:112
+#: ../../releng-tool/Documentation/user-guide/arguments:56
 msgid ""
 "Performs the build stage for the package. On success, the specified "
 "package stage will have completed its build. If a package has any package"
@@ -170,19 +171,19 @@ msgid ""
 " be generated."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:120
+#: ../../releng-tool/Documentation/user-guide/arguments:64
 msgid "``<pkg>-clean``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:120
+#: ../../releng-tool/Documentation/user-guide/arguments:64
 msgid "Cleans the build directory for package (if it exists)."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:123
+#: ../../releng-tool/Documentation/user-guide/arguments:67
 msgid "``<pkg>-configure``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:123
+#: ../../releng-tool/Documentation/user-guide/arguments:67
 msgid ""
 "Performs the configure stage for the package. On success, the specified "
 "package stage will have completed its configuration stage. If a package "
@@ -191,33 +192,33 @@ msgid ""
 "notification will be generated."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:131
+#: ../../releng-tool/Documentation/user-guide/arguments:75
 msgid "``<pkg>-extract``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:131
+#: ../../releng-tool/Documentation/user-guide/arguments:75
 msgid ""
 "Performs the extraction stage for the package. On success, the specified "
 "package stage will have completed its extraction stage. If the provided "
 "package name does not exist, a notification will be generated."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:137
+#: ../../releng-tool/Documentation/user-guide/arguments:81
 msgid "``<pkg>-fetch``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:137
+#: ../../releng-tool/Documentation/user-guide/arguments:81
 msgid ""
 "Performs the fetch stage for the package. On success, the specified "
 "package stage will have completed its fetch stage. If the provided "
 "package name does not exist, a notification will be generated."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:143
+#: ../../releng-tool/Documentation/user-guide/arguments:87
 msgid "``<pkg>-install``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:143
+#: ../../releng-tool/Documentation/user-guide/arguments:87
 msgid ""
 "Performs the installation stage for the package. On success, the "
 "specified package stage will have completed its installation stage. If a "
@@ -226,22 +227,22 @@ msgid ""
 " not exist, a notification will be generated."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:151
+#: ../../releng-tool/Documentation/user-guide/arguments:95
 msgid "``<pkg>-patch``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:151
+#: ../../releng-tool/Documentation/user-guide/arguments:95
 msgid ""
 "Performs the patch stage for the package. On success, the specified "
 "package stage will have completed its patch stage. If the provided "
 "package name does not exist, a notification will be generated."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:157
+#: ../../releng-tool/Documentation/user-guide/arguments:101
 msgid "``<pkg>-rebuild``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:157
+#: ../../releng-tool/Documentation/user-guide/arguments:101
 msgid ""
 "Force a rebuild of a specific package. Once a package has been built, the"
 " package will not attempt to be built again. Invoking a rebuild request "
@@ -252,11 +253,11 @@ msgid ""
 "understand this action's effect."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:167
+#: ../../releng-tool/Documentation/user-guide/arguments:111
 msgid "``<pkg>-reconfigure``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:167
+#: ../../releng-tool/Documentation/user-guide/arguments:111
 msgid ""
 "Force a re-configuration of a specific package. Once a package has been "
 "configured, the package will not attempt to configure it again. Invoking "
@@ -268,11 +269,11 @@ msgid ""
 "effect."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:178
+#: ../../releng-tool/Documentation/user-guide/arguments:122
 msgid "``<pkg>-reinstall``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:178
+#: ../../releng-tool/Documentation/user-guide/arguments:122
 msgid ""
 "Force a re-installation of a specific package. Once a package has been "
 "installed, the package will not attempt to install it again. Invoking a "
@@ -284,117 +285,117 @@ msgid ""
 "effect."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:193
+#: ../../releng-tool/Documentation/user-guide/arguments:137
 msgid "The following outlines available options:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:196
+#: ../../releng-tool/Documentation/user-guide/arguments:140
 msgid "``--cache-dir <dir>``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:196
+#: ../../releng-tool/Documentation/user-guide/arguments:140
 msgid ""
 "Directory for distributed version control cache information (defaults to "
 "``<root>/cache``)."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:199
+#: ../../releng-tool/Documentation/user-guide/arguments:143
 msgid "``--debug``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:199
+#: ../../releng-tool/Documentation/user-guide/arguments:143
 msgid "Show debug-related messages."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:201
+#: ../../releng-tool/Documentation/user-guide/arguments:145
 msgid "``-D``, ``--development``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:201
+#: ../../releng-tool/Documentation/user-guide/arguments:145
 msgid "Enables `development mode`_."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:203
+#: ../../releng-tool/Documentation/user-guide/arguments:147
 msgid "``--dl-dir <dir>``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:203
+#: ../../releng-tool/Documentation/user-guide/arguments:147
 msgid "Directory for download archives (defaults to ``<root>/dl``)."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:206
+#: ../../releng-tool/Documentation/user-guide/arguments:150
 msgid "``-h``, ``--help``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:206
+#: ../../releng-tool/Documentation/user-guide/arguments:150
 msgid "Show this help."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:208
+#: ../../releng-tool/Documentation/user-guide/arguments:152
 msgid "``-j``, ``--jobs <jobs>``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:208
+#: ../../releng-tool/Documentation/user-guide/arguments:152
 msgid "Numbers of jobs to handle (default to ``0``; automatic)."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:211
+#: ../../releng-tool/Documentation/user-guide/arguments:155
 msgid "``--local-sources``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:211
+#: ../../releng-tool/Documentation/user-guide/arguments:155
 msgid "Enables `local-sources mode`_."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:213
+#: ../../releng-tool/Documentation/user-guide/arguments:157
 msgid "``--nocolorout``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:213
+#: ../../releng-tool/Documentation/user-guide/arguments:157
 msgid "Explicitly disable colorized output."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:215
+#: ../../releng-tool/Documentation/user-guide/arguments:159
 msgid "``--out-dir <dir>``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:215
+#: ../../releng-tool/Documentation/user-guide/arguments:159
 msgid ""
 "Directory for output (builds, images, etc.; defaults to "
 "``<root>/output``)."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:218
+#: ../../releng-tool/Documentation/user-guide/arguments:162
 msgid "``--root-dir <dir>``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:218
+#: ../../releng-tool/Documentation/user-guide/arguments:162
 msgid ""
 "Directory to process a releng-tool project (defaults to the working "
 "directory)."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:221
+#: ../../releng-tool/Documentation/user-guide/arguments:165
 msgid "``-V``, ``--verbose``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:221
+#: ../../releng-tool/Documentation/user-guide/arguments:165
 msgid "Show additional messages."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:223
+#: ../../releng-tool/Documentation/user-guide/arguments:167
 msgid "``--version``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:223
+#: ../../releng-tool/Documentation/user-guide/arguments:167
 msgid "Show releng-tool's version."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:227
+#: ../../releng-tool/Documentation/user-guide/rebuilds:2
 msgid "understanding rebuilds"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:229
+#: ../../releng-tool/Documentation/user-guide/rebuilds:4
 msgid ""
 "As packages are processed in order (based off of detected dependencies, "
 "if any), each package will go through their respective stages: fetching, "
@@ -409,7 +410,7 @@ msgid ""
 "rebuilds of packages to avoid a full rebuild of the entire project."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:241
+#: ../../releng-tool/Documentation/user-guide/rebuilds:16
 msgid ""
 "Consider the following example: a project has three packages "
 "``module-a``, ``module-b`` and ``module-c`` which are C++-based. For this"
@@ -420,7 +421,7 @@ msgid ""
 "``module-c``:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:255
+#: ../../releng-tool/Documentation/user-guide/rebuilds:30
 msgid ""
 "A developer notices that it is due to an issue found in ``module-b``; "
 "however, instead of attempting to redo everything from a fresh start, the"
@@ -430,7 +431,7 @@ msgid ""
 "occurs:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:266
+#: ../../releng-tool/Documentation/user-guide/rebuilds:41
 msgid ""
 "The issue here is that since ``module-b`` has already been processed, "
 "none of the interim changes made will be available for ``module-c`` to "
@@ -438,42 +439,42 @@ msgid ""
 "builder can signal for the updated package to be rebuilt:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:276
+#: ../../releng-tool/Documentation/user-guide/rebuilds:51
 msgid ""
 "With ``module-b`` in a more desired state, a re-invoke of ``releng-tool``"
 " could allow ``module-c`` to be built."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:284
+#: ../../releng-tool/Documentation/user-guide/rebuilds:59
 msgid ""
 "This is a very simple example to consider, and attempts to rebuild can "
 "vary based on the packages, changes and languages used."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:288
+#: ../../releng-tool/Documentation/user-guide/tips:2
 msgid "tips"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:291
+#: ../../releng-tool/Documentation/user-guide/tips:5
 msgid "offline builds"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:293
+#: ../../releng-tool/Documentation/user-guide/tips:7
 msgid "A user can prepare for an offline build by using the ``fetch`` action:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:299
+#: ../../releng-tool/Documentation/user-guide/tips:13
 msgid ""
 "Package content will be downloaded into the respective ``dl/`` and/or "
 "``cache/`` folders. Future builds for the project will no longer need "
 "external access until these folders are manually removed."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:304
+#: ../../releng-tool/Documentation/user-guide/tips:18
 msgid "parallel builds"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:306
+#: ../../releng-tool/Documentation/user-guide/tips:20
 msgid ""
 "A stage (such as a build stage) for a package can take advantage of "
 "multiple cores to perform the step. By default, releng-tool will attempt "
@@ -484,17 +485,17 @@ msgid ""
 "following can be used:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:317
+#: ../../releng-tool/Documentation/user-guide/tips:31
 msgid ""
 "Note that a developer may restrict the amount of jobs allowed for a "
 "specific package if a package cannot support parallel processing."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:321
+#: ../../releng-tool/Documentation/user-guide/tips:35
 msgid "privileged builds"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:323
+#: ../../releng-tool/Documentation/user-guide/tips:37
 msgid ""
 "It is never recommended to invoke a build with elevated (e.g. root) "
 "privileges. A builder invoking in an elevated environment runs the risk "
@@ -502,11 +503,11 @@ msgid ""
 "builder's host environment."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:328
+#: ../../releng-tool/Documentation/user-guide/tips:42
 msgid "license generation"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:330
+#: ../../releng-tool/Documentation/user-guide/tips:44
 msgid ""
 "At the end of a ``releng-tool`` invoke, the final stages will compile a "
 "list of package license information (if licenses are defined). If a user "
@@ -514,21 +515,21 @@ msgid ""
 "performing an entire build, the ``licenses`` action can be used:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:339
+#: ../../releng-tool/Documentation/user-guide/tips:53
 msgid ""
 "License information can then be found in the root directory's "
 "``<root>/licenses`` folder."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:343
+#: ../../releng-tool/Documentation/user-guide/advanced:2
 msgid "advanced builder capabilities"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:348
+#: ../../releng-tool/Documentation/user-guide/advanced:7
 msgid "development mode"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:350
+#: ../../releng-tool/Documentation/user-guide/advanced:9
 msgid ""
 "Development mode provides a way for builder to request to process "
 "supported packages against a development version of sources rather than "
@@ -542,7 +543,7 @@ msgid ""
 " tag."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:360
+#: ../../releng-tool/Documentation/user-guide/advanced:19
 msgid ""
 "To enable development mode, invoking ``releng-tool`` with the "
 "``--development`` argument will enable the mode. Future calls to releng-"
@@ -550,24 +551,24 @@ msgid ""
 " define. For example:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:372
+#: ../../releng-tool/Documentation/user-guide/advanced:31
 msgid ""
 "Development mode is persisted through the use of a file flag in the root "
 "directory. A user can either disable development mode by performing a "
 "|ACTION_MRPROPER|_ or can manually remove the file flag."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:379
+#: ../../releng-tool/Documentation/user-guide/advanced:38
 msgid "local-sources mode"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:383
+#: ../../releng-tool/Documentation/user-guide/advanced:42
 msgid ""
 "Clean events (such as ``releng-tool clean``) will not touch packages "
 "using sources found alongside the output directory"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:386
+#: ../../releng-tool/Documentation/user-guide/advanced:45
 msgid ""
 "Local-sources mode provides a way for a developer to build internal-"
 "flagged packages using sources found alongside the root directory instead"
@@ -590,7 +591,7 @@ msgid ""
 "package will be left with the user."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:404
+#: ../../releng-tool/Documentation/user-guide/advanced:63
 msgid ""
 "To enable local-sources mode, invoking ``releng-tool`` with the "
 "``--local-sources`` argument will enable the mode. Future calls to "
@@ -598,18 +599,18 @@ msgid ""
 "as internal packages. For example:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:417
+#: ../../releng-tool/Documentation/user-guide/advanced:76
 msgid ""
 "Local-sources mode is persisted through the use of a file flag in the "
 "root directory. A user can either disable local sources mode by "
 "performing a |ACTION_MRPROPER|_ or can manually remove the file flag."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:424
+#: ../../releng-tool/Documentation/user-guide/advanced:83
 msgid "configuration overrides"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:426
+#: ../../releng-tool/Documentation/user-guide/advanced:85
 msgid ""
 "While it is not recommended to have users manually modify a project's "
 "configuration, a series of override options exist to deal with unique "
@@ -620,11 +621,11 @@ msgid ""
 "source repository."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:434
+#: ../../releng-tool/Documentation/user-guide/advanced:93
 msgid "extraction tool overrides"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:436
+#: ../../releng-tool/Documentation/user-guide/advanced:95
 msgid ""
 "The ``override_extract_tools`` option inside a configuration override "
 "script allows a dictionary to be provided to map an extension type to an "
@@ -635,11 +636,11 @@ msgid ""
 "following example:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:450
+#: ../../releng-tool/Documentation/user-guide/advanced:109
 msgid "revision overrides"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:452
+#: ../../releng-tool/Documentation/user-guide/advanced:111
 msgid ""
 "The ``override_revisions`` option inside a configuration override script "
 "allows a dictionary to be provided to map a package name to a new "
@@ -652,17 +653,17 @@ msgid ""
 "definition. To avoid this, an override can be used instead:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:467
+#: ../../releng-tool/Documentation/user-guide/advanced:126
 msgid ""
 "The above example shows that package ``module-b`` will fetch using a test"
 " branch instead of what is defined in the actual package definition."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:471
+#: ../../releng-tool/Documentation/user-guide/advanced:130
 msgid "site overrides"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:473
+#: ../../releng-tool/Documentation/user-guide/advanced:132
 msgid ""
 "The ``override_sites`` option inside a configuration override script "
 "allows a dictionary to be provided to map a package name to a new site "
@@ -676,11 +677,11 @@ msgid ""
 " used:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:489
+#: ../../releng-tool/Documentation/user-guide/advanced:148
 msgid "tool overrides"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:491
+#: ../../releng-tool/Documentation/user-guide/advanced:150
 msgid ""
 "Environment variables can be used to help override external tool invoked "
 "by the releng-tool process. For example, when invoking CMake-based "
@@ -690,67 +691,14 @@ msgid ""
 "set to switch which tool to invoke. Consider the following example:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:505
+#: ../../releng-tool/Documentation/user-guide/advanced:164
 msgid "quirks"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide.rst:507
+#: ../../releng-tool/Documentation/user-guide/advanced:166
 msgid ""
 "releng-tool also provides a series of configuration quirks to deal with "
 "rare host environment scenarios where releng-tool may be experiencing "
 "issues. See :ref:`configuration quirks <quirks>` for more information."
 msgstr ""
-
-#~ msgid ""
-#~ "Clean (remove) the ``output/`` directory "
-#~ "found in the root directory. This "
-#~ "clean operation will remove content such"
-#~ " as extracted archives, built libraries "
-#~ "and more. Downloaded assets/cache files "
-#~ "are not removed (instead see "
-#~ "``mrproper``). If an output directory is"
-#~ " provided (i.e. ``--out-dir <dir>``) "
-#~ "during a clean event, the provided "
-#~ "directory will be removed instead of "
-#~ "the output directory (if any) found "
-#~ "in the root directory. If no "
-#~ "output directory exists, this call will"
-#~ " have no effect."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Perform a pristine clean of the "
-#~ "releng-tool project. This request not "
-#~ "only removes the targeted output "
-#~ "directory but also any cached assets "
-#~ "and mode file flags (see also "
-#~ "``clean``)."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Package content will be downloaded into"
-#~ " the respective ``dl/`` and/or ``cache/``"
-#~ " folders. Future builds for the "
-#~ "project will no longer need external "
-#~ "access until these folders are manually"
-#~ " removed or ``mrproper`` is invoked."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Development mode is persisted through "
-#~ "the use of a file flag in "
-#~ "the root directory. A user can "
-#~ "either disable development mode by "
-#~ "performing a ``mrproper`` or can "
-#~ "manually remove the file flag."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Local-sources mode is persisted through"
-#~ " the use of a file flag in "
-#~ "the root directory. A user can "
-#~ "either disable local sources mode by "
-#~ "performing a ``mrproper`` or can "
-#~ "manually remove the file flag."
-#~ msgstr ""
 

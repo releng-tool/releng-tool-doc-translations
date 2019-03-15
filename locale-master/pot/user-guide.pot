@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-05 00:18-0500\n"
+"POT-Creation-Date: 2019-03-15 01:27-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,18 +33,18 @@ msgid "Depending on the host and how releng-tool has been :doc:`installed <insta
 msgstr ""
 
 #: ../../releng-tool/Documentation/user-guide/getting-started:10
-msgid "A releng-tool project will be defined by a ``releng.py`` configuration file along with one or more packages found inside a ``package/`` folder. This location can be referred to as the \"root directory\". When invoking ``releng-tool``, the tool will look into the current working directory for the project information to process. For example, if a project found inside ``my-project`` with the single package ``package-a`` defined, the following output may be observed:"
+msgid "A releng-tool project will be defined by a ``releng`` configuration file along with one or more packages found inside a ``package/`` folder. This location can be referred to as the \"root directory\". When invoking ``releng-tool``, the tool will look into the current working directory for the project information to process. For example, if a project found inside ``my-project`` with the single package ``package-a`` defined, the following output may be observed:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/getting-started:30
+#: ../../releng-tool/Documentation/user-guide/getting-started:29
 msgid "On a successful execution, it is common that the release engineering process will have an asset (or multiple) generated into a ``images/`` location; however, it is up to the developer of a releng-tool project to decide where generated files will be stored."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/getting-started:35
+#: ../../releng-tool/Documentation/user-guide/getting-started:34
 msgid "If a user wishes to pass the directory of a project location via command line, the argument ``--root-dir`` can be used:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/getting-started:43
+#: ../../releng-tool/Documentation/user-guide/getting-started:42
 msgid "For a complete list of actions and other argument options provided by the tool, the ``--help`` option can be used to show this information:"
 msgstr ""
 

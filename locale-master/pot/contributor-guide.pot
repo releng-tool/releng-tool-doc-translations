@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-05 00:18-0500\n"
+"POT-Creation-Date: 2019-03-15 01:27-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -117,7 +117,7 @@ msgid "extensions"
 msgstr ""
 
 #: ../../releng-tool/Documentation/contributor-guide.rst:89
-msgid "Developers wishing to provide extensions to releng-tool should consult the API implementation found in this tool's repository (|releng/api/__init__.py|_). Implementation in the API folder aims to be \"API safe\" -- there is a strong attempt to prevent the changing of classes, methods, etc. to prevent compatibility issues as both releng-tool and extensions (if any) evolve. A developer for a releng-tool project would register an extension to load using the ``extensions`` configuration option inside the project configuration (``releng.py``):"
+msgid "Developers wishing to provide extensions to releng-tool should consult the API implementation found in this tool's repository (|releng/api/__init__.py|_). Implementation in the API folder aims to be \"API safe\" -- there is a strong attempt to prevent the changing of classes, methods, etc. to prevent compatibility issues as both releng-tool and extensions (if any) evolve. A developer for a releng-tool project would register an extension to load using the ``extensions`` configuration option inside the project configuration (``releng``):"
 msgstr ""
 
 #: ../../releng-tool/Documentation/contributor-guide.rst:109
