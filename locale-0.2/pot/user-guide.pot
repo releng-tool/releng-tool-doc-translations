@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-15 01:49-0400\n"
+"POT-Creation-Date: 2019-03-19 21:19-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -409,7 +409,7 @@ msgid "configuration overrides"
 msgstr ""
 
 #: ../../releng-tool/Documentation/user-guide/advanced:85
-msgid "While it is not recommended to have users manually modify a project's configuration, a series of override options exist to deal with unique build scenarios. If a builder needs to override a tool location or package site, a user and define either environment options or setup a configuration override script ``releng-overrides.py``. It is never recommended to persist a configuration overrides file into a project's source repository."
+msgid "While it is not recommended to have users manually modify a project's configuration, a series of override options exist to deal with unique build scenarios. If a builder needs to override a tool location or package site, a user and define either environment options or setup a configuration override script ``releng-overrides``. It is never recommended to persist a configuration overrides file into a project's source repository."
 msgstr ""
 
 #: ../../releng-tool/Documentation/user-guide/advanced:93
