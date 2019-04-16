@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-05 00:18-0500\n"
+"POT-Creation-Date: 2019-04-16 01:19-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,11 +48,11 @@ msgstr ""
 msgid "Configuration options parsed by releng-tool for a package definition:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/annex-a.rst:107
+#: ../../releng-tool/Documentation/annex-a.rst:109
 msgid "script helpers"
 msgstr ""
 
-#: ../../releng-tool/Documentation/annex-a.rst:109
+#: ../../releng-tool/Documentation/annex-a.rst:111
 msgid "Functions available to scripts invoked by releng-tool or importable via ``from releng import *``:"
 msgstr ""
 
