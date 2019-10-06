@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-16 01:19-0400\n"
+"POT-Creation-Date: 2019-10-06 17:57-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FO7E3FBD5BC2\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -505,7 +505,7 @@ msgid ""
 "external are assumed to be external packages."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:82
+#: ../../releng-tool/Documentation/developer-guide/environment:93
 #: ../../releng-tool/Documentation/developer-guide/packages:303
 #: ../../releng-tool/Documentation/developer-guide/packages:356
 #: ../../releng-tool/Documentation/developer-guide/releng-py:36
@@ -838,165 +838,180 @@ msgid "See also |CONF_PKG_BUILD_DIR|_."
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide/environment:64
-msgid "``PKG_CACHE_FILE``"
+msgid "``PKG_CACHE_DIR``"
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide/environment:64
 msgid ""
-"The location of the cache file for a package. If package defines a fetch "
-"of an archive from a remote source, after the fetch stage is completed, "
-"the archive can be found in this location. For example, if a package "
-"defines a site ``https://www.example.com/test.tgz``, the resulting catch "
-"file may be ``<root>/output/dl/test-1.0.tgz``."
+"The location of the cache directory for a package. If a package defines a"
+" fetch from a repository which can be locally cached, this cache "
+"directory represents the location where the local cache of content will "
+"be held. For example, if a provide defines a Git-based site, a local "
+"cache of the Git repository will be stored in this location. Typically, "
+"packages should not need to operate on the cache directory except for "
+"advanced cases."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:73
+#: ../../releng-tool/Documentation/developer-guide/environment:75
+msgid "``PKG_CACHE_FILE``"
+msgstr ""
+
+#: ../../releng-tool/Documentation/developer-guide/environment:75
+msgid ""
+"The location of the cache file for a package. If a package defines a "
+"fetch of an archive from a remote source, after the fetch stage is "
+"completed, the archive can be found in this location. For example, if a "
+"package defines a site ``https://www.example.com/test.tgz``, the "
+"resulting catch file may be ``<root>/output/dl/test-1.0.tgz``."
+msgstr ""
+
+#: ../../releng-tool/Documentation/developer-guide/environment:84
 msgid "``PKG_DEFDIR``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:73
+#: ../../releng-tool/Documentation/developer-guide/environment:84
 msgid ""
 "The package's definition directory. For example, for a package ``test``. "
 "the definition directory would be ``<root>/package/test``."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:77
+#: ../../releng-tool/Documentation/developer-guide/environment:88
 msgid "``PKG_INTERNAL``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:77
+#: ../../releng-tool/Documentation/developer-guide/environment:88
 msgid ""
 "Whether or not the package is considered \"internal\". If internal, the "
 "environment variable will be set to a value of one (i.e. "
 "``PKG_INTERNAL=1``)."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:84
+#: ../../releng-tool/Documentation/developer-guide/environment:95
 msgid "``PKG_NAME``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:84
-#: ../../releng-tool/Documentation/developer-guide/environment:138
+#: ../../releng-tool/Documentation/developer-guide/environment:95
+#: ../../releng-tool/Documentation/developer-guide/environment:149
 msgid "The name of the package."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:86
+#: ../../releng-tool/Documentation/developer-guide/environment:97
 msgid "``PKG_REVISION``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:86
+#: ../../releng-tool/Documentation/developer-guide/environment:97
 msgid "The site revision of the package."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:88
+#: ../../releng-tool/Documentation/developer-guide/environment:99
 msgid "See also |LIBFOO_REVISION|_."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:90
+#: ../../releng-tool/Documentation/developer-guide/environment:101
 msgid "``PKG_SITE``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:90
+#: ../../releng-tool/Documentation/developer-guide/environment:101
 msgid "The site of the package."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:92
+#: ../../releng-tool/Documentation/developer-guide/environment:103
 msgid "See also |LIBFOO_SITE|_."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:94
+#: ../../releng-tool/Documentation/developer-guide/environment:105
 msgid "``PKG_VERSION``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:94
+#: ../../releng-tool/Documentation/developer-guide/environment:105
 msgid "The version of the package."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:96
+#: ../../releng-tool/Documentation/developer-guide/environment:107
 msgid "See also |LIBFOO_VERSION|_."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:98
+#: ../../releng-tool/Documentation/developer-guide/environment:109
 msgid "``PREFIX``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:98
+#: ../../releng-tool/Documentation/developer-guide/environment:109
 msgid "The sysroot prefix for the package."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:100
+#: ../../releng-tool/Documentation/developer-guide/environment:111
 msgid "``RELENG_DEVMODE``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:100
+#: ../../releng-tool/Documentation/developer-guide/environment:111
 msgid "Flag set if in :ref:`development mode`."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:102
+#: ../../releng-tool/Documentation/developer-guide/environment:113
 msgid "``RELENG_LOCALSRCS``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:102
+#: ../../releng-tool/Documentation/developer-guide/environment:113
 msgid "Flag set if in :ref:`local-sources mode`."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:104
+#: ../../releng-tool/Documentation/developer-guide/environment:115
 msgid "``RELENG_REBUILD``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:104
+#: ../../releng-tool/Documentation/developer-guide/environment:115
 msgid "Flag set if performing a re-build request."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:106
+#: ../../releng-tool/Documentation/developer-guide/environment:117
 msgid "``RELENG_RECONFIGURE``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:106
+#: ../../releng-tool/Documentation/developer-guide/environment:117
 msgid "Flag set if performing a re-configuration request."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:109
+#: ../../releng-tool/Documentation/developer-guide/environment:120
 msgid "``RELENG_REINSTALL``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:109
+#: ../../releng-tool/Documentation/developer-guide/environment:120
 msgid "Flag set if performing a re-install request."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:111
+#: ../../releng-tool/Documentation/developer-guide/environment:122
 msgid "``ROOT_DIR``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:111
+#: ../../releng-tool/Documentation/developer-guide/environment:122
 msgid "The root directory."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:113
+#: ../../releng-tool/Documentation/developer-guide/environment:124
 msgid "``STAGING_DIR``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:113
+#: ../../releng-tool/Documentation/developer-guide/environment:124
 msgid "The staging area directory."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:115
+#: ../../releng-tool/Documentation/developer-guide/environment:126
 msgid "``SYMBOLS_DIR``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:115
+#: ../../releng-tool/Documentation/developer-guide/environment:126
 msgid "The symbols area directory."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:117
+#: ../../releng-tool/Documentation/developer-guide/environment:128
 msgid "``TARGET_DIR``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:117
+#: ../../releng-tool/Documentation/developer-guide/environment:128
 msgid "The target area directory."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:125
+#: ../../releng-tool/Documentation/developer-guide/environment:136
 msgid ""
 "Package-defined environment variables are also available in the rare "
 "chance that package content needs to be mangled (e.g. including a "
@@ -1006,43 +1021,43 @@ msgid ""
 "determined package key):"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:132
+#: ../../releng-tool/Documentation/developer-guide/environment:143
 msgid "``<PKG>_BUILD_DIR``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:132
+#: ../../releng-tool/Documentation/developer-guide/environment:143
 msgid "The directory for a defined package's buildable content."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:135
+#: ../../releng-tool/Documentation/developer-guide/environment:146
 msgid "``<PKG>_BUILD_OUTPUT_DIR``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:135
+#: ../../releng-tool/Documentation/developer-guide/environment:146
 msgid "The directory for where a defined package's build output will be stored."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:138
+#: ../../releng-tool/Documentation/developer-guide/environment:149
 msgid "``<PKG>_NAME``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:140
+#: ../../releng-tool/Documentation/developer-guide/environment:151
 msgid "``<PKG>_REVISION``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:140
+#: ../../releng-tool/Documentation/developer-guide/environment:151
 msgid "The revision of a defined package."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:142
+#: ../../releng-tool/Documentation/developer-guide/environment:153
 msgid "``<PKG>_VERSION``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:142
+#: ../../releng-tool/Documentation/developer-guide/environment:153
 msgid "The version of a defined package."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/environment:145
+#: ../../releng-tool/Documentation/developer-guide/environment:156
 msgid ""
 "Note that is it not recommended to define environment variables for the "
 "releng-tool process to use outside the project definition except for "
@@ -1561,8 +1576,8 @@ msgstr ""
 msgid ""
 "Flag value to explicitly indicate that a package should not extract the "
 "package contents. This feature is primarily used when using releng-tool "
-"to fetch content for one or more packages (into ``DL_DIR`) to be used by "
-"another package the releng-tool project defines."
+"to fetch content for one or more packages (into ``DL_DIR``) to be used by"
+" another package the releng-tool project defines."
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide/packages:377
@@ -1689,25 +1704,39 @@ msgid ""
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide/packages:462
-msgid "package post-processing"
+msgid "package bootstrapping and post-processing"
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide/packages:464
 msgid ""
 "Every package, no matter which package |LIBFOO_TYPE|_ is defined, can "
-"create a post-processing script to invoke after a package has completed "
-"an installation stage. The existence of a ``<package>-post`` inside a "
-"package directory will trigger the post-processing stage for the package."
-" An example post-processing script (``libfoo-post``) can be as follows:"
+"create a bootstrapping or post-processing script to invoke before a "
+"package starts a configuration stage or after a package has completed an "
+"installation stage, respectively."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:477
+#: ../../releng-tool/Documentation/developer-guide/packages:469
 msgid ""
-"A post-processing script for a package is optional; thus, if a script is "
-"not provided, no post-processing will be performed for the package."
+"The existence of a ``<package>-bootstrap`` inside a package directory "
+"will trigger the bootstrapping stage for the package. An example "
+"bootstrapping script (``libfoo-bootstrap``) can be as follows:"
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide/packages:480
+msgid ""
+"The existence of a ``<package>-post`` inside a package directory will "
+"trigger the post-processing stage for the package. An example post-"
+"processing script (``libfoo-post``) can be as follows:"
+msgstr ""
+
+#: ../../releng-tool/Documentation/developer-guide/packages:491
+msgid ""
+"Bootstrapping or post-processing scripts for a package are optional; "
+"thus, if no scripts are provided for a package, no bootstrapping or post-"
+"processing will be performed for the package."
+msgstr ""
+
+#: ../../releng-tool/Documentation/developer-guide/packages:495
 #: ../../releng-tool/Documentation/developer-guide/packages-type-script:34
 msgid ""
 "See also `script helpers`_ for helper functions/variables available for "
