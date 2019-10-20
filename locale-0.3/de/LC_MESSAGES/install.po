@@ -1,0 +1,119 @@
+# Copyright (C) 2019 releng-tool
+# This file is distributed under the same license as the releng-tool
+# package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-26 00:59-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../releng-tool/Documentation/install.rst:2
+msgid "installation"
+msgstr "installation"
+
+#: ../../releng-tool/Documentation/install.rst:4
+msgid "The recommended method of installation is using pip_:"
+msgstr ""
+
+#: ../../releng-tool/Documentation/install.rst:10
+msgid ""
+"To verify the package has been installed the following command can be "
+"used:"
+msgstr ""
+
+#: ../../releng-tool/Documentation/install.rst:19
+msgid "quick-start"
+msgstr ""
+
+#: ../../releng-tool/Documentation/install.rst:21
+msgid ""
+"The following provides a series of steps to assist in preparing a new "
+"environment to use this package. This quick-start will aim to use the "
+"most recent version of Python."
+msgstr ""
+
+#: ../../releng-tool/Documentation/install.rst:26
+msgid "linux"
+msgstr ""
+
+#: ../../releng-tool/Documentation/install.rst:28
+msgid ""
+"While the use of Python_/pip_ is almost consistent between Linux "
+"distributions, the following are a series of helpful steps to install "
+"this package under specific distributions of Linux. From a terminal, "
+"invoke the following commands:"
+msgstr ""
+
+#: ../../releng-tool/Documentation/install.rst:33
+msgid "arch"
+msgstr ""
+
+#: ../../releng-tool/Documentation/install.rst:44
+msgid "centos"
+msgstr ""
+
+#: ../../releng-tool/Documentation/install.rst:55
+msgid "fedora"
+msgstr ""
+
+#: ../../releng-tool/Documentation/install.rst:65
+msgid "opensuse"
+msgstr ""
+
+#: ../../releng-tool/Documentation/install.rst:74
+msgid "ubuntu"
+msgstr ""
+
+#: ../../releng-tool/Documentation/install.rst:85
+msgid "os x"
+msgstr ""
+
+#: ../../releng-tool/Documentation/install.rst:87
+msgid "From a terminal, invoke the following commands:"
+msgstr ""
+
+#: ../../releng-tool/Documentation/install.rst:97
+msgid "windows"
+msgstr ""
+
+#: ../../releng-tool/Documentation/install.rst:99
+msgid "If not already installed, download the most recent version of Python_:"
+msgstr ""
+
+#: ../../releng-tool/Documentation/install.rst
+msgid "Python - Downloads"
+msgstr ""
+
+#: ../../releng-tool/Documentation/install.rst
+msgid "https://www.python.org/downloads/"
+msgstr ""
+
+#: ../../releng-tool/Documentation/install.rst:104
+msgid ""
+"When invoking the installer, it is recommended to select the option to "
+"\"Add Python to PATH\"; however, users can explicitly invoked Python from"
+" an absolute path (the remainder of these steps will assume Python is "
+"available in the path)."
+msgstr ""
+
+#: ../../releng-tool/Documentation/install.rst:108
+msgid "Open a Windows command prompt and invoke the following:"
+msgstr ""
+
+#: ../../releng-tool/Documentation/install.rst:117
+msgid "development"
+msgstr ""
+
+#: ../../releng-tool/Documentation/install.rst:119
+msgid ""
+"To install the most recent development sources, the following pip_ "
+"command can be used:"
+msgstr ""
+

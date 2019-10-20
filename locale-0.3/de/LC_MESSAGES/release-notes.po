@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 releng-tool
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-20 00:46-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../releng-tool/Documentation/release-notes.rst:2
+msgid "release notes"
+msgstr ""
+
+#: ../../releng-tool/Documentation/release-notes.rst:4
+msgid ""
+"The following provides the notable features, bug fixes and more for each "
+"release of releng-tool. For a complete list of detailed changes to "
+"releng-tool, please consult the project's `repository commits`_."
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:2
+msgid "0.3 (2019-10-19)"
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:4
+msgid "allow packages to configure to ignore cache while in development mode"
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:5
+msgid "allow packages to configure for no-extraction for sources"
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:6
+msgid "fixed default interpreter detection for python packages"
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:7
+msgid "fixed fetching from mercurial sources"
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:8
+msgid "fixed fetching from newer git hashes if repository was already cached"
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:9
+msgid "introduce ``releng_env`` and ``releng_mkdir`` helper script functions"
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:10
+msgid "introduce support for package-specific bootstrapping stage"
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:13
+msgid "0.2 (2019-03-15)"
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:15
+msgid ""
+"a project's host directory will now be registered in the system's path "
+"during execution"
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:17
+msgid "allow tracking project's license files when found in multiple directories"
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:18
+msgid "fixed loading configuration overrides script if one actually exists"
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:19
+msgid "re-work various script names (e.g. ``releng.py`` -> ``releng``)"
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:22
+msgid "0.1 (2019-02-24)"
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:24
+msgid "hello world"
+msgstr ""
+
