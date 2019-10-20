@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-05 00:18-0500\n"
+"POT-Creation-Date: 2019-10-20 00:13-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1801,12 +1801,12 @@ msgstr ""
 #: ../../releng-tool/releng/__init__.py:docstring of releng.releng_move:0
 #: ../../releng-tool/releng/__init__.py:docstring of releng.releng_tmpdir:0
 #: ../../releng-tool/releng/__init__.py:docstring of releng.releng_wd:0
-msgid "raises"
+msgid "Raises"
 msgstr ""
 
 #: ../../releng-tool/releng/__init__.py:docstring of releng.releng_copy:46
 #: ../../releng-tool/releng/__init__.py:docstring of releng.releng_move:42
-msgid ":exc:`SystemExit` -- if the copy operation fails with ``critical=True``"
+msgid "if the copy operation fails with ``critical=True``"
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide.rst:1785
@@ -1874,7 +1874,7 @@ msgid "``True`` if the execution has completed with no error; ``False`` if the e
 msgstr ""
 
 #: ../../releng-tool/releng/__init__.py:docstring of releng.releng_execute:67
-msgid ":exc:`SystemExit` -- if the execution operation fails with ``critical=True``"
+msgid "if the execution operation fails with ``critical=True``"
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide.rst:1789
@@ -1922,7 +1922,7 @@ msgid "exit code; defaults to 0 if no message or defaults to 1 if a message is s
 msgstr ""
 
 #: ../../releng-tool/releng/__init__.py:docstring of releng.releng_exit:24
-msgid ":exc:`SystemExit` -- always raised"
+msgid "always raised"
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide.rst:1797
@@ -2014,7 +2014,7 @@ msgid "the directory to create the temporary directory in"
 msgstr ""
 
 #: ../../releng-tool/releng/__init__.py:docstring of releng.releng_tmpdir:19
-msgid ":exc:`FailedToPrepareBaseDirectoryError` -- the base directory does not exist and could not be created"
+msgid "the base directory does not exist and     could not be created"
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide.rst:1820
@@ -2054,7 +2054,7 @@ msgid "the target working directory"
 msgstr ""
 
 #: ../../releng-tool/releng/__init__.py:docstring of releng.releng_wd:20
-msgid ":exc:`FailedToPrepareWorkingDirectoryError` -- the working directory does not exist and could not be created"
+msgid "the working directory does not     exist and could not be created"
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide.rst:1828
