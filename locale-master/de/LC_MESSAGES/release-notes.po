@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../releng-tool/Documentation/release-notes.rst:2
 msgid "release notes"
-msgstr ""
+msgstr "versionshinweise"
 
 #: ../../releng-tool/Documentation/release-notes.rst:4
 msgid ""
