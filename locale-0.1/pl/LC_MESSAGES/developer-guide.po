@@ -2981,29 +2981,3 @@ msgstr ""
 msgid "https://docs.python.org/3.7/library/urllib.request.html#urllib.request.urlopen"
 msgstr ""
 
-#~ msgid "raises"
-#~ msgstr ""
-
-#~ msgid ":exc:`SystemExit` -- if the copy operation fails with ``critical=True``"
-#~ msgstr ""
-
-#~ msgid ""
-#~ ":exc:`SystemExit` -- if the execution "
-#~ "operation fails with ``critical=True``"
-#~ msgstr ""
-
-#~ msgid ":exc:`SystemExit` -- always raised"
-#~ msgstr ""
-
-#~ msgid ""
-#~ ":exc:`FailedToPrepareBaseDirectoryError` -- the base"
-#~ " directory does not exist and could"
-#~ " not be created"
-#~ msgstr ""
-
-#~ msgid ""
-#~ ":exc:`FailedToPrepareWorkingDirectoryError` -- the "
-#~ "working directory does not exist and "
-#~ "could not be created"
-#~ msgstr ""
-
