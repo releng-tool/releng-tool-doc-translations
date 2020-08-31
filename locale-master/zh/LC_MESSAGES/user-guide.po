@@ -6,14 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-19 21:19-0400\n"
+"POT-Creation-Date: 2020-08-30 21:42-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FO7E3FBD5BC2\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../releng-tool/Documentation/user-guide.rst:2
 msgid "user guide"
@@ -378,18 +378,28 @@ msgid ""
 msgstr ""
 
 #: ../../releng-tool/Documentation/user-guide/arguments:165
-msgid "``-V``, ``--verbose``"
+msgid "``--quirk <quirk-id>``"
 msgstr ""
 
 #: ../../releng-tool/Documentation/user-guide/arguments:165
+msgid ""
+"Allows specifying a runtime :ref:`quirk <quirks>` for the releng-tool "
+"process. This option can be used multiple times to apply multiple quirks."
+msgstr ""
+
+#: ../../releng-tool/Documentation/user-guide/arguments:170
+msgid "``-V``, ``--verbose``"
+msgstr ""
+
+#: ../../releng-tool/Documentation/user-guide/arguments:170
 msgid "Show additional messages."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:167
+#: ../../releng-tool/Documentation/user-guide/arguments:172
 msgid "``--version``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:167
+#: ../../releng-tool/Documentation/user-guide/arguments:172
 msgid "Show releng-tool's version."
 msgstr ""
 
