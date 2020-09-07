@@ -1,0 +1,110 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-30 21:42-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../releng-tool/Documentation/release-notes.rst:2
+msgid "release notes"
+msgstr ""
+
+#: ../../releng-tool/Documentation/release-notes.rst:4
+msgid "The following provides the notable features, bug fixes and more for each release of releng-tool. For a complete list of detailed changes to releng-tool, please consult the project's `repository commits`_."
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:2
+msgid "master"
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:4
+msgid "allow developers to fetch from addition git refspecs (e.g. pull requests)"
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:5
+msgid "allow setting quirks in command line"
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:6
+msgid "fixed a scenario where a git extraction stage could fetch sources"
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:7
+msgid "fixed git fetch/extraction if package is cached and site has changed"
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:8
+msgid "improved handling of output files which may set the readonly attribute"
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:11
+msgid "0.3 (2019-10-19)"
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:13
+msgid "allow packages to configure to ignore cache while in development mode"
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:14
+msgid "allow packages to configure for no-extraction for sources"
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:15
+msgid "fixed default interpreter detection for python packages"
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:16
+msgid "fixed fetching from mercurial sources"
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:17
+msgid "fixed fetching from newer git hashes if repository was already cached"
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:18
+msgid "introduce ``releng_env`` and ``releng_mkdir`` helper script functions"
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:19
+msgid "introduce support for package-specific bootstrapping stage"
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:22
+msgid "0.2 (2019-03-15)"
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:24
+msgid "a project's host directory will now be registered in the system's path during execution"
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:26
+msgid "allow tracking project's license files when found in multiple directories"
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:27
+msgid "fixed loading configuration overrides script if one actually exists"
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:28
+msgid "re-work various script names (e.g. ``releng.py`` -> ``releng``)"
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:31
+msgid "0.1 (2019-02-24)"
+msgstr ""
+
+#: ../../releng-tool/CHANGELOG.rst:33
+msgid "hello world"
+msgstr ""
+
