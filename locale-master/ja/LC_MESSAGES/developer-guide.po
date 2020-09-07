@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-30 21:42-0400\n"
+"POT-Creation-Date: 2020-09-07 14:31-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -504,8 +504,8 @@ msgid ""
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide/environment:93
-#: ../../releng-tool/Documentation/developer-guide/packages:302
-#: ../../releng-tool/Documentation/developer-guide/packages:368
+#: ../../releng-tool/Documentation/developer-guide/packages:305
+#: ../../releng-tool/Documentation/developer-guide/packages:392
 #: ../../releng-tool/Documentation/developer-guide/releng-py:36
 msgid "See also `internal and external packages`_."
 msgstr ""
@@ -1145,7 +1145,7 @@ msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide/packages:68
 #: ../../releng-tool/Documentation/developer-guide/packages:135
-#: ../../releng-tool/Documentation/developer-guide/packages:180
+#: ../../releng-tool/Documentation/developer-guide/packages:183
 msgid "type"
 msgstr ""
 
@@ -1328,14 +1328,20 @@ msgid ""
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide/packages:169
-msgid "See also |LIBFOO_VCS_TYPE|_."
+msgid ""
+"Specifying a site value of ``local`` will automatically configure a VCS-"
+"type of ``local`` (see |LIBFOO_VCS_TYPE|_ for more information)."
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide/packages:172
-msgid "LIBFOO_TYPE"
+msgid "See also |LIBFOO_VCS_TYPE|_."
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide/packages:175
+msgid "LIBFOO_TYPE"
+msgstr ""
+
+#: ../../releng-tool/Documentation/developer-guide/packages:178
 msgid ""
 "The package type. The default package type is a (Python) script-based "
 "package; however, releng-tool also provides a series of helper package "
@@ -1343,54 +1349,54 @@ msgid ""
 "site definitions:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:180
+#: ../../releng-tool/Documentation/developer-guide/packages:183
 msgid "value"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:182
+#: ../../releng-tool/Documentation/developer-guide/packages:185
 msgid "Autotools"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:182
+#: ../../releng-tool/Documentation/developer-guide/packages:185
 msgid "``autotools``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:183
+#: ../../releng-tool/Documentation/developer-guide/packages:186
 msgid "CMake"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:183
+#: ../../releng-tool/Documentation/developer-guide/packages:186
 msgid "``cmake``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:184
+#: ../../releng-tool/Documentation/developer-guide/packages:187
 msgid "Python"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:184
+#: ../../releng-tool/Documentation/developer-guide/packages:187
 msgid "``python``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:185
+#: ../../releng-tool/Documentation/developer-guide/packages:188
 msgid "Script"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:185
+#: ../../releng-tool/Documentation/developer-guide/packages:188
 msgid "``script``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:188
+#: ../../releng-tool/Documentation/developer-guide/packages:191
 msgid "For example:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:194
+#: ../../releng-tool/Documentation/developer-guide/packages:197
 msgid ""
 "If no type is defined for a package, it will be considered a script-based"
 " package. If applicable, loaded extensions may provide support for custom"
 " site protocols."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:198
+#: ../../releng-tool/Documentation/developer-guide/packages:201
 msgid ""
 "Using a specific type will create a dependency for a project that the "
 "respective host tool is installed on the host system. For example, if a "
@@ -1398,11 +1404,11 @@ msgid ""
 "on the system."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:203
+#: ../../releng-tool/Documentation/developer-guide/packages:206
 msgid "LIBFOO_VERSION"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:206
+#: ../../releng-tool/Documentation/developer-guide/packages:209
 msgid ""
 "The version of the package. Typically the version value should be "
 "formatted in a semantic versioning style; however, it is up to the "
@@ -1411,7 +1417,7 @@ msgid ""
 "output folder names, cache files and more."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:215
+#: ../../releng-tool/Documentation/developer-guide/packages:218
 msgid ""
 "For some VCS types, the version value will be used to acquire a specific "
 "revision of sources. If for some case the desired version value cannot be"
@@ -1419,25 +1425,25 @@ msgid ""
 " such as ``libfoo-libfoo-v1.0``), |LIBFOO_REVISION|_ can be used."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:220
+#: ../../releng-tool/Documentation/developer-guide/packages:223
 msgid "See also |LIBFOO_DEVMODE_REVISION|_ and |LIBFOO_REVISION|_."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:223
+#: ../../releng-tool/Documentation/developer-guide/packages:226
 msgid "advanced package configurations"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:225
+#: ../../releng-tool/Documentation/developer-guide/packages:228
 msgid ""
 "The following outlines more advanced configuration options available for "
 "packages."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:229
+#: ../../releng-tool/Documentation/developer-guide/packages:232
 msgid "LIBFOO_BUILD_SUBDIR"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:231
+#: ../../releng-tool/Documentation/developer-guide/packages:234
 msgid ""
 "Sub-directory where a package's extracted sources holds its buildable "
 "content. Sources for a package may be nested inside one or more "
@@ -1445,11 +1451,11 @@ msgid ""
 "configuration, build and installation processes are invoked from."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:241
+#: ../../releng-tool/Documentation/developer-guide/packages:244
 msgid "LIBFOO_DEVMODE_IGNORE_CACHE"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:243
+#: ../../releng-tool/Documentation/developer-guide/packages:246
 msgid ""
 "Flag value to explicitly indicate that a package should ignore any "
 "generated cache file when operating in development mode. In most cases, "
@@ -1464,15 +1470,15 @@ msgid ""
 "state."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:257
+#: ../../releng-tool/Documentation/developer-guide/packages:260
 msgid "By default, this option is disabled with a value of ``False``."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:260
+#: ../../releng-tool/Documentation/developer-guide/packages:263
 msgid "LIBFOO_DEVMODE_REVISION"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:263
+#: ../../releng-tool/Documentation/developer-guide/packages:266
 msgid ""
 "Specifies a development revision for a package. When a project is being "
 "built in :ref:`development mode`, the development revision is used over "
@@ -1481,15 +1487,15 @@ msgid ""
 "|LIBFOO_REVISION|_ while in development mode."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:273
+#: ../../releng-tool/Documentation/developer-guide/packages:276
 msgid "See also |LIBFOO_REVISION|_ and |LIBFOO_VERSION|_."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:276
+#: ../../releng-tool/Documentation/developer-guide/packages:279
 msgid "LIBFOO_EXTENSION"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:278
+#: ../../releng-tool/Documentation/developer-guide/packages:281
 msgid ""
 "Specifies a filename extension for the package. A package may be cached "
 "inside the download directory to be used when the extraction phase is "
@@ -1499,11 +1505,11 @@ msgid ""
 "specify the extension value using this option."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:290
+#: ../../releng-tool/Documentation/developer-guide/packages:293
 msgid "LIBFOO_EXTERNAL"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:293
+#: ../../releng-tool/Documentation/developer-guide/packages:296
 msgid ""
 "Flag value to explicitly indicate that a package is an external package. "
 "External packages will generate warnings if :ref:`hashes <hash_files>` or"
@@ -1511,33 +1517,33 @@ msgid ""
 "unless explicitly configured to be internal."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:305
+#: ../../releng-tool/Documentation/developer-guide/packages:308
 msgid "LIBFOO_EXTOPT"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:307
+#: ../../releng-tool/Documentation/developer-guide/packages:310
 msgid ""
 "Specifies extension-specific options. Packages wishing to take advantage "
 "of extension-specific capabilities can forward options to extensions by "
 "defining a dictionary of values."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:319
+#: ../../releng-tool/Documentation/developer-guide/packages:322
 msgid "LIBFOO_EXTRACT_TYPE"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:321
+#: ../../releng-tool/Documentation/developer-guide/packages:324
 msgid ""
 "Specifies a custom extraction type for a package. If a configured "
 "extension supports a custom extraction capability, the registered "
 "extraction type can be explicitly registered in this option."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:330
+#: ../../releng-tool/Documentation/developer-guide/packages:333
 msgid "LIBFOO_FIXED_JOBS"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:332
+#: ../../releng-tool/Documentation/developer-guide/packages:335
 msgid ""
 "Explicitly configure the total number of jobs a package can use. The "
 "primary use case for this option is to help limit the total number of "
@@ -1545,11 +1551,37 @@ msgid ""
 "environment."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:341
+#: ../../releng-tool/Documentation/developer-guide/packages:344
+msgid "LIBFOO_GIT_DEPTH"
+msgstr ""
+
+#: ../../releng-tool/Documentation/developer-guide/packages:347
+msgid ""
+"Limit fetching for a Git-based source to the specified number of commits."
+" The value provided will be used with the |--depth|_ argument. By "
+"default, the depth will be set to a value of ``1``. If a developer wishes"
+" use fetch all commits from all refspecs, a developer can specify a value"
+" of ``0``."
+msgstr ""
+
+#: ../../releng-tool/Documentation/developer-guide/packages:352
+msgid ""
+"While the default depth is a value of ``1``, an exception is made when "
+"the depth is not explicitly set and the |LIBFOO_REVISION|_ value defined "
+"is a hash. For this case, if the revision is not found with the "
+"implicitly-defined shallow depth of ``1``, the entire history of the "
+"repository will be fetched."
+msgstr ""
+
+#: ../../releng-tool/Documentation/developer-guide/packages:361
+msgid "See also |LIBFOO_GIT_REFSPECS|_ and :ref:`configuration quirks <quirks>`."
+msgstr ""
+
+#: ../../releng-tool/Documentation/developer-guide/packages:364
 msgid "LIBFOO_GIT_REFSPECS"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:343
+#: ../../releng-tool/Documentation/developer-guide/packages:367
 msgid ""
 "List of addition refspecs to fetch when using a ``git`` VCS type. By "
 "default, a Git fetch request will acquire all ``heads`` and ``tags`` "
@@ -1558,11 +1590,11 @@ msgid ""
 "refspecs to acquire when fetching."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:354
+#: ../../releng-tool/Documentation/developer-guide/packages:378
 msgid "LIBFOO_INTERNAL"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:357
+#: ../../releng-tool/Documentation/developer-guide/packages:381
 msgid ""
 "Flag value to explicitly indicate that a package is an internal package. "
 "Internal packages will not generate warnings if :ref:`hashes "
@@ -1572,11 +1604,11 @@ msgid ""
 "external unless explicitly configured to be internal."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:371
+#: ../../releng-tool/Documentation/developer-guide/packages:395
 msgid "LIBFOO_NO_EXTRACTION"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:375
+#: ../../releng-tool/Documentation/developer-guide/packages:399
 msgid ""
 "If ``LIBFOO_NO_EXTRACTION`` is configured for a package, the package "
 "cannot define additional :ref:`hashes <hash_files>`, define a list of "
@@ -1584,7 +1616,7 @@ msgid ""
 "(such as building; since no sources are available)."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:380
+#: ../../releng-tool/Documentation/developer-guide/packages:404
 msgid ""
 "Flag value to explicitly indicate that a package should not extract the "
 "package contents. This feature is primarily used when using releng-tool "
@@ -1592,7 +1624,7 @@ msgid ""
 " another package the releng-tool project defines."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:389
+#: ../../releng-tool/Documentation/developer-guide/packages:413
 msgid ""
 "Limitations exist when using the ``LIBFOO_NO_EXTRACTION`` option. Since "
 "releng-tool will not be used to extract a package's archive (if any), "
@@ -1606,26 +1638,26 @@ msgid ""
 "value of ``False``."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:400
+#: ../../releng-tool/Documentation/developer-guide/packages:424
 msgid "LIBFOO_PREFIX"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:403
+#: ../../releng-tool/Documentation/developer-guide/packages:427
 msgid ""
 "Specifies the sysroot prefix value to use for the package. An explicitly "
 "provided prefix value will override the project-defined or default "
 "sysroot prefix value."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:411
+#: ../../releng-tool/Documentation/developer-guide/packages:435
 msgid "See also |CONF_SYSROOT_PREFIX|_."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:414
+#: ../../releng-tool/Documentation/developer-guide/packages:438
 msgid "LIBFOO_REVISION"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:417
+#: ../../releng-tool/Documentation/developer-guide/packages:441
 msgid ""
 "Specifies a revision value for a package. When a package fetches content "
 "using source management tools, the revision value is used to determine "
@@ -1633,15 +1665,15 @@ msgid ""
 "defined package, a package will use the configured |LIBFOO_VERSION|_."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:426
+#: ../../releng-tool/Documentation/developer-guide/packages:450
 msgid "See also |LIBFOO_DEVMODE_REVISION|_ and |LIBFOO_VERSION|_."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:429
+#: ../../releng-tool/Documentation/developer-guide/packages:453
 msgid "LIBFOO_STRIP_COUNT"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:431
+#: ../../releng-tool/Documentation/developer-guide/packages:455
 msgid ""
 "Specifies the strip count to use when attempting to extract sources from "
 "an archive. By default, the extraction process will strip a single "
@@ -1651,11 +1683,11 @@ msgid ""
 " be set."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:442
+#: ../../releng-tool/Documentation/developer-guide/packages:466
 msgid "LIBFOO_VCS_TYPE"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:445
+#: ../../releng-tool/Documentation/developer-guide/packages:469
 msgid ""
 "Explicitly sets the version control system type to use when acquiring "
 "sources. releng-tool attempts to automatically determine the VCS type of "
@@ -1665,49 +1697,53 @@ msgid ""
 "value is configured as."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:451
+#: ../../releng-tool/Documentation/developer-guide/packages:475
 msgid "Supported types are as follows:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:453
+#: ../../releng-tool/Documentation/developer-guide/packages:477
 msgid "``bzr`` (Bazaar)"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:454
+#: ../../releng-tool/Documentation/developer-guide/packages:478
 msgid "``cvs`` (CVS)"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:455
+#: ../../releng-tool/Documentation/developer-guide/packages:479
 msgid "``git`` (Git)"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:456
+#: ../../releng-tool/Documentation/developer-guide/packages:480
 msgid "``hg``  (Mercurial)"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:457
+#: ../../releng-tool/Documentation/developer-guide/packages:481
+msgid "``local`` (no VCS; local interim-development package)"
+msgstr ""
+
+#: ../../releng-tool/Documentation/developer-guide/packages:482
 msgid "``none`` (no VCS; virtual package)"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:458
+#: ../../releng-tool/Documentation/developer-guide/packages:483
 msgid "``scp`` (SCP)"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:459
+#: ../../releng-tool/Documentation/developer-guide/packages:484
 msgid "``svn`` (SVN)"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:460
+#: ../../releng-tool/Documentation/developer-guide/packages:485
 msgid "``url`` (URL)"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:466
+#: ../../releng-tool/Documentation/developer-guide/packages:491
 msgid ""
 "If a project registers a custom extension which provides a custom VCS "
 "type, the extension type can be set in this option."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:469
+#: ../../releng-tool/Documentation/developer-guide/packages:494
 msgid ""
 "Using a specific type will create a dependency for a project that the "
 "respective host tool is installed on the host system. For example, if a "
@@ -1715,11 +1751,24 @@ msgid ""
 "on the system."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:474
+#: ../../releng-tool/Documentation/developer-guide/packages:498
+msgid ""
+"Note that the ``local`` type is designed to be a special/development-"
+"helper type only. When set, this option allows placing the contents of a "
+"module directly inside the definition folder (alongside the definition "
+"file). This approach is similar to using :ref:`local-sources mode` where "
+"it avoids the need to have the module content located in a site to be "
+"fetched -- specifically, for initial development/testing/training "
+"scenarios. It is never recommended to store the package's \"main "
+"content\" inside a releng-tool project, thus using the ``local`` type "
+"will always generate a warning message."
+msgstr ""
+
+#: ../../releng-tool/Documentation/developer-guide/packages:508
 msgid "package bootstrapping and post-processing"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:476
+#: ../../releng-tool/Documentation/developer-guide/packages:510
 msgid ""
 "Every package, no matter which package |LIBFOO_TYPE|_ is defined, can "
 "create a bootstrapping or post-processing script to invoke before a "
@@ -1727,28 +1776,28 @@ msgid ""
 "installation stage, respectively."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:481
+#: ../../releng-tool/Documentation/developer-guide/packages:515
 msgid ""
 "The existence of a ``<package>-bootstrap`` inside a package directory "
 "will trigger the bootstrapping stage for the package. An example "
 "bootstrapping script (``libfoo-bootstrap``) can be as follows:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:492
+#: ../../releng-tool/Documentation/developer-guide/packages:526
 msgid ""
 "The existence of a ``<package>-post`` inside a package directory will "
 "trigger the post-processing stage for the package. An example post-"
 "processing script (``libfoo-post``) can be as follows:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:503
+#: ../../releng-tool/Documentation/developer-guide/packages:537
 msgid ""
 "Bootstrapping or post-processing scripts for a package are optional; "
 "thus, if no scripts are provided for a package, no bootstrapping or post-"
 "processing will be performed for the package."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:507
+#: ../../releng-tool/Documentation/developer-guide/packages:541
 #: ../../releng-tool/Documentation/developer-guide/packages-type-script:34
 msgid ""
 "See also `script helpers`_ for helper functions/variables available for "
@@ -3068,24 +3117,30 @@ msgid ""
 "which do not explicitly provide a parallelization option."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:301
+#: ../../releng-tool/Documentation/developer-guide/other:300
+msgid ""
+"``releng.git.no_depth`` -- Disables the ``--depth`` option from being "
+"injected when a Git-site-defined package is performing a fetch stage."
+msgstr ""
+
+#: ../../releng-tool/Documentation/developer-guide/other:303
 msgid ""
 "Quirks are enabled through a configuration (override) script such as "
 "follows:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:310
+#: ../../releng-tool/Documentation/developer-guide/other:312
 msgid "loading extensions"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:314
+#: ../../releng-tool/Documentation/developer-guide/other:316
 msgid ""
 "If looking for information on developing extensions for releng-tool, "
 "consult the :ref:`contributor's guide -- extensions "
 "<contributor_guide_ext>`."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:317
+#: ../../releng-tool/Documentation/developer-guide/other:319
 msgid ""
 "A releng-tool project can define one or more extensions to load for "
 "externally implemented capabilities. For example, a project can load "
@@ -3093,7 +3148,7 @@ msgid ""
 "project's configuration:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:329
+#: ../../releng-tool/Documentation/developer-guide/other:331
 msgid ""
 "During the initial stages of a release engineering process, releng-tool "
 "will check and load any configured extension. In the event that an "
@@ -3101,7 +3156,7 @@ msgid ""
 "or fails to load, a detailed error message will be presented to the user."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:334
+#: ../../releng-tool/Documentation/developer-guide/other:336
 msgid ""
 "While the ability to load extensions is supported, capabilities provided "
 "by extensions are not officially supported by releng-tool. For issues "
@@ -3144,3 +3199,4 @@ msgstr ""
 #: ../../releng-tool/Documentation/developer-guide.rst:25
 msgid "https://docs.python.org/3.7/library/urllib.request.html#urllib.request.urlopen"
 msgstr ""
+

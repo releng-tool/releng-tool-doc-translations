@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019 releng-tool
+# Copyright (C) 2020 releng-tool
 # This file is distributed under the same license as the releng-tool package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-30 21:42-0400\n"
+"POT-Creation-Date: 2020-09-07 14:31-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,11 +48,10 @@ msgstr ""
 msgid "Configuration options parsed by releng-tool for a package definition:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/annex-a.rst:111
+#: ../../releng-tool/Documentation/annex-a.rst:112
 msgid "script helpers"
 msgstr ""
 
-#: ../../releng-tool/Documentation/annex-a.rst:113
+#: ../../releng-tool/Documentation/annex-a.rst:114
 msgid "Functions available to scripts invoked by releng-tool or importable via ``from releng import *``:"
 msgstr ""
-

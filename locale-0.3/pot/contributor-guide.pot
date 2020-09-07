@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-30 21:41-0400\n"
+"POT-Creation-Date: 2020-09-07 14:30-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -159,4 +159,3 @@ msgstr ""
 #: ../../releng-tool/Documentation/contributor-guide.rst:0
 msgid "https://github.com/releng-tool/releng-tool-doc-translations-builder"
 msgstr ""
-
