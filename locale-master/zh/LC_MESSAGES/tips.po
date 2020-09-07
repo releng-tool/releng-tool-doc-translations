@@ -21,7 +21,7 @@ msgstr "提示"
 
 #: ../../releng-tool/Documentation/tips.rst:5
 msgid "examples"
-msgstr ""
+msgstr "例子"
 
 #: ../../releng-tool/Documentation/tips.rst:7
 msgid "Examples of releng-tool projects can be found in the following repository:"
