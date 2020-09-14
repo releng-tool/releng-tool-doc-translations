@@ -28,7 +28,6 @@ msgid "Examples of releng-tool projects can be found in the following repository
 msgstr ""
 
 #: ../../releng-tool/Documentation/tips.rst
-#, fuzzy
 msgid "releng-tool - examples repository"
 msgstr "releng-tool - 问题"
 
