@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-13 23:12-0400\n"
+"POT-Creation-Date: 2020-10-10 23:43-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FO3CA985E085\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -572,11 +572,23 @@ msgid ""
 "listed will be automatically loaded and processed as well."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/releng-py:99
+#: ../../releng-tool/Documentation/developer-guide/releng-py:97
+msgid "``prerequisites``"
+msgstr ""
+
+#: ../../releng-tool/Documentation/developer-guide/releng-py:97
+msgid ""
+"A list of host tools to check for before running a releng-tool project. "
+"Allows a developer to identify tools to check and fail-fast if missing, "
+"instead of waiting for a stage which requires a specific tool and failing"
+" later during a building, packaging, etc. phase."
+msgstr ""
+
+#: ../../releng-tool/Documentation/developer-guide/releng-py:114
 msgid "``sysroot_prefix``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/releng-py:99
+#: ../../releng-tool/Documentation/developer-guide/releng-py:114
 msgid ""
 "Define a custom sysroot prefix to provide to packages during their "
 "configuration, build and installation stages. By default, the sysroot "
@@ -584,15 +596,15 @@ msgid ""
 "character to separate pathname components)."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/releng-py:110
+#: ../../releng-tool/Documentation/developer-guide/releng-py:125
 msgid "See also |LIBFOO_PREFIX|_."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/releng-py:112
+#: ../../releng-tool/Documentation/developer-guide/releng-py:127
 msgid "``url_mirror``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/releng-py:112
+#: ../../releng-tool/Documentation/developer-guide/releng-py:127
 msgid ""
 "Specifies a mirror base site to be used for URL fetch requests. If this "
 "option is set, any URL fetch requests will first be tried on the "
@@ -600,22 +612,22 @@ msgid ""
 "a package definition."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/releng-py:127
+#: ../../releng-tool/Documentation/developer-guide/releng-py:142
 msgid "A list of more advanced configuration options are as follows:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/releng-py:130
+#: ../../releng-tool/Documentation/developer-guide/releng-py:145
 msgid "``cache_ext``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/releng-py:130
+#: ../../releng-tool/Documentation/developer-guide/releng-py:145
 msgid ""
 "A transform for cache extension interpreting. This is an advanced "
 "configuration and is not recommended for use except for special use cases"
 " outlined below."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/releng-py:135
+#: ../../releng-tool/Documentation/developer-guide/releng-py:150
 msgid ""
 "When releng-tool fetches assets from remote sites, the site value can "
 "used to determine the resulting filename of a cached asset. For example, "
@@ -628,7 +640,7 @@ msgid ""
 "translate a site value into a known cache extension value."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/releng-py:151
+#: ../../releng-tool/Documentation/developer-guide/releng-py:166
 msgid ""
 "Consider the following example: a host is used to acquire assets from a "
 "content server. The URI to download an asset uses a unique request format"
@@ -638,17 +650,17 @@ msgid ""
 "defined. For example:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/releng-py:171
+#: ../../releng-tool/Documentation/developer-guide/releng-py:186
 msgid ""
 "The above transform indicates that all packages using the "
 "``static.example.org`` site will be ``tgz`` archives."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/releng-py:175
+#: ../../releng-tool/Documentation/developer-guide/releng-py:190
 msgid "``override_extract_tools``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/releng-py:175
+#: ../../releng-tool/Documentation/developer-guide/releng-py:190
 msgid ""
 "A dictionary to be provided to map an extension type to an external tool "
 "to indicate which tool should be used for extraction. For example, when a"
@@ -657,19 +669,19 @@ msgid ""
 " tool with their own extraction utility. Consider the following example:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/releng-py:190
-#: ../../releng-tool/Documentation/developer-guide/releng-py:218
-#: ../../releng-tool/Documentation/developer-guide/releng-py:242
+#: ../../releng-tool/Documentation/developer-guide/releng-py:205
+#: ../../releng-tool/Documentation/developer-guide/releng-py:233
+#: ../../releng-tool/Documentation/developer-guide/releng-py:257
 msgid ""
 "Note that the use of an override option should only be used in special "
 "cases (see also |CONF_OVERRIDES|)."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/releng-py:194
+#: ../../releng-tool/Documentation/developer-guide/releng-py:209
 msgid "``override_revisions``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/releng-py:194
+#: ../../releng-tool/Documentation/developer-guide/releng-py:209
 msgid ""
 "Allows a dictionary to be provided to map a package name to a new "
 "revision value. Consider the following example: a project defines "
@@ -681,17 +693,17 @@ msgid ""
 "definition. To avoid this, an override can be used instead:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/releng-py:213
+#: ../../releng-tool/Documentation/developer-guide/releng-py:228
 msgid ""
 "The above example shows that package ``module-b`` will fetch using a test"
 " branch instead of what is defined in the actual package definition."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/releng-py:222
+#: ../../releng-tool/Documentation/developer-guide/releng-py:237
 msgid "``override_sites``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/releng-py:222
+#: ../../releng-tool/Documentation/developer-guide/releng-py:237
 msgid ""
 "A dictionary to be provided to map a package name to a new site value. "
 "There may be times where a host may not have access to a specific package"
@@ -704,17 +716,17 @@ msgid ""
 " used:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/releng-py:248
+#: ../../releng-tool/Documentation/developer-guide/releng-py:263
 msgid "``quirks``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/releng-py:248
+#: ../../releng-tool/Documentation/developer-guide/releng-py:263
 msgid ""
 "A list of configuration quirks to apply to deal with rare corner case "
 "scenarios which can prevent releng-tool operating on a host system."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/releng-py:258
+#: ../../releng-tool/Documentation/developer-guide/releng-py:273
 msgid "For a list of available quirks, please consult `quirks`_."
 msgstr ""
 
@@ -2513,33 +2525,35 @@ msgstr ""
 msgid "``debug``"
 msgstr ""
 
-#: of releng.debug:1
+#: of releng_tool.debug:1
 msgid "log a debug message"
 msgstr ""
 
-#: of releng.debug:3
+#: of releng_tool.debug:3
 msgid ""
 "Logs a debug message to standard out with a trailing new line. By "
 "default, debug messages will not be output to standard out unless the "
 "instance is configured with debugging enabled."
 msgstr ""
 
-#: of releng.debug releng.err releng.log releng.note releng.releng_copy
-#: releng.releng_env releng.releng_execute releng.releng_exists
-#: releng.releng_exit releng.releng_expand releng.releng_mkdir
-#: releng.releng_move releng.releng_remove releng.releng_tmpdir
-#: releng.releng_touch releng.releng_wd releng.success releng.verbose
-#: releng.warn
+#: of releng_tool.debug releng_tool.err releng_tool.log releng_tool.note
+#: releng_tool.releng_copy releng_tool.releng_env releng_tool.releng_execute
+#: releng_tool.releng_exists releng_tool.releng_exit releng_tool.releng_expand
+#: releng_tool.releng_mkdir releng_tool.releng_move releng_tool.releng_remove
+#: releng_tool.releng_tmpdir releng_tool.releng_touch releng_tool.releng_wd
+#: releng_tool.success releng_tool.verbose releng_tool.warn
 msgid "Parameters"
 msgstr ""
 
-#: of releng.debug:11 releng.err:10 releng.log:9 releng.note:10
-#: releng.success:10 releng.verbose:11 releng.warn:10
+#: of releng_tool.debug:11 releng_tool.err:10 releng_tool.log:9
+#: releng_tool.note:10 releng_tool.success:10 releng_tool.verbose:11
+#: releng_tool.warn:10
 msgid "the message"
 msgstr ""
 
-#: of releng.debug:12 releng.err:11 releng.log:10 releng.note:11
-#: releng.success:11 releng.verbose:12 releng.warn:11
+#: of releng_tool.debug:12 releng_tool.err:11 releng_tool.log:10
+#: releng_tool.note:11 releng_tool.success:11 releng_tool.verbose:12
+#: releng_tool.warn:11
 msgid ""
 "an arbitrary set of positional and keyword arguments used when generating"
 " a formatted message"
@@ -2549,11 +2563,11 @@ msgstr ""
 msgid "``err``"
 msgstr ""
 
-#: of releng.err:1
+#: of releng_tool.err:1
 msgid "log an error message"
 msgstr ""
 
-#: of releng.err:3
+#: of releng_tool.err:3
 msgid ""
 "Logs an error message to standard error with a trailing new line and (if "
 "enabled) a red colorization."
@@ -2563,11 +2577,11 @@ msgstr ""
 msgid "``log``"
 msgstr ""
 
-#: of releng.log:1
+#: of releng_tool.log:1
 msgid "log a message"
 msgstr ""
 
-#: of releng.log:3
+#: of releng_tool.log:3
 msgid "Logs a (normal) message to standard out with a trailing new line."
 msgstr ""
 
@@ -2575,11 +2589,11 @@ msgstr ""
 msgid "``note``"
 msgstr ""
 
-#: of releng.note:1
+#: of releng_tool.note:1
 msgid "log a notification message"
 msgstr ""
 
-#: of releng.note:3
+#: of releng_tool.note:3
 msgid ""
 "Logs a notification message to standard out with a trailing new line and "
 "(if enabled) an inverted colorization."
@@ -2589,11 +2603,11 @@ msgstr ""
 msgid "``releng_copy``"
 msgstr ""
 
-#: of releng.releng_copy:1
+#: of releng_tool.releng_copy:1
 msgid "copy a file or directory into a target file or directory"
 msgstr ""
 
-#: of releng.releng_copy:3
+#: of releng_tool.releng_copy:3
 msgid ""
 "This call will attempt to copy a provided file or directory, defined by "
 "``src`` into a destination file or directory defined by ``dst``. If "
@@ -2607,47 +2621,51 @@ msgid ""
 "will issue a system exit (``SystemExit``)."
 msgstr ""
 
-#: of releng.releng_copy:14 releng.releng_env:7 releng.releng_execute:39
-#: releng.releng_exists:6 releng.releng_exit:12 releng.releng_expand:15
-#: releng.releng_mkdir:9 releng.releng_move:16 releng.releng_remove:9
-#: releng.releng_tmpdir:9 releng.releng_touch:7 releng.releng_wd:9
+#: of releng_tool.releng_copy:14 releng_tool.releng_env:7
+#: releng_tool.releng_execute:39 releng_tool.releng_exists:6
+#: releng_tool.releng_exit:12 releng_tool.releng_expand:15
+#: releng_tool.releng_mkdir:9 releng_tool.releng_move:16
+#: releng_tool.releng_remove:9 releng_tool.releng_tmpdir:9
+#: releng_tool.releng_touch:7 releng_tool.releng_wd:9
 msgid "An example when using in the context of script helpers is as follows:"
 msgstr ""
 
-#: of releng.releng_copy:36 releng.releng_move:32
+#: of releng_tool.releng_copy:36 releng_tool.releng_move:32
 msgid "the source directory or file"
 msgstr ""
 
-#: of releng.releng_copy:37 releng.releng_move:33
+#: of releng_tool.releng_copy:37 releng_tool.releng_move:33
 msgid "the destination directory or file\\* (\\*if ``src`` is a file)"
 msgstr ""
 
-#: of releng.releng_copy:38 releng.releng_move:34 releng.releng_remove:18
+#: of releng_tool.releng_copy:38 releng_tool.releng_move:34
+#: releng_tool.releng_remove:18
 msgid "whether or not to suppress output"
 msgstr ""
 
-#: of releng.releng_copy:40 releng.releng_move:36
+#: of releng_tool.releng_copy:40 releng_tool.releng_move:36
 msgid "whether or not to stop execution on failure"
 msgstr ""
 
-#: of releng.releng_copy releng.releng_execute releng.releng_exists
-#: releng.releng_expand releng.releng_mkdir releng.releng_move
-#: releng.releng_remove releng.releng_touch
+#: of releng_tool.releng_copy releng_tool.releng_execute
+#: releng_tool.releng_exists releng_tool.releng_expand releng_tool.releng_mkdir
+#: releng_tool.releng_move releng_tool.releng_remove releng_tool.releng_touch
 msgid "Returns"
 msgstr ""
 
-#: of releng.releng_copy:43
+#: of releng_tool.releng_copy:43
 msgid ""
 "``True`` if the copy has completed with no error; ``False`` if the copy "
 "has failed"
 msgstr ""
 
-#: of releng.releng_copy releng.releng_execute releng.releng_exit
-#: releng.releng_move releng.releng_tmpdir releng.releng_wd
+#: of releng_tool.releng_copy releng_tool.releng_execute
+#: releng_tool.releng_exit releng_tool.releng_move releng_tool.releng_tmpdir
+#: releng_tool.releng_wd
 msgid "Raises"
 msgstr ""
 
-#: of releng.releng_copy:46 releng.releng_move:42
+#: of releng_tool.releng_copy:46 releng_tool.releng_move:42
 msgid "if the copy operation fails with ``critical=True``"
 msgstr ""
 
@@ -2655,22 +2673,22 @@ msgstr ""
 msgid "``releng_env``"
 msgstr ""
 
-#: of releng.releng_env:1
+#: of releng_tool.releng_env:1
 msgid "helper to easily configure an environment variable"
 msgstr ""
 
-#: of releng.releng_env:3
+#: of releng_tool.releng_env:3
 msgid ""
 "Provides a caller an simple method to configure an environment variable "
 "for the current context. This call is the same as if one directly added a"
 " key-value into ``os.environ``."
 msgstr ""
 
-#: of releng.releng_env:13
+#: of releng_tool.releng_env:13
 msgid "the environment key to set the value on"
 msgstr ""
 
-#: of releng.releng_env:14
+#: of releng_tool.releng_env:14
 msgid "the environment value to set"
 msgstr ""
 
@@ -2678,11 +2696,11 @@ msgstr ""
 msgid "``releng_execute``"
 msgstr ""
 
-#: of releng.releng_execute:1
+#: of releng_tool.releng_execute:1
 msgid "execute the provided command/arguments"
 msgstr ""
 
-#: of releng.releng_execute:3
+#: of releng_tool.releng_execute:3
 msgid ""
 "Runs the command described by ``args`` until completion. A caller can "
 "adjust the working directory of the executed command by explicitly "
@@ -2693,7 +2711,7 @@ msgid ""
 " standard error unless ``quiet`` is set to ``True``."
 msgstr ""
 
-#: of releng.releng_execute:11
+#: of releng_tool.releng_execute:11
 msgid ""
 "The environment variables used on execution can be manipulated in two "
 "ways. First, the environment can be explicitly controlled by applying a "
@@ -2711,14 +2729,14 @@ msgid ""
 "of the original environment of the caller."
 msgstr ""
 
-#: of releng.releng_execute:25
+#: of releng_tool.releng_execute:25
 msgid ""
 "If ``critical`` is set to ``True`` and the execution fails for any "
 "reason, this call will issue a system exit (``SystemExit``). By default, "
 "the critical flag is enabled (i.e. ``critical=True``)."
 msgstr ""
 
-#: of releng.releng_execute:29
+#: of releng_tool.releng_execute:29
 msgid ""
 "In special cases, an executing process may not provide carriage "
 "returns/new lines to simple output processing. This can lead the output "
@@ -2728,52 +2746,52 @@ msgid ""
 "value of ``False``."
 msgstr ""
 
-#: of releng.releng_execute:35
+#: of releng_tool.releng_execute:35
 msgid ""
 "A caller may wish to capture the provided output from a process for "
 "examination. If a list is provided in the call argument ``capture``, the "
 "list will be populated with the output provided from an invoked process."
 msgstr ""
 
-#: of releng.releng_execute:45
+#: of releng_tool.releng_execute:45
 msgid "the list of arguments to execute"
 msgstr ""
 
-#: of releng.releng_execute:46
+#: of releng_tool.releng_execute:46
 msgid "working directory to use"
 msgstr ""
 
-#: of releng.releng_execute:48
+#: of releng_tool.releng_execute:48
 msgid "environment variables to use for the process"
 msgstr ""
 
-#: of releng.releng_execute:50
+#: of releng_tool.releng_execute:50
 msgid "environment variables to append for the process"
 msgstr ""
 
-#: of releng.releng_execute:52 releng.releng_mkdir:19
+#: of releng_tool.releng_execute:52 releng_tool.releng_mkdir:19
 msgid "whether or not to suppress output (defaults to ``False``)"
 msgstr ""
 
-#: of releng.releng_execute:55
+#: of releng_tool.releng_execute:55
 msgid "whether or not to stop execution on failure (defaults to ``True``)"
 msgstr ""
 
-#: of releng.releng_execute:58
+#: of releng_tool.releng_execute:58
 msgid "force polling stdin/stdout for output data (defaults to ``False``)"
 msgstr ""
 
-#: of releng.releng_execute:61
+#: of releng_tool.releng_execute:61
 msgid "list to capture output into"
 msgstr ""
 
-#: of releng.releng_execute:64
+#: of releng_tool.releng_execute:64
 msgid ""
 "``True`` if the execution has completed with no error; ``False`` if the "
 "execution has failed"
 msgstr ""
 
-#: of releng.releng_execute:67
+#: of releng_tool.releng_execute:67
 msgid "if the execution operation fails with ``critical=True``"
 msgstr ""
 
@@ -2781,25 +2799,25 @@ msgstr ""
 msgid "``releng_exists``"
 msgstr ""
 
-#: of releng.releng_exists:1
+#: of releng_tool.releng_exists:1
 msgid "return whether or not the path exists"
 msgstr ""
 
-#: of releng.releng_exists:3
+#: of releng_tool.releng_exists:3
 msgid ""
 "Allows a caller to verify the existence of a file on the file system. "
 "This call will return ``True`` if the path exists; ``False`` otherwise."
 msgstr ""
 
-#: of releng.releng_exists:15
+#: of releng_tool.releng_exists:15
 msgid "the path"
 msgstr ""
 
-#: of releng.releng_exists:16
+#: of releng_tool.releng_exists:16
 msgid "additional path parts"
 msgstr ""
 
-#: of releng.releng_exists:18
+#: of releng_tool.releng_exists:18
 msgid "``True`` if the path exists; ``False`` otherwise"
 msgstr ""
 
@@ -2807,11 +2825,11 @@ msgstr ""
 msgid "``releng_exit``"
 msgstr ""
 
-#: of releng.releng_exit:1
+#: of releng_tool.releng_exit:1
 msgid "exit out of the releng-tool process"
 msgstr ""
 
-#: of releng.releng_exit:3
+#: of releng_tool.releng_exit:3
 msgid ""
 "Provides a convenience method to help invoke a system exit call without "
 "needing to explicitly use ``sys``. A caller can provide a message to "
@@ -2823,17 +2841,17 @@ msgid ""
 "provided code value will be used."
 msgstr ""
 
-#: of releng.releng_exit:18
+#: of releng_tool.releng_exit:18
 msgid "error message to print"
 msgstr ""
 
-#: of releng.releng_exit:20
+#: of releng_tool.releng_exit:20
 msgid ""
 "exit code; defaults to 0 if no message or defaults to 1 if a message is "
 "set"
 msgstr ""
 
-#: of releng.releng_exit:24
+#: of releng_tool.releng_exit:24
 msgid "always raised"
 msgstr ""
 
@@ -2841,11 +2859,11 @@ msgstr ""
 msgid "``releng_expand``"
 msgstr ""
 
-#: of releng.releng_expand:1
+#: of releng_tool.releng_expand:1
 msgid "perform variable expansion on strings"
 msgstr ""
 
-#: of releng.releng_expand:3
+#: of releng_tool.releng_expand:3
 msgid ""
 "This expand utility method will attempt to expand variables in detected "
 "string types. For a detected string which contains substrings in the form"
@@ -2860,15 +2878,15 @@ msgid ""
 "values result in duplicate entries."
 msgstr ""
 
-#: of releng.releng_expand:27
+#: of releng_tool.releng_expand:27
 msgid "the object"
 msgstr ""
 
-#: of releng.releng_expand:28
+#: of releng_tool.releng_expand:28
 msgid "key-values pairs to use"
 msgstr ""
 
-#: of releng.releng_expand:31
+#: of releng_tool.releng_expand:31
 msgid "the expanded object"
 msgstr ""
 
@@ -2884,11 +2902,11 @@ msgstr ""
 msgid "``releng_mkdir``"
 msgstr ""
 
-#: of releng.releng_mkdir:1
+#: of releng_tool.releng_mkdir:1
 msgid "ensure the provided directory exists"
 msgstr ""
 
-#: of releng.releng_mkdir:3
+#: of releng_tool.releng_mkdir:3
 msgid ""
 "Attempts to create the provided directory. If the directory already "
 "exists, this method has no effect. If the directory does not exist and "
@@ -2897,11 +2915,11 @@ msgid ""
 "error (unless ``quiet`` is set to ``True``)."
 msgstr ""
 
-#: of releng.releng_mkdir:18
+#: of releng_tool.releng_mkdir:18
 msgid "the directory"
 msgstr ""
 
-#: of releng.releng_mkdir:23
+#: of releng_tool.releng_mkdir:23
 msgid ""
 "``True`` if the directory exists; ``False`` if the directory could not be"
 " created"
@@ -2911,11 +2929,11 @@ msgstr ""
 msgid "``releng_move``"
 msgstr ""
 
-#: of releng.releng_move:1
+#: of releng_tool.releng_move:1
 msgid "move a file or directory into a target file or directory"
 msgstr ""
 
-#: of releng.releng_move:3
+#: of releng_tool.releng_move:3
 msgid ""
 "This call will attempt to move a provided file or directory's contents, "
 "defined by ``src`` into a destination file or directory defined by "
@@ -2925,7 +2943,7 @@ msgid ""
 "exist, it will be automatically created."
 msgstr ""
 
-#: of releng.releng_move:10
+#: of releng_tool.releng_move:10
 msgid ""
 "In the event that a file or directory could not be moved, an error "
 "message will be output to standard error (unless ``quiet`` is set to "
@@ -2934,7 +2952,7 @@ msgid ""
 "system exit (``SystemExit``)."
 msgstr ""
 
-#: of releng.releng_move:39
+#: of releng_tool.releng_move:39
 msgid ""
 "``True`` if the move has completed with no error; ``False`` if the move "
 "has failed"
@@ -2944,11 +2962,11 @@ msgstr ""
 msgid "``releng_remove``"
 msgstr ""
 
-#: of releng.releng_remove:1
+#: of releng_tool.releng_remove:1
 msgid "remove the provided path"
 msgstr ""
 
-#: of releng.releng_remove:3
+#: of releng_tool.releng_remove:3
 msgid ""
 "Attempts to remove the provided path if it exists. The path value can "
 "either be a directory or a specific file. If the provided path does not "
@@ -2958,11 +2976,11 @@ msgid ""
 "to ``True``)."
 msgstr ""
 
-#: of releng.releng_remove:17
+#: of releng_tool.releng_remove:17
 msgid "the path to remove"
 msgstr ""
 
-#: of releng.releng_remove:21
+#: of releng_tool.releng_remove:21
 msgid ""
 "``True`` if the path was removed or does not exist; ``False`` if the path"
 " could not be removed from the system"
@@ -2972,11 +2990,11 @@ msgstr ""
 msgid "``releng_tmpdir``"
 msgstr ""
 
-#: of releng.releng_tmpdir:1
+#: of releng_tool.releng_tmpdir:1
 msgid "generate a context-supported temporary directory"
 msgstr ""
 
-#: of releng.releng_tmpdir:3
+#: of releng_tool.releng_tmpdir:3
 msgid ""
 "Creates a temporary directory in the provided directory ``dir`` (or "
 "system default, is not provided). This is a context-supported call and "
@@ -2986,11 +3004,11 @@ msgid ""
 "thrown."
 msgstr ""
 
-#: of releng.releng_tmpdir:16
+#: of releng_tool.releng_tmpdir:16
 msgid "the directory to create the temporary directory in"
 msgstr ""
 
-#: of releng.releng_tmpdir:19
+#: of releng_tool.releng_tmpdir:19
 msgid "the base directory does not exist and     could not be created"
 msgstr ""
 
@@ -2998,22 +3016,22 @@ msgstr ""
 msgid "``releng_touch``"
 msgstr ""
 
-#: of releng.releng_touch:1
+#: of releng_tool.releng_touch:1
 msgid "update a file's access/modifications times"
 msgstr ""
 
-#: of releng.releng_touch:3
+#: of releng_tool.releng_touch:3
 msgid ""
 "Attempts to update the access/modifications times on a file. If the file "
 "does not exist, it will be created. This utility call operates in the "
 "same fashion as the ``touch`` system command."
 msgstr ""
 
-#: of releng.releng_touch:16
+#: of releng_tool.releng_touch:16
 msgid "the file"
 msgstr ""
 
-#: of releng.releng_touch:18
+#: of releng_tool.releng_touch:18
 msgid ""
 "``True`` if the file was created/updated; ``False`` if the file could not"
 " be created/updated"
@@ -3023,11 +3041,11 @@ msgstr ""
 msgid "``releng_wd``"
 msgstr ""
 
-#: of releng.releng_wd:1
+#: of releng_tool.releng_wd:1
 msgid "move into a context-supported working directory"
 msgstr ""
 
-#: of releng.releng_wd:3
+#: of releng_tool.releng_wd:3
 msgid ""
 "Moves the current context into the provided working directory ``dir``. "
 "When returned, the original working directory will be restored. If the "
@@ -3036,11 +3054,11 @@ msgid ""
 "exception will be thrown."
 msgstr ""
 
-#: of releng.releng_wd:18
+#: of releng_tool.releng_wd:18
 msgid "the target working directory"
 msgstr ""
 
-#: of releng.releng_wd:20
+#: of releng_tool.releng_wd:20
 msgid "the working directory does not     exist and could not be created"
 msgstr ""
 
@@ -3048,11 +3066,11 @@ msgstr ""
 msgid "``success``"
 msgstr ""
 
-#: of releng.success:1
+#: of releng_tool.success:1
 msgid "log a success message"
 msgstr ""
 
-#: of releng.success:3
+#: of releng_tool.success:3
 msgid ""
 "Logs a success message to standard error with a trailing new line and (if"
 " enabled) a green colorization."
@@ -3062,11 +3080,11 @@ msgstr ""
 msgid "``verbose``"
 msgstr ""
 
-#: of releng.verbose:1
+#: of releng_tool.verbose:1
 msgid "log a verbose message"
 msgstr ""
 
-#: of releng.verbose:3
+#: of releng_tool.verbose:3
 msgid ""
 "Logs a verbose message to standard out with a trailing new line and (if "
 "enabled) an inverted colorization. By default, verbose messages will not "
@@ -3078,11 +3096,11 @@ msgstr ""
 msgid "``warn``"
 msgstr ""
 
-#: of releng.warn:1
+#: of releng_tool.warn:1
 msgid "log a warning message"
 msgstr ""
 
-#: of releng.warn:3
+#: of releng_tool.warn:3
 msgid ""
 "Logs a warning message to standard error with a trailing new line and (if"
 " enabled) a purple colorization."
@@ -3135,28 +3153,34 @@ msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide/other:300
 msgid ""
+"``releng.disable_prerequisites_check`` -- Disables the fast-fail "
+"prerequisites check from running."
+msgstr ""
+
+#: ../../releng-tool/Documentation/developer-guide/other:302
+msgid ""
 "``releng.git.no_depth`` -- Disables the ``--depth`` option from being "
 "injected when a Git-site-defined package is performing a fetch stage."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:303
+#: ../../releng-tool/Documentation/developer-guide/other:305
 msgid ""
 "Quirks are enabled through a configuration (override) script such as "
 "follows:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:312
+#: ../../releng-tool/Documentation/developer-guide/other:314
 msgid "loading extensions"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:316
+#: ../../releng-tool/Documentation/developer-guide/other:318
 msgid ""
 "If looking for information on developing extensions for releng-tool, "
 "consult the :ref:`contributor's guide -- extensions "
 "<contributor_guide_ext>`."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:319
+#: ../../releng-tool/Documentation/developer-guide/other:321
 msgid ""
 "A releng-tool project can define one or more extensions to load for "
 "externally implemented capabilities. For example, a project can load "
@@ -3164,7 +3188,7 @@ msgid ""
 "project's configuration:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:331
+#: ../../releng-tool/Documentation/developer-guide/other:333
 msgid ""
 "During the initial stages of a release engineering process, releng-tool "
 "will check and load any configured extension. In the event that an "
@@ -3172,7 +3196,7 @@ msgid ""
 "or fails to load, a detailed error message will be presented to the user."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:336
+#: ../../releng-tool/Documentation/developer-guide/other:338
 msgid ""
 "While the ability to load extensions is supported, capabilities provided "
 "by extensions are not officially supported by releng-tool. For issues "

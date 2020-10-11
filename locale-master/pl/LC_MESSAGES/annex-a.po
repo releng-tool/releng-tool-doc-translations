@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-13 23:12-0400\n"
+"POT-Creation-Date: 2020-10-10 23:43-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FO3CA985E085\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,11 +39,11 @@ msgid ""
 "script:"
 msgstr "Opcje, które releng-tool czyta ze skryptu konfiguracyjnego projektu:"
 
-#: ../../releng-tool/Documentation/annex-a.rst:29
+#: ../../releng-tool/Documentation/annex-a.rst:30
 msgid "environment variables"
 msgstr "zmienne środowiskowe"
 
-#: ../../releng-tool/Documentation/annex-a.rst:31
+#: ../../releng-tool/Documentation/annex-a.rst:32
 msgid ""
 "Environment (and script) variables available to context's invoked by "
 "releng-tool (may vary per context):"
@@ -52,25 +52,33 @@ msgstr ""
 "kontekstu wywołane przez releng-tool (może się różnić w zależności od "
 "kontekstu):"
 
-#: ../../releng-tool/Documentation/annex-a.rst:70
+#: ../../releng-tool/Documentation/annex-a.rst:71
 msgid "package options"
 msgstr "opcje pakietów"
 
-#: ../../releng-tool/Documentation/annex-a.rst:72
+#: ../../releng-tool/Documentation/annex-a.rst:73
 msgid "Configuration options parsed by releng-tool for a package definition:"
 msgstr ""
 "Opcje konfiguracyjne analizowane przez releng-tool dla zdefiniowania "
 "pakietu:"
 
-#: ../../releng-tool/Documentation/annex-a.rst:113
+#: ../../releng-tool/Documentation/annex-a.rst:114
 msgid "script helpers"
 msgstr ""
 
-#: ../../releng-tool/Documentation/annex-a.rst:115
+#: ../../releng-tool/Documentation/annex-a.rst:116
 msgid ""
 "Functions available to scripts invoked by releng-tool or importable via "
 "``from releng_tool import *``:"
 msgstr ""
 "Funkcje dostępne dla skryptów wywoływanych przez releng-tool lub "
 "importowane przez ``from releng import *``:"
+
+#: ../../releng-tool/Documentation/annex-a.rst:143
+msgid "quirks"
+msgstr ""
+
+#: ../../releng-tool/Documentation/annex-a.rst:145
+msgid "Quirk options used by releng-tool:"
+msgstr ""
 
