@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-# Copyright 2019-2020 releng-tool
+# Copyright 2019-2021 releng-tool
 set -e
 
 # map of versions to documentation references
 declare -A versions
 versions=(
-    ['master']='master'
+    ['development']='master'
     ['0.6']='v0.6'
     ['0.5']='v0.5'
     ['0.4']='v0.4'
