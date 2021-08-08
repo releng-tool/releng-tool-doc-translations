@@ -6,14 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-15 01:27-0400\n"
+"POT-Creation-Date: 2021-08-08 01:57-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../releng-tool/Documentation/contributor-guide.rst:2
 msgid "contributor guide"
@@ -28,29 +28,29 @@ msgid "``Documentation`` - project documentation"
 msgstr ""
 
 #: ../../releng-tool/Documentation/contributor-guide.rst:7
-msgid "``releng/api/`` - api implementation for supporting releng-tool extensions"
+msgid "``releng_tool/api/`` - api for supporting releng-tool extensions"
 msgstr ""
 
 #: ../../releng-tool/Documentation/contributor-guide.rst:8
-msgid "``releng/engine/`` - core implementation"
+msgid "``releng_tool/engine/`` - core implementation"
 msgstr ""
 
 #: ../../releng-tool/Documentation/contributor-guide.rst:9
-msgid "``releng/ext/`` - extensions that are maintained in the official tree"
+msgid "``releng_tool/ext/`` - extensions that are maintained in the official tree"
 msgstr ""
 
 #: ../../releng-tool/Documentation/contributor-guide.rst:10
 msgid ""
-"``releng/extract/`` - translating fetched content to a build's working "
-"area"
+"``releng_tool/extract/`` - translate fetched content to a build's working"
+" area"
 msgstr ""
 
 #: ../../releng-tool/Documentation/contributor-guide.rst:11
-msgid "``releng/fetch/`` - support for fetching content from package sites"
+msgid "``releng_tool/fetch/`` - support for fetching content from package sites"
 msgstr ""
 
 #: ../../releng-tool/Documentation/contributor-guide.rst:12
-msgid "``releng/tool/`` - definitions for host tools used by tool features"
+msgid "``releng_tool/tool/`` - definitions for host tools used by tool features"
 msgstr ""
 
 #: ../../releng-tool/Documentation/contributor-guide.rst:13
@@ -125,7 +125,7 @@ msgid ""
 msgstr ""
 
 #: ../../releng-tool/Documentation/contributor-guide.rst:59
-msgid "Not all packages will fetch content (i.e. placeholder packages)."
+msgid "Not all packages will fetch content (e.g. placeholder packages)."
 msgstr ""
 
 #: ../../releng-tool/Documentation/contributor-guide.rst:64
@@ -166,9 +166,9 @@ msgstr ""
 msgid ""
 "Developers wishing to provide extensions to releng-tool should consult "
 "the API implementation found in this tool's repository "
-"(|releng/api/__init__.py|_). Implementation in the API folder aims to be "
-"\"API safe\" -- there is a strong attempt to prevent the changing of "
-"classes, methods, etc. to prevent compatibility issues as both releng-"
+"(|releng_tool/api/__init__.py|_). Implementation in the API folder aims "
+"to be \"API safe\" -- there is a strong attempt to prevent the changing "
+"of classes, methods, etc. to prevent compatibility issues as both releng-"
 "tool and extensions (if any) evolve. A developer for a releng-tool "
 "project would register an extension to load using the ``extensions`` "
 "configuration option inside the project configuration (``releng``):"
@@ -226,4 +226,3 @@ msgstr ""
 #: ../../releng-tool/Documentation/contributor-guide.rst
 msgid "https://github.com/releng-tool/releng-tool-doc-translations-builder"
 msgstr ""
-

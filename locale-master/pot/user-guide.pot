@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-10 23:43-0400\n"
+"POT-Creation-Date: 2021-08-08 02:06-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,247 +68,271 @@ msgstr ""
 msgid "Clean (removes) a series of folders holding content such as extracted archives, built libraries and more. Images and downloaded assets/cache are not removed (see |ACTION_MRPROPER|_ for a more through all cleaning operation). This clean operation will remove files based off the configured output directory. If an output directory is provided (i.e. ``--out-dir <dir>``) during a clean event, select folders inside this directory will be removed instead of the output directory (if any) found in the root directory."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:33
+#: ../../releng-tool/Documentation/user-guide/arguments:34
 msgid "``distclean``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:33
+#: ../../releng-tool/Documentation/user-guide/arguments:34
 msgid "Perform a more extreme pristine clean of the releng-tool project. This request removes the ``cache/``, ``dl/`` and ``output/`` directories found in the root directory or overridden by respective arguments, as well as any mode file flags which may be set. See also the |ACTION_CLEAN|_ or |ACTION_MRPROPER|_ actions."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:41
+#: ../../releng-tool/Documentation/user-guide/arguments:42
 msgid "``extract``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:41
+#: ../../releng-tool/Documentation/user-guide/arguments:42
 msgid "The release engineering process will process all packages up to the extraction phase (inclusive)."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:44
+#: ../../releng-tool/Documentation/user-guide/arguments:46
 msgid "``fetch``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:44
+#: ../../releng-tool/Documentation/user-guide/arguments:46
 msgid "The release engineering process will process all packages up to the fetch phase (inclusive; see also `offline builds`_)."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:48
+#: ../../releng-tool/Documentation/user-guide/arguments:50
 msgid "``init``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:48
+#: ../../releng-tool/Documentation/user-guide/arguments:50
 msgid "Initialize an empty root directory with a sample project."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:51
+#: ../../releng-tool/Documentation/user-guide/arguments:53
 msgid "``licenses``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:51
+#: ../../releng-tool/Documentation/user-guide/arguments:53
 msgid "A request to generate all license information for the project. Note that license information requires acquiring license documents from packages. Therefore, packages will be fetched/extracted if not already done."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:59
+#: ../../releng-tool/Documentation/user-guide/arguments:61
 msgid "``mrproper``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:59
-msgid "Perform a pristine clean of the releng-tool project. This request removes the ``output/`` directory found in the root directory or overridden by the ``--out-dir`` argument, as well as any mode file flags which may be set. The ``cache/`` and ``dl/`` directories will remain untouched. See also the |ACTION_CLEAN|_ or |ACTION_DISTCLEAN|_ actions."
+#: ../../releng-tool/Documentation/user-guide/arguments:61
+msgid "Perform a pristine clean of the releng-tool project. This request removes the ``output/`` directory found in the root directory or overridden by the ``--out-dir`` argument, as well as any mode file flags which may be set. The ``cache/`` and ``dl/`` directories will remain untouched. See also the  |ACTION_CLEAN|_ or |ACTION_DISTCLEAN|_ actions."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:67
+#: ../../releng-tool/Documentation/user-guide/arguments:70
 msgid "``patch``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:67
+#: ../../releng-tool/Documentation/user-guide/arguments:70
 msgid "The release engineering process will process all packages up to the patch phase (inclusive)."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:70
+#: ../../releng-tool/Documentation/user-guide/arguments:73
 msgid "``<pkg>-build``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:70
+#: ../../releng-tool/Documentation/user-guide/arguments:73
 msgid "Performs the build stage for the package. On success, the specified package stage will have completed its build. If a package has any package dependencies, these dependencies will be processed before the specified package. If the provided package name does not exist, a notification will be generated."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:78
+#: ../../releng-tool/Documentation/user-guide/arguments:81
 msgid "``<pkg>-clean``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:78
+#: ../../releng-tool/Documentation/user-guide/arguments:81
 msgid "Cleans the build directory for package (if it exists)."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:81
+#: ../../releng-tool/Documentation/user-guide/arguments:84
 msgid "``<pkg>-configure``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:81
+#: ../../releng-tool/Documentation/user-guide/arguments:84
 msgid "Performs the configure stage for the package. On success, the specified package stage will have completed its configuration stage. If a package has any package dependencies, these dependencies will be processed before the specified package. If the provided package name does not exist, a notification will be generated."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:89
+#: ../../releng-tool/Documentation/user-guide/arguments:93
 msgid "``<pkg>-extract``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:89
+#: ../../releng-tool/Documentation/user-guide/arguments:93
 msgid "Performs the extraction stage for the package. On success, the specified package stage will have completed its extraction stage. If the provided package name does not exist, a notification will be generated."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:95
+#: ../../releng-tool/Documentation/user-guide/arguments:99
 msgid "``<pkg>-fetch``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:95
+#: ../../releng-tool/Documentation/user-guide/arguments:99
 msgid "Performs the fetch stage for the package. On success, the specified package stage will have completed its fetch stage. If the provided package name does not exist, a notification will be generated."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:101
+#: ../../releng-tool/Documentation/user-guide/arguments:105
 msgid "``<pkg>-install``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:101
+#: ../../releng-tool/Documentation/user-guide/arguments:105
 msgid "Performs the installation stage for the package. On success, the specified package stage will have completed its installation stage. If a package has any package dependencies, these dependencies will be processed before the specified package. If the provided package name does not exist, a notification will be generated."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:109
+#: ../../releng-tool/Documentation/user-guide/arguments:114
 msgid "``<pkg>-patch``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:109
+#: ../../releng-tool/Documentation/user-guide/arguments:114
 msgid "Performs the patch stage for the package. On success, the specified package stage will have completed its patch stage. If the provided package name does not exist, a notification will be generated."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:115
+#: ../../releng-tool/Documentation/user-guide/arguments:120
 msgid "``<pkg>-rebuild``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:115
-msgid "Force a rebuild of a specific package. Once a package has been built, the package will not attempt to be built again. Invoking a rebuild request will tell releng-tool to re-invoke the build step again. This can be useful during times of development where a developer attempts to change a package definition or sources between build attempts. If using this action, please ensure `understanding rebuilds`_ has been read to understand this action's effect."
+#: ../../releng-tool/Documentation/user-guide/arguments:120
+msgid "Force a rebuild of a specific package. Once a package has been built, the package will not attempt to be built again. Invoking a rebuild request will tell releng-tool to re-invoke the build step again. This can be useful during times of development where a developer attempts to change a package definition or sources between build attempts. After completing a rebuild, releng-tool will perform the remaining stages of the package (i.e. the installation phase). Users wishing to perform only the rebuild stage are recommended to use ``<pkg>-rebuild-only`` instead."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:125
+#: ../../releng-tool/Documentation/user-guide/arguments:134
+#: ../../releng-tool/Documentation/user-guide/arguments:151
+#: ../../releng-tool/Documentation/user-guide/arguments:171
+#: ../../releng-tool/Documentation/user-guide/arguments:190
+#: ../../releng-tool/Documentation/user-guide/arguments:204
+msgid "If using this action, please ensure `understanding rebuilds`_ has been read to understand this action's effect."
+msgstr ""
+
+#: ../../releng-tool/Documentation/user-guide/arguments:138
+msgid "``<pkg>-rebuild-only``"
+msgstr ""
+
+#: ../../releng-tool/Documentation/user-guide/arguments:138
+msgid "Force a rebuild of a specific package. Once a package has been built, the package will not attempt to be built again. Invoking a rebuild request will tell releng-tool to re-invoke the build step again. This can be useful during times of development where a developer attempts to change a package definition or sources between build attempts. After completing a rebuild, releng-tool will stop and perform no other changes. Users wishing to perform a rebuild to the installation phase are recommended to use ``<pkg>-rebuild`` instead."
+msgstr ""
+
+#: ../../releng-tool/Documentation/user-guide/arguments:155
 msgid "``<pkg>-reconfigure``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:125
-msgid "Force a re-configuration of a specific package. Once a package has been configured, the package will not attempt to configure it again. Invoking a re-configuration request will tell releng-tool to re-invoke the configuration step again. This can be useful during times of development where a developer attempts to change a package definition or sources between configuration attempts. If using this action, please ensure `understanding rebuilds`_ has been read to understand this action's effect."
+#: ../../releng-tool/Documentation/user-guide/arguments:155
+msgid "Force a re-configuration of a specific package. Once a package has been configured, the package will not attempt to configure it again. Invoking a re-configuration request will tell releng-tool to re-invoke the configuration step again. This can be useful during times of development where a developer attempts to change a package definition or sources between configuration attempts. After completing a re-configuration, releng-tool will perform the remaining stages of the package (i.e. all the way to the installation phase). Users wishing to perform only the re-configuration stage are recommended to use ``<pkg>-reconfigure-only`` instead."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:136
+#: ../../releng-tool/Documentation/user-guide/arguments:175
+msgid "``<pkg>-reconfigure-only``"
+msgstr ""
+
+#: ../../releng-tool/Documentation/user-guide/arguments:175
+msgid "Force a re-configuration of a specific package. Once a package has been configured, the package will not attempt to configure it again. Invoking a re-configuration request will tell releng-tool to re-invoke the configuration step again. This can be useful during times of development where a developer attempts to change a package definition or sources between configuration attempts. After completing a re-configuration, releng-tool will stop and perform no other changes. Users wishing to perform a re-configuration to the installation phase are recommended to use ``<pkg>-reconfigure`` instead."
+msgstr ""
+
+#: ../../releng-tool/Documentation/user-guide/arguments:194
 msgid "``<pkg>-reinstall``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:136
-msgid "Force a re-installation of a specific package. Once a package has been installed, the package will not attempt to install it again. Invoking a re-installation request will tell releng-tool to re-invoke the installation step again. This can be useful during times of development where a developer attempts to change a package definition or sources between installation attempts. If using this action, please ensure `understanding rebuilds`_ has been read to understand this action's effect."
+#: ../../releng-tool/Documentation/user-guide/arguments:194
+msgid "Force a re-installation of a specific package. Once a package has been installed, the package will not attempt to install it again. Invoking a re-installation request will tell releng-tool to re-invoke the installation step again. This can be useful during times of development where a developer attempts to change a package definition or sources between installation attempts."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:152
+#: ../../releng-tool/Documentation/user-guide/arguments:213
 msgid "The following outlines available options:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:155
+#: ../../releng-tool/Documentation/user-guide/arguments:216
 msgid "``--cache-dir <dir>``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:155
+#: ../../releng-tool/Documentation/user-guide/arguments:216
 msgid "Directory for distributed version control cache information (defaults to ``<root>/cache``)."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:158
+#: ../../releng-tool/Documentation/user-guide/arguments:219
 msgid "``--debug``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:158
+#: ../../releng-tool/Documentation/user-guide/arguments:219
 msgid "Show debug-related messages."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:160
+#: ../../releng-tool/Documentation/user-guide/arguments:221
 msgid "``-D``, ``--development``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:160
+#: ../../releng-tool/Documentation/user-guide/arguments:221
 msgid "Enables `development mode`_."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:162
+#: ../../releng-tool/Documentation/user-guide/arguments:223
 msgid "``--dl-dir <dir>``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:162
+#: ../../releng-tool/Documentation/user-guide/arguments:223
 msgid "Directory for download archives (defaults to ``<root>/dl``)."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:165
+#: ../../releng-tool/Documentation/user-guide/arguments:226
 msgid "``-h``, ``--help``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:165
+#: ../../releng-tool/Documentation/user-guide/arguments:226
 msgid "Show this help."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:167
+#: ../../releng-tool/Documentation/user-guide/arguments:228
 msgid "``-j``, ``--jobs <jobs>``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:167
+#: ../../releng-tool/Documentation/user-guide/arguments:228
 msgid "Numbers of jobs to handle (default to ``0``; automatic)."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:170
+#: ../../releng-tool/Documentation/user-guide/arguments:231
 msgid "``--local-sources``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:170
+#: ../../releng-tool/Documentation/user-guide/arguments:231
 msgid "Enables `local-sources mode`_."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:172
+#: ../../releng-tool/Documentation/user-guide/arguments:233
 msgid "``--nocolorout``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:172
+#: ../../releng-tool/Documentation/user-guide/arguments:233
 msgid "Explicitly disable colorized output."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:174
+#: ../../releng-tool/Documentation/user-guide/arguments:235
 msgid "``--out-dir <dir>``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:174
+#: ../../releng-tool/Documentation/user-guide/arguments:235
 msgid "Directory for output (builds, images, etc.; defaults to ``<root>/output``)."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:177
+#: ../../releng-tool/Documentation/user-guide/arguments:238
 msgid "``--root-dir <dir>``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:177
+#: ../../releng-tool/Documentation/user-guide/arguments:238
 msgid "Directory to process a releng-tool project (defaults to the working directory)."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:180
+#: ../../releng-tool/Documentation/user-guide/arguments:241
 msgid "``--quirk <quirk-id>``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:180
+#: ../../releng-tool/Documentation/user-guide/arguments:241
 msgid "Allows specifying a runtime :ref:`quirk <quirks>` for the releng-tool process. This option can be used multiple times to apply multiple quirks."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:185
+#: ../../releng-tool/Documentation/user-guide/arguments:246
 msgid "``-V``, ``--verbose``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:185
+#: ../../releng-tool/Documentation/user-guide/arguments:246
 msgid "Show additional messages."
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:187
+#: ../../releng-tool/Documentation/user-guide/arguments:248
 msgid "``--version``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/user-guide/arguments:187
+#: ../../releng-tool/Documentation/user-guide/arguments:248
 msgid "Show releng-tool's version."
 msgstr ""
 

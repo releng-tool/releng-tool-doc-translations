@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-13 23:21-0400\n"
+"POT-Creation-Date: 2021-08-08 01:57-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,27 +29,27 @@ msgid "``Documentation`` - project documentation"
 msgstr ""
 
 #: ../../releng-tool/Documentation/contributor-guide.rst:7
-msgid "``releng/api/`` - api implementation for supporting releng-tool extensions"
+msgid "``releng_tool/api/`` - api for supporting releng-tool extensions"
 msgstr ""
 
 #: ../../releng-tool/Documentation/contributor-guide.rst:8
-msgid "``releng/engine/`` - core implementation"
+msgid "``releng_tool/engine/`` - core implementation"
 msgstr ""
 
 #: ../../releng-tool/Documentation/contributor-guide.rst:9
-msgid "``releng/ext/`` - extensions that are maintained in the official tree"
+msgid "``releng_tool/ext/`` - extensions that are maintained in the official tree"
 msgstr ""
 
 #: ../../releng-tool/Documentation/contributor-guide.rst:10
-msgid "``releng/extract/`` - translating fetched content to a build's working area"
+msgid "``releng_tool/extract/`` - translate fetched content to a build's working area"
 msgstr ""
 
 #: ../../releng-tool/Documentation/contributor-guide.rst:11
-msgid "``releng/fetch/`` - support for fetching content from package sites"
+msgid "``releng_tool/fetch/`` - support for fetching content from package sites"
 msgstr ""
 
 #: ../../releng-tool/Documentation/contributor-guide.rst:12
-msgid "``releng/tool/`` - definitions for host tools used by tool features"
+msgid "``releng_tool/tool/`` - definitions for host tools used by tool features"
 msgstr ""
 
 #: ../../releng-tool/Documentation/contributor-guide.rst:13
@@ -93,7 +93,7 @@ msgid "releng-tool also supports the fetching of content from version control sy
 msgstr ""
 
 #: ../../releng-tool/Documentation/contributor-guide.rst:59
-msgid "Not all packages will fetch content (i.e. placeholder packages)."
+msgid "Not all packages will fetch content (e.g. placeholder packages)."
 msgstr ""
 
 #: ../../releng-tool/Documentation/contributor-guide.rst:64
@@ -117,7 +117,7 @@ msgid "extensions"
 msgstr ""
 
 #: ../../releng-tool/Documentation/contributor-guide.rst:89
-msgid "Developers wishing to provide extensions to releng-tool should consult the API implementation found in this tool's repository (|releng/api/__init__.py|_). Implementation in the API folder aims to be \"API safe\" -- there is a strong attempt to prevent the changing of classes, methods, etc. to prevent compatibility issues as both releng-tool and extensions (if any) evolve. A developer for a releng-tool project would register an extension to load using the ``extensions`` configuration option inside the project configuration (``releng``):"
+msgid "Developers wishing to provide extensions to releng-tool should consult the API implementation found in this tool's repository (|releng_tool/api/__init__.py|_). Implementation in the API folder aims to be \"API safe\" -- there is a strong attempt to prevent the changing of classes, methods, etc. to prevent compatibility issues as both releng-tool and extensions (if any) evolve. A developer for a releng-tool project would register an extension to load using the ``extensions`` configuration option inside the project configuration (``releng``):"
 msgstr ""
 
 #: ../../releng-tool/Documentation/contributor-guide.rst:109
