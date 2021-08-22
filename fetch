@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Copyright 2019 releng-tool
+# Copyright 2019-2021 releng-tool
 set -e
 
 ################################################################################
@@ -7,25 +7,73 @@ set -e
 # documentation repository
 doc_repo=https://github.com/releng-tool/releng-tool.git
 
+# target revision
+revision=master
+
+################################################################################
+
+help=0
+while [ "$#" -gt 0 ]; do
+    case $1 in
+        --help)
+        help=1
+        break 2
+        ;;
+        --repo|-R)
+        doc_repo="$2"
+        shift
+        ;;
+        --revision)
+        revision="$2"
+        shift
+        ;;
+    esac
+    shift
+done
+
+if [ $help -eq 1 ]; then
+    cat << HELP_EOM
+fetch <options>
+
+ -h, --help                show this help
+ -R, --repo <repo>         the repository to fetch documentation from
+ --revision <revision>     the target revision to build documentation from
+HELP_EOM
+    exit 0
+fi
+
 ################################################################################
 
 base="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
 source $base/common
+
+GIT="git --git-dir=$base/$doc_container/.git"
+GIT_WT="$GIT --work-tree=$base/$doc_container"
 
 # clone repository
 echo 'ensuring repository exists...'
 [ ! -d "$base/$doc_container" ] && git \
     clone $doc_repo $base/$doc_container
 
-# fetch all from repository
-echo 'ensuring most recent data from repository...'
-git --git-dir="$base/$doc_container/.git" fetch --all
-git \
-    --git-dir="$base/$doc_container/.git" \
-    --work-tree="$base/$doc_container" \
-    pull --all
+# adjust origin if changed
+$GIT remote add origin $doc_repo 2>/dev/null || true
+$GIT remote set-url origin $doc_repo
 
 # disable detached head message
-git --git-dir="$base/$doc_container/.git" config advice.detachedHead false
+$GIT config advice.detachedHead false
+
+# fetch all from repository
+echo 'ensuring most recent data from repository...'
+$GIT fetch --all
+$GIT_WT checkout --force $revision
+$GIT_WT reset --hard $revision
+
+origin_revision=$($GIT_WT rev-parse --quiet --verify origin/$revision || true)
+if [ -n "$origin_revision" ]; then
+    local_revision=$($GIT_WT rev-parse --quiet --verify HEAD)
+    if [ "$local_revision" != "$origin_revision" ]; then
+        $GIT_WT reset --hard origin/$revision
+    fi
+fi
 
 echo 'ready!'
