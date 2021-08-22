@@ -1,12 +1,49 @@
 #!/usr/bin/env bash
-# Copyright 2019 releng-tool
+# Copyright 2019-2021 releng-tool
 set -e
+
+################################################################################
+
+help=0
+target=
+while [ "$#" -gt 0 ]; do
+    case $1 in
+        --help)
+        help=1
+        break 2
+        ;;
+        --version)
+        target="$2"
+        shift
+        ;;
+    esac
+    shift
+done
+
+if [ $help -eq 1 ]; then
+    cat << HELP_EOM
+update <options>
+
+ -h, --help                show this help
+ --version <version>       build only a specific version
+HELP_EOM
+    exit 0
+fi
+
+################################################################################
 
 base="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
 source $base/common
 source $base/settings
 
 for version in "${!versions[@]}"; do
+    # skip version if not matching to the target (if set)
+    if [ -n "$target" ]; then
+        if [ "$version" != "$target" ]; then
+            continue
+        fi
+    fi
+
     echo -e "\e[7mupdating $version (pot)...\e[0m"
 
     # checkout specific documentation version
