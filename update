@@ -6,6 +6,7 @@ set -e
 
 help=0
 target=
+target_dir=
 while [ "$#" -gt 0 ]; do
     case $1 in
         --help)
@@ -14,6 +15,10 @@ while [ "$#" -gt 0 ]; do
         ;;
         --version)
         target="$2"
+        shift
+        ;;
+        --version-dir)
+        target_dir="$2"
         shift
         ;;
     esac
@@ -26,8 +31,16 @@ update <options>
 
  -h, --help                show this help
  --version <version>       build only a specific version
+ --version-dir <dir>       prepared directory to use for the version build
 HELP_EOM
     exit 0
+fi
+
+if [ -n "$target_dir" ]; then
+    if [ -z "$target" ]; then
+        echo "error) provided a version directory without a version"
+        exit 1
+    fi
 fi
 
 ################################################################################
@@ -45,13 +58,17 @@ for version in "${!versions[@]}"; do
     fi
 
     echo -e "\e[7mupdating $version (pot)...\e[0m"
-
-    # checkout specific documentation version
-    reference=${versions[$version]}
-    git \
-        --git-dir="$base/$doc_container/.git" \
-        --work-tree="$base/$doc_container" \
-        checkout $reference --force
+    if [ -n "$target_dir" ]; then
+        export RELENG_TARGET_DIR=$target_dir
+    else
+        # checkout specific documentation version
+        reference=${versions[$version]}
+        git \
+            --git-dir="$base/$doc_container/.git" \
+            --work-tree="$base/$doc_container" \
+            checkout $reference --force
+        export RELENG_TARGET_DIR=$base/$doc_container
+    fi
 
     # generate translation files
     export RELENG_LOCALE_DIR=$base/locale-$version/
