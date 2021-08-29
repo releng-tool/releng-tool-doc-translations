@@ -6,6 +6,7 @@ set -e
 declare -A versions
 versions=(
     ['development']='master'
+    ['0.8']='v0.8'
     ['0.7']='v0.7'
     ['0.6']='v0.6'
     ['0.5']='v0.5'
