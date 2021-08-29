@@ -6,14 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-20 00:12-0400\n"
+"POT-Creation-Date: 2021-08-28 22:25-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.7.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../releng-tool/Documentation/developer-guide.rst:2
 msgid "developer guide"
@@ -225,8 +225,8 @@ msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide/getting-started:36
 msgid ""
-"Next, create a build script for the ``libx`` project ``my-"
-"project/libx/build`` with the following content:"
+"Next, create a build script for the ``libx`` project ``my-project/libx"
+"/libx-build`` with the following content:"
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide/getting-started:46
@@ -237,7 +237,7 @@ msgid ""
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide/getting-started:58
-msgid "And ``my-project/liby/build`` containing:"
+msgid "And ``my-project/liby/libx-build`` containing:"
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide/getting-started:67
@@ -2348,32 +2348,36 @@ msgstr ""
 msgid "``debug``"
 msgstr ""
 
-#: of releng.debug:1
+#: of releng.util.log.debug:1
 msgid "log a debug message"
 msgstr ""
 
-#: of releng.debug:3
+#: of releng.util.log.debug:3
 msgid ""
 "Logs a debug message to standard out with a trailing new line. By "
 "default, debug messages will not be output to standard out unless the "
 "instance is configured with debugging enabled."
 msgstr ""
 
-#: of releng.debug releng.err releng.log releng.note releng.releng_copy
-#: releng.releng_execute releng.releng_exists releng.releng_exit
-#: releng.releng_expand releng.releng_move releng.releng_remove
-#: releng.releng_tmpdir releng.releng_touch releng.releng_wd releng.success
-#: releng.verbose releng.warn
+#: of releng.util.io.execute releng.util.io.generateTempDir
+#: releng.util.io.interimWorkingDirectory releng.util.io.pathCopy
+#: releng.util.io.pathExists releng.util.io.pathMove releng.util.io.pathRemove
+#: releng.util.io.touch releng.util.log.debug releng.util.log.err
+#: releng.util.log.log releng.util.log.note releng.util.log.success
+#: releng.util.log.verbose releng.util.log.warn releng.util.platform.exit
+#: releng.util.string.expand
 msgid "Parameters"
 msgstr ""
 
-#: of releng.debug:11 releng.err:10 releng.log:9 releng.note:10
-#: releng.success:10 releng.verbose:11 releng.warn:10
+#: of releng.util.log.debug:11 releng.util.log.err:10 releng.util.log.log:9
+#: releng.util.log.note:10 releng.util.log.success:10
+#: releng.util.log.verbose:11 releng.util.log.warn:10
 msgid "the message"
 msgstr ""
 
-#: of releng.debug:12 releng.err:11 releng.log:10 releng.note:11
-#: releng.success:11 releng.verbose:12 releng.warn:11
+#: of releng.util.log.debug:12 releng.util.log.err:11 releng.util.log.log:10
+#: releng.util.log.note:11 releng.util.log.success:11
+#: releng.util.log.verbose:12 releng.util.log.warn:11
 msgid ""
 "an arbitrary set of positional and keyword arguments used when generating"
 " a formatted message"
@@ -2383,11 +2387,11 @@ msgstr ""
 msgid "``err``"
 msgstr ""
 
-#: of releng.err:1
+#: of releng.util.log.err:1
 msgid "log an error message"
 msgstr ""
 
-#: of releng.err:3
+#: of releng.util.log.err:3
 msgid ""
 "Logs an error message to standard error with a trailing new line and (if "
 "enabled) a red colorization."
@@ -2397,11 +2401,11 @@ msgstr ""
 msgid "``log``"
 msgstr ""
 
-#: of releng.log:1
+#: of releng.util.log.log:1
 msgid "log a message"
 msgstr ""
 
-#: of releng.log:3
+#: of releng.util.log.log:3
 msgid "Logs a (normal) message to standard out with a trailing new line."
 msgstr ""
 
@@ -2409,11 +2413,11 @@ msgstr ""
 msgid "``note``"
 msgstr ""
 
-#: of releng.note:1
+#: of releng.util.log.note:1
 msgid "log a notification message"
 msgstr ""
 
-#: of releng.note:3
+#: of releng.util.log.note:3
 msgid ""
 "Logs a notification message to standard out with a trailing new line and "
 "(if enabled) an inverted colorization."
@@ -2423,11 +2427,11 @@ msgstr ""
 msgid "``releng_copy``"
 msgstr ""
 
-#: of releng.releng_copy:1
+#: of releng.util.io.pathCopy:1
 msgid "copy a file or directory into a target file or directory"
 msgstr ""
 
-#: of releng.releng_copy:3
+#: of releng.util.io.pathCopy:3
 msgid ""
 "This call will attempt to copy a provided file or directory, defined by "
 "``src`` into a destination file or directory defined by ``dst``. If "
@@ -2441,47 +2445,50 @@ msgid ""
 "will issue a system exit (``SystemExit``)."
 msgstr ""
 
-#: of releng.releng_copy:14 releng.releng_execute:39 releng.releng_exists:6
-#: releng.releng_exit:12 releng.releng_expand:15 releng.releng_move:16
-#: releng.releng_remove:9 releng.releng_tmpdir:9 releng.releng_touch:7
-#: releng.releng_wd:9
+#: of releng.util.io.execute:39 releng.util.io.generateTempDir:9
+#: releng.util.io.interimWorkingDirectory:9 releng.util.io.pathCopy:14
+#: releng.util.io.pathExists:6 releng.util.io.pathMove:16
+#: releng.util.io.pathRemove:9 releng.util.io.touch:7
+#: releng.util.platform.exit:12 releng.util.string.expand:15
 msgid "An example when using in the context of script helpers is as follows:"
 msgstr ""
 
-#: of releng.releng_copy:36 releng.releng_move:32
+#: of releng.util.io.pathCopy:36 releng.util.io.pathMove:32
 msgid "the source directory or file"
 msgstr ""
 
-#: of releng.releng_copy:37 releng.releng_move:33
+#: of releng.util.io.pathCopy:37 releng.util.io.pathMove:33
 msgid "the destination directory or file\\* (\\*if ``src`` is a file)"
 msgstr ""
 
-#: of releng.releng_copy:38 releng.releng_move:34 releng.releng_remove:18
+#: of releng.util.io.pathCopy:38 releng.util.io.pathMove:34
+#: releng.util.io.pathRemove:18
 msgid "whether or not to suppress output"
 msgstr ""
 
-#: of releng.releng_copy:40 releng.releng_move:36
+#: of releng.util.io.pathCopy:40 releng.util.io.pathMove:36
 msgid "whether or not to stop execution on failure"
 msgstr ""
 
-#: of releng.releng_copy releng.releng_execute releng.releng_exists
-#: releng.releng_expand releng.releng_move releng.releng_remove
-#: releng.releng_touch
+#: of releng.util.io.execute releng.util.io.pathCopy releng.util.io.pathExists
+#: releng.util.io.pathMove releng.util.io.pathRemove releng.util.io.touch
+#: releng.util.string.expand
 msgid "Returns"
 msgstr ""
 
-#: of releng.releng_copy:43
+#: of releng.util.io.pathCopy:43
 msgid ""
 "``True`` if the copy has completed with no error; ``False`` if the copy "
 "has failed"
 msgstr ""
 
-#: of releng.releng_copy releng.releng_execute releng.releng_exit
-#: releng.releng_move releng.releng_tmpdir releng.releng_wd
+#: of releng.util.io.execute releng.util.io.generateTempDir
+#: releng.util.io.interimWorkingDirectory releng.util.io.pathCopy
+#: releng.util.io.pathMove releng.util.platform.exit
 msgid "Raises"
 msgstr ""
 
-#: of releng.releng_copy:46 releng.releng_move:42
+#: of releng.util.io.pathCopy:46 releng.util.io.pathMove:42
 msgid "if the copy operation fails with ``critical=True``"
 msgstr ""
 
@@ -2489,11 +2496,11 @@ msgstr ""
 msgid "``releng_execute``"
 msgstr ""
 
-#: of releng.releng_execute:1
+#: of releng.util.io.execute:1
 msgid "execute the provided command/arguments"
 msgstr ""
 
-#: of releng.releng_execute:3
+#: of releng.util.io.execute:3
 msgid ""
 "Runs the command described by ``args`` until completion. A caller can "
 "adjust the working directory of the executed command by explicitly "
@@ -2504,7 +2511,7 @@ msgid ""
 " standard error unless ``quiet`` is set to ``True``."
 msgstr ""
 
-#: of releng.releng_execute:11
+#: of releng.util.io.execute:11
 msgid ""
 "The environment variables used on execution can be manipulated in two "
 "ways. First, the environment can be explicitly controlled by applying a "
@@ -2522,14 +2529,14 @@ msgid ""
 "of the original environment of the caller."
 msgstr ""
 
-#: of releng.releng_execute:25
+#: of releng.util.io.execute:25
 msgid ""
 "If ``critical`` is set to ``True`` and the execution fails for any "
 "reason, this call will issue a system exit (``SystemExit``). By default, "
 "the critical flag is enabled (i.e. ``critical=True``)."
 msgstr ""
 
-#: of releng.releng_execute:29
+#: of releng.util.io.execute:29
 msgid ""
 "In special cases, an executing process may not provide carriage "
 "returns/new lines to simple output processing. This can lead the output "
@@ -2539,52 +2546,52 @@ msgid ""
 "value of ``False``."
 msgstr ""
 
-#: of releng.releng_execute:35
+#: of releng.util.io.execute:35
 msgid ""
 "A caller may wish to capture the provided output from a process for "
 "examination. If a list is provided in the call argument ``capture``, the "
 "list will be populated with the output provided from an invoked process."
 msgstr ""
 
-#: of releng.releng_execute:45
+#: of releng.util.io.execute:45
 msgid "the list of arguments to execute"
 msgstr ""
 
-#: of releng.releng_execute:46
+#: of releng.util.io.execute:46
 msgid "working directory to use"
 msgstr ""
 
-#: of releng.releng_execute:48
+#: of releng.util.io.execute:48
 msgid "environment variables to use for the process"
 msgstr ""
 
-#: of releng.releng_execute:50
+#: of releng.util.io.execute:50
 msgid "environment variables to append for the process"
 msgstr ""
 
-#: of releng.releng_execute:52
+#: of releng.util.io.execute:52
 msgid "whether or not to suppress output (defaults to ``False``)"
 msgstr ""
 
-#: of releng.releng_execute:55
+#: of releng.util.io.execute:55
 msgid "whether or not to stop execution on failure (defaults to ``True``)"
 msgstr ""
 
-#: of releng.releng_execute:58
+#: of releng.util.io.execute:58
 msgid "force polling stdin/stdout for output data (defaults to ``False``)"
 msgstr ""
 
-#: of releng.releng_execute:61
+#: of releng.util.io.execute:61
 msgid "list to capture output into"
 msgstr ""
 
-#: of releng.releng_execute:64
+#: of releng.util.io.execute:64
 msgid ""
 "``True`` if the execution has completed with no error; ``False`` if the "
 "execution has failed"
 msgstr ""
 
-#: of releng.releng_execute:67
+#: of releng.util.io.execute:67
 msgid "if the execution operation fails with ``critical=True``"
 msgstr ""
 
@@ -2592,25 +2599,25 @@ msgstr ""
 msgid "``releng_exists``"
 msgstr ""
 
-#: of releng.releng_exists:1
+#: of releng.util.io.pathExists:1
 msgid "return whether or not the path exists"
 msgstr ""
 
-#: of releng.releng_exists:3
+#: of releng.util.io.pathExists:3
 msgid ""
 "Allows a caller to verify the existence of a file on the file system. "
 "This call will return ``True`` if the path exists; ``False`` otherwise."
 msgstr ""
 
-#: of releng.releng_exists:15
+#: of releng.util.io.pathExists:15
 msgid "the path"
 msgstr ""
 
-#: of releng.releng_exists:16
+#: of releng.util.io.pathExists:16
 msgid "additional path parts"
 msgstr ""
 
-#: of releng.releng_exists:18
+#: of releng.util.io.pathExists:18
 msgid "``True`` if the path exists; ``False`` otherwise"
 msgstr ""
 
@@ -2618,11 +2625,11 @@ msgstr ""
 msgid "``releng_exit``"
 msgstr ""
 
-#: of releng.releng_exit:1
+#: of releng.util.platform.exit:1
 msgid "exit out of the releng-tool process"
 msgstr ""
 
-#: of releng.releng_exit:3
+#: of releng.util.platform.exit:3
 msgid ""
 "Provides a convenience method to help invoke a system exit call without "
 "needing to explicitly use ``sys``. A caller can provide a message to "
@@ -2634,17 +2641,17 @@ msgid ""
 "provided code value will be used."
 msgstr ""
 
-#: of releng.releng_exit:18
+#: of releng.util.platform.exit:18
 msgid "error message to print"
 msgstr ""
 
-#: of releng.releng_exit:20
+#: of releng.util.platform.exit:20
 msgid ""
 "exit code; defaults to 0 if no message or defaults to 1 if a message is "
 "set"
 msgstr ""
 
-#: of releng.releng_exit:24
+#: of releng.util.platform.exit:24
 msgid "always raised"
 msgstr ""
 
@@ -2652,11 +2659,11 @@ msgstr ""
 msgid "``releng_expand``"
 msgstr ""
 
-#: of releng.releng_expand:1
+#: of releng.util.string.expand:1
 msgid "perform variable expansion on strings"
 msgstr ""
 
-#: of releng.releng_expand:3
+#: of releng.util.string.expand:3
 msgid ""
 "This expand utility method will attempt to expand variables in detected "
 "string types. For a detected string which contains substrings in the form"
@@ -2671,15 +2678,15 @@ msgid ""
 "values result in duplicate entries."
 msgstr ""
 
-#: of releng.releng_expand:27
+#: of releng.util.string.expand:27
 msgid "the object"
 msgstr ""
 
-#: of releng.releng_expand:28
+#: of releng.util.string.expand:28
 msgid "key-values pairs to use"
 msgstr ""
 
-#: of releng.releng_expand:31
+#: of releng.util.string.expand:31
 msgid "the expanded object"
 msgstr ""
 
@@ -2695,11 +2702,11 @@ msgstr ""
 msgid "``releng_move``"
 msgstr ""
 
-#: of releng.releng_move:1
+#: of releng.util.io.pathMove:1
 msgid "move a file or directory into a target file or directory"
 msgstr ""
 
-#: of releng.releng_move:3
+#: of releng.util.io.pathMove:3
 msgid ""
 "This call will attempt to move a provided file or directory's contents, "
 "defined by ``src`` into a destination file or directory defined by "
@@ -2709,7 +2716,7 @@ msgid ""
 "exist, it will be automatically created."
 msgstr ""
 
-#: of releng.releng_move:10
+#: of releng.util.io.pathMove:10
 msgid ""
 "In the event that a file or directory could not be moved, an error "
 "message will be output to standard error (unless ``quiet`` is set to "
@@ -2718,7 +2725,7 @@ msgid ""
 "system exit (``SystemExit``)."
 msgstr ""
 
-#: of releng.releng_move:39
+#: of releng.util.io.pathMove:39
 msgid ""
 "``True`` if the move has completed with no error; ``False`` if the move "
 "has failed"
@@ -2728,11 +2735,11 @@ msgstr ""
 msgid "``releng_remove``"
 msgstr ""
 
-#: of releng.releng_remove:1
+#: of releng.util.io.pathRemove:1
 msgid "remove the provided path"
 msgstr ""
 
-#: of releng.releng_remove:3
+#: of releng.util.io.pathRemove:3
 msgid ""
 "Attempts to remove the provided path if it exists. The path value can "
 "either be a directory or a specific file. If the provided path does not "
@@ -2742,11 +2749,11 @@ msgid ""
 "to ``True``)."
 msgstr ""
 
-#: of releng.releng_remove:17
+#: of releng.util.io.pathRemove:17
 msgid "the path to remove"
 msgstr ""
 
-#: of releng.releng_remove:21
+#: of releng.util.io.pathRemove:21
 msgid ""
 "``True`` if the path was removed or does not exist; ``False`` if the path"
 " could not be removed from the system"
@@ -2756,11 +2763,11 @@ msgstr ""
 msgid "``releng_tmpdir``"
 msgstr ""
 
-#: of releng.releng_tmpdir:1
+#: of releng.util.io.generateTempDir:1
 msgid "generate a context-supported temporary directory"
 msgstr ""
 
-#: of releng.releng_tmpdir:3
+#: of releng.util.io.generateTempDir:3
 msgid ""
 "Creates a temporary directory in the provided directory ``dir`` (or "
 "system default, is not provided). This is a context-supported call and "
@@ -2770,11 +2777,11 @@ msgid ""
 "thrown."
 msgstr ""
 
-#: of releng.releng_tmpdir:16
+#: of releng.util.io.generateTempDir:16
 msgid "the directory to create the temporary directory in"
 msgstr ""
 
-#: of releng.releng_tmpdir:19
+#: of releng.util.io.generateTempDir:19
 msgid "the base directory does not exist and     could not be created"
 msgstr ""
 
@@ -2782,22 +2789,22 @@ msgstr ""
 msgid "``releng_touch``"
 msgstr ""
 
-#: of releng.releng_touch:1
+#: of releng.util.io.touch:1
 msgid "update a file's access/modifications times"
 msgstr ""
 
-#: of releng.releng_touch:3
+#: of releng.util.io.touch:3
 msgid ""
 "Attempts to update the access/modifications times on a file. If the file "
 "does not exist, it will be created. This utility call operates in the "
 "same fashion as the ``touch`` system command."
 msgstr ""
 
-#: of releng.releng_touch:16
+#: of releng.util.io.touch:16
 msgid "the file"
 msgstr ""
 
-#: of releng.releng_touch:18
+#: of releng.util.io.touch:18
 msgid ""
 "``True`` if the file was created/updated; ``False`` if the file could not"
 " be created/updated"
@@ -2807,11 +2814,11 @@ msgstr ""
 msgid "``releng_wd``"
 msgstr ""
 
-#: of releng.releng_wd:1
+#: of releng.util.io.interimWorkingDirectory:1
 msgid "move into a context-supported working directory"
 msgstr ""
 
-#: of releng.releng_wd:3
+#: of releng.util.io.interimWorkingDirectory:3
 msgid ""
 "Moves the current context into the provided working directory ``dir``. "
 "When returned, the original working directory will be restored. If the "
@@ -2820,11 +2827,11 @@ msgid ""
 "exception will be thrown."
 msgstr ""
 
-#: of releng.releng_wd:18
+#: of releng.util.io.interimWorkingDirectory:18
 msgid "the target working directory"
 msgstr ""
 
-#: of releng.releng_wd:20
+#: of releng.util.io.interimWorkingDirectory:20
 msgid "the working directory does not     exist and could not be created"
 msgstr ""
 
@@ -2832,11 +2839,11 @@ msgstr ""
 msgid "``success``"
 msgstr ""
 
-#: of releng.success:1
+#: of releng.util.log.success:1
 msgid "log a success message"
 msgstr ""
 
-#: of releng.success:3
+#: of releng.util.log.success:3
 msgid ""
 "Logs a success message to standard error with a trailing new line and (if"
 " enabled) a green colorization."
@@ -2846,11 +2853,11 @@ msgstr ""
 msgid "``verbose``"
 msgstr ""
 
-#: of releng.verbose:1
+#: of releng.util.log.verbose:1
 msgid "log a verbose message"
 msgstr ""
 
-#: of releng.verbose:3
+#: of releng.util.log.verbose:3
 msgid ""
 "Logs a verbose message to standard out with a trailing new line and (if "
 "enabled) an inverted colorization. By default, verbose messages will not "
@@ -2862,11 +2869,11 @@ msgstr ""
 msgid "``warn``"
 msgstr ""
 
-#: of releng.warn:1
+#: of releng.util.log.warn:1
 msgid "log a warning message"
 msgstr ""
 
-#: of releng.warn:3
+#: of releng.util.log.warn:3
 msgid ""
 "Logs a warning message to standard error with a trailing new line and (if"
 " enabled) a purple colorization."

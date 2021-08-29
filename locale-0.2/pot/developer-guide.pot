@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-08 01:56-0400\n"
+"POT-Creation-Date: 2021-08-28 22:25-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -149,7 +149,7 @@ msgid "Inside the ``libx`` project, the package definition and script-based file
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide/getting-started:36
-msgid "Next, create a build script for the ``libx`` project ``my-project/libx/build`` with the following content:"
+msgid "Next, create a build script for the ``libx`` project ``my-project/libx/libx-build`` with the following content:"
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide/getting-started:46
@@ -157,7 +157,7 @@ msgid "This is a very simple script-based package (all package options explained
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide/getting-started:58
-msgid "And ``my-project/liby/build`` containing:"
+msgid "And ``my-project/liby/libx-build`` containing:"
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide/getting-started:67
