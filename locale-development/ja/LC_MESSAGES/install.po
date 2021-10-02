@@ -6,13 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-26 00:59-0500\n"
+"POT-Creation-Date: 2021-10-02 18:45-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../releng-tool/Documentation/install.rst:2
 msgid "installation"
@@ -22,28 +23,28 @@ msgstr "インストール"
 msgid "The recommended method of installation is using pip_:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:10
+#: ../../releng-tool/Documentation/install.rst:12
 msgid ""
 "To verify the package has been installed the following command can be "
 "used:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:19
+#: ../../releng-tool/Documentation/install.rst:21
 msgid "quick-start"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:21
+#: ../../releng-tool/Documentation/install.rst:23
 msgid ""
 "The following provides a series of steps to assist in preparing a new "
 "environment to use this package. This quick-start will aim to use the "
 "most recent version of Python."
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:26
+#: ../../releng-tool/Documentation/install.rst:28
 msgid "linux"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:28
+#: ../../releng-tool/Documentation/install.rst:30
 msgid ""
 "While the use of Python_/pip_ is almost consistent between Linux "
 "distributions, the following are a series of helpful steps to install "
@@ -51,39 +52,45 @@ msgid ""
 "invoke the following commands:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:33
+#: ../../releng-tool/Documentation/install.rst:35
 msgid "arch"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:44
+#: ../../releng-tool/Documentation/install.rst:45
+msgid ""
+"This package is also `available on AUR "
+"<https://aur.archlinux.org/packages/releng-tool/>`_."
+msgstr ""
+
+#: ../../releng-tool/Documentation/install.rst:49
 msgid "centos"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:55
+#: ../../releng-tool/Documentation/install.rst:60
 msgid "fedora"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:65
+#: ../../releng-tool/Documentation/install.rst:70
 msgid "opensuse"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:74
+#: ../../releng-tool/Documentation/install.rst:79
 msgid "ubuntu"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:85
+#: ../../releng-tool/Documentation/install.rst:90
 msgid "os x"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:87
+#: ../../releng-tool/Documentation/install.rst:92
 msgid "From a terminal, invoke the following commands:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:97
+#: ../../releng-tool/Documentation/install.rst:102
 msgid "windows"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:99
+#: ../../releng-tool/Documentation/install.rst:104
 msgid "If not already installed, download the most recent version of Python_:"
 msgstr ""
 
@@ -95,7 +102,7 @@ msgstr ""
 msgid "https://www.python.org/downloads/"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:104
+#: ../../releng-tool/Documentation/install.rst:109
 msgid ""
 "When invoking the installer, it is recommended to select the option to "
 "\"Add Python to PATH\"; however, users can explicitly invoked Python from"
@@ -103,15 +110,15 @@ msgid ""
 "available in the path)."
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:108
+#: ../../releng-tool/Documentation/install.rst:113
 msgid "Open a Windows command prompt and invoke the following:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:117
+#: ../../releng-tool/Documentation/install.rst:122
 msgid "development"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:119
+#: ../../releng-tool/Documentation/install.rst:124
 msgid ""
 "To install the most recent development sources, the following pip_ "
 "command can be used:"

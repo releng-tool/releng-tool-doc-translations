@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-28 22:25-0400\n"
+"POT-Creation-Date: 2021-10-02 18:45-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -277,7 +277,7 @@ msgid "Eventually the project should be in a good state that each package is bei
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide/actually-getting-started:159
-msgid "A developer may create a post-processing file ``releng-post`` in the root directory. On the completion of processing each package, the post-processing script will be invoked. It is important to note that the post-processing script may be invoked multiple times if a user attempts to rebuild the project. For example, if the file ``releng-post`` has the following contents:"
+msgid "A developer may create a post-processing file ``releng-post-build`` in the root directory. On the completion of processing each package, the post-processing script will be invoked. It is important to note that the post-processing script may be invoked multiple times if a user attempts to rebuild the project. For example, if the file ``releng-post-build`` has the following contents:"
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide/actually-getting-started:172
@@ -306,8 +306,8 @@ msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide/releng-py:36
 #: ../../releng-tool/Documentation/developer-guide/environment:93
-#: ../../releng-tool/Documentation/developer-guide/packages:305
-#: ../../releng-tool/Documentation/developer-guide/packages:425
+#: ../../releng-tool/Documentation/developer-guide/packages:308
+#: ../../releng-tool/Documentation/developer-guide/packages:441
 msgid "See also `internal and external packages`_."
 msgstr ""
 
@@ -1117,259 +1117,267 @@ msgid "Flag value to explicitly indicate that a package should ignore any genera
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide/packages:260
-msgid "By default, this option is disabled with a value of ``False``."
-msgstr ""
-
-#: ../../releng-tool/Documentation/developer-guide/packages:263
-msgid "LIBFOO_DEVMODE_REVISION"
+msgid "By default, this option is not defined and results can vary based off the site type being fetched. In most cases, fetch operations will treat the default case of this option as disabled (``False``). DVCS site types may elect to enable this option by default (``True``) if the target revision is a branch."
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide/packages:266
+msgid "LIBFOO_DEVMODE_REVISION"
+msgstr ""
+
+#: ../../releng-tool/Documentation/developer-guide/packages:269
 msgid "Specifies a development revision for a package. When a project is being built in :ref:`development mode`, the development revision is used over the configured |LIBFOO_REVISION|_ value. If a development revision is not defined for a project, a package will still use the configured |LIBFOO_REVISION|_ while in development mode."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:276
+#: ../../releng-tool/Documentation/developer-guide/packages:279
 msgid "See also |LIBFOO_REVISION|_ and |LIBFOO_VERSION|_."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:279
+#: ../../releng-tool/Documentation/developer-guide/packages:282
 msgid "LIBFOO_EXTENSION"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:281
+#: ../../releng-tool/Documentation/developer-guide/packages:284
 msgid "Specifies a filename extension for the package. A package may be cached inside the download directory to be used when the extraction phase is invoked. releng-tool attempts to determine the most ideal extension for this cache file; however some cases the detected extension may be incorrect. To deal with this situation, a developer can explicitly specify the extension value using this option."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:293
+#: ../../releng-tool/Documentation/developer-guide/packages:296
 msgid "LIBFOO_EXTERNAL"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:296
-msgid "Flag value to explicitly indicate that a package is an external package. External packages will generate warnings if :ref:`hashes <hash_files>` or `licenses`_ are missing. By default, packages are considered external unless explicitly configured to be internal."
+#: ../../releng-tool/Documentation/developer-guide/packages:299
+msgid "Flag value to explicitly indicate that a package is an external package. External packages will generate warnings if :ref:`hashes <hash_files>`, an :ref:`ASCII-armor <ascii_armor>` or `licenses`_ are missing. By default, packages are considered external unless explicitly configured to be internal."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:308
+#: ../../releng-tool/Documentation/developer-guide/packages:311
 msgid "LIBFOO_EXTOPT"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:310
+#: ../../releng-tool/Documentation/developer-guide/packages:313
 msgid "Specifies extension-specific options. Packages wishing to take advantage of extension-specific capabilities can forward options to extensions by defining a dictionary of values."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:322
+#: ../../releng-tool/Documentation/developer-guide/packages:325
 msgid "LIBFOO_EXTRACT_TYPE"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:324
+#: ../../releng-tool/Documentation/developer-guide/packages:327
 msgid "Specifies a custom extraction type for a package. If a configured extension supports a custom extraction capability, the registered extraction type can be explicitly registered in this option."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:333
+#: ../../releng-tool/Documentation/developer-guide/packages:336
 msgid "LIBFOO_FIXED_JOBS"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:335
+#: ../../releng-tool/Documentation/developer-guide/packages:338
 msgid "Explicitly configure the total number of jobs a package can use. The primary use case for this option is to help limit the total number of jobs for a package that cannot support a large or any parallel build environment."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:344
+#: ../../releng-tool/Documentation/developer-guide/packages:347
 msgid "LIBFOO_GIT_CONFIG"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:347
+#: ../../releng-tool/Documentation/developer-guide/packages:350
 msgid "Apply additional repository-specific Git configuration settings (|git-config|_) after a Git repository cache has been initialized. By default, no repository-specific configurations are introduced (i.e. all Git calls will use the global configuration set)."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:359
+#: ../../releng-tool/Documentation/developer-guide/packages:362
 msgid "LIBFOO_GIT_DEPTH"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:362
+#: ../../releng-tool/Documentation/developer-guide/packages:365
 msgid "Limit fetching for a Git-based source to the specified number of commits. The value provided will be used with the |--depth|_ argument. By default, the depth will be set to a value of ``1``. If a developer wishes use fetch all commits from all refspecs, a developer can specify a value of ``0``."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:367
+#: ../../releng-tool/Documentation/developer-guide/packages:370
 msgid "While the default depth is a value of ``1``, an exception is made when the depth is not explicitly set and the |LIBFOO_REVISION|_ value defined is a hash. For this case, if the revision is not found with the implicitly-defined shallow depth of ``1``, the entire history of the repository will be fetched."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:376
+#: ../../releng-tool/Documentation/developer-guide/packages:379
 msgid "See also |LIBFOO_GIT_REFSPECS|_ and :ref:`configuration quirks <quirks>`."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:379
+#: ../../releng-tool/Documentation/developer-guide/packages:382
 msgid "LIBFOO_GIT_REFSPECS"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:382
+#: ../../releng-tool/Documentation/developer-guide/packages:385
 msgid "List of addition refspecs to fetch when using a ``git`` VCS type. By default, a Git fetch request will acquire all ``heads`` and ``tags`` refspecs. If a developer wishes use revisions from different refspecs (for example, a pull request), a developer can specify the additional refspecs to acquire when fetching."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:393
+#: ../../releng-tool/Documentation/developer-guide/packages:396
 msgid "LIBFOO_GIT_SUBMODULES"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:395
+#: ../../releng-tool/Documentation/developer-guide/packages:398
 msgid "Flag value to indicate whether or not a package's Git submodules should be fetched/extracted during a package's own fetch/extraction stages. By default, submodules are not fetched. Ideally, any dependencies for a package are recommended to be defined in their own individual package; however, this may not be ideal for all environments. When configured, submodules will be cached in the same fashion as other Git-based packages. Note that submodule caching is specific to the repository being processed (i.e. they cannot be \"shared\" between other packages). If multiple packages have the same dependency defined through a submodule, it is recommended to create a new package and reference its contents instead."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:411
+#: ../../releng-tool/Documentation/developer-guide/packages:414
+msgid "LIBFOO_GIT_VERIFY_REVISION"
+msgstr ""
+
+#: ../../releng-tool/Documentation/developer-guide/packages:416
+msgid "Flag value to indicate whether or not the target revision is required to be signed before it can be used. When this value is set, the configured revision for a repository will not be extracted unless the GPG signature. This includes if the public key for the author is not registered in the local system or if the target revision is not signed."
+msgstr ""
+
+#: ../../releng-tool/Documentation/developer-guide/packages:427
 msgid "LIBFOO_INTERNAL"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:414
-msgid "Flag value to explicitly indicate that a package is an internal package. Internal packages will not generate warnings if :ref:`hashes <hash_files>` or `licenses`_ are missing. When configured in :ref:`local-sources mode`, package sources are searched for in the local directory opposed to site fetched sources. By default, packages are considered external unless explicitly configured to be internal."
+#: ../../releng-tool/Documentation/developer-guide/packages:430
+msgid "Flag value to explicitly indicate that a package is an internal package. Internal packages will not generate warnings if :ref:`hashes <hash_files>`, an :ref:`ASCII-armor <ascii_armor>` or `licenses`_ are missing. When configured in :ref:`local-sources mode`, package sources are searched for in the local directory opposed to site fetched sources. By default, packages are considered external unless explicitly configured to be internal."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:428
+#: ../../releng-tool/Documentation/developer-guide/packages:444
 msgid "LIBFOO_NO_EXTRACTION"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:432
-msgid "If ``LIBFOO_NO_EXTRACTION`` is configured for a package, the package cannot define additional :ref:`hashes <hash_files>`, define a list of ``LIBFOO_LICENSE_FILES`` to manage or expect to support various actions (such as building; since no sources are available)."
+#: ../../releng-tool/Documentation/developer-guide/packages:448
+msgid "If ``LIBFOO_NO_EXTRACTION`` is configured for a package, the package cannot define additional :ref:`hashes <hash_files>`, configure an :ref:`ASCII-armor <ascii_armor>`, define a list of ``LIBFOO_LICENSE_FILES`` to manage or expect to support various actions (such as building; since no sources are available)."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:437
+#: ../../releng-tool/Documentation/developer-guide/packages:454
 msgid "Flag value to explicitly indicate that a package should not extract the package contents. This feature is primarily used when using releng-tool to fetch content for one or more packages (into ``DL_DIR``) to be used by another package the releng-tool project defines."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:446
+#: ../../releng-tool/Documentation/developer-guide/packages:463
 msgid "Limitations exist when using the ``LIBFOO_NO_EXTRACTION`` option. Since releng-tool will not be used to extract a package's archive (if any), hash entries for files found inside the archive cannot be checked against. If any files other than the archive itself is listed, releng-tool will stop processing due to a hash check failure. In addition, since releng-tool does not have the extracted contents of an archive, it is unable to acquire a copy of the project's license file. Specifying ``LIBFOO_LICENSE_FILES`` for projects with the no-extraction flag enabled will result in a warning. By default, this option is disabled with a value of ``False``."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:457
+#: ../../releng-tool/Documentation/developer-guide/packages:474
 msgid "LIBFOO_PREFIX"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:460
+#: ../../releng-tool/Documentation/developer-guide/packages:477
 msgid "Specifies the sysroot prefix value to use for the package. An explicitly provided prefix value will override the project-defined or default sysroot prefix value."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:468
+#: ../../releng-tool/Documentation/developer-guide/packages:485
 msgid "See also |CONF_SYSROOT_PREFIX|_."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:471
+#: ../../releng-tool/Documentation/developer-guide/packages:488
 msgid "LIBFOO_REVISION"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:474
+#: ../../releng-tool/Documentation/developer-guide/packages:491
 msgid "Specifies a revision value for a package. When a package fetches content using source management tools, the revision value is used to determine which sources should be acquired (e.g. a tag). If a revision is not defined package, a package will use the configured |LIBFOO_VERSION|_."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:483
+#: ../../releng-tool/Documentation/developer-guide/packages:500
 msgid "See also |LIBFOO_DEVMODE_REVISION|_ and |LIBFOO_VERSION|_."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:486
+#: ../../releng-tool/Documentation/developer-guide/packages:503
 msgid "LIBFOO_SKIP_REMOTE_CONFIG"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:488
+#: ../../releng-tool/Documentation/developer-guide/packages:505
 msgid "Flag value to explicitly indicate that a package should not attempt to load any package configurations which may be defined in the package's source. A package, by default, has the ability to load configuration information from a package's source. If the package includes a ``.releng-tool`` file at the root of their sources, supported configuration options that have not been populated will be registered into the package before invoking a package's configuration stage."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:499
-#: ../../releng-tool/Documentation/developer-guide/packages:519
+#: ../../releng-tool/Documentation/developer-guide/packages:516
+#: ../../releng-tool/Documentation/developer-guide/packages:536
 msgid "See also :ref:`configuration quirks <quirks>`."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:502
+#: ../../releng-tool/Documentation/developer-guide/packages:519
 msgid "LIBFOO_SKIP_REMOTE_SCRIPTS"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:504
+#: ../../releng-tool/Documentation/developer-guide/packages:521
 msgid "Flag value to explicitly indicate that a package should not attempt to load any package scripts which may be defined in the package's source. Typically, a script-based package will load configuration, build, etc. scripts from its package definition folder. If a script-based package is missing a stage script to invoke and finds an associated script in the package's source, the detected script will be invoked. For example, if ``libfoo`` package may attempt to load a ``libfoo-configure`` script for a configuration stage. In the event that the script cannot be found and remote scripting is permitted for a package, the script (if exists) ``releng-configure`` will be loaded from the root of the package's contents."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:522
+#: ../../releng-tool/Documentation/developer-guide/packages:539
 msgid "LIBFOO_STRIP_COUNT"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:524
+#: ../../releng-tool/Documentation/developer-guide/packages:541
 msgid "Specifies the strip count to use when attempting to extract sources from an archive. By default, the extraction process will strip a single directory from an archive (value: 1). If a package's archive has no container directory, a strip count of zero can be set; likewise if an archive contains multiple container directories, a higher strip count can be set."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:535
+#: ../../releng-tool/Documentation/developer-guide/packages:552
 msgid "LIBFOO_VCS_TYPE"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:538
+#: ../../releng-tool/Documentation/developer-guide/packages:555
 msgid "Explicitly sets the version control system type to use when acquiring sources. releng-tool attempts to automatically determine the VCS type of a package based off a |LIBFOO_SITE|_ value. In some scenarios, a site value may be unable to specify a desired prefix/postfix. A developer can instead explicitly set the VCS type to be used no matter what the site value is configured as."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:544
+#: ../../releng-tool/Documentation/developer-guide/packages:561
 msgid "Supported types are as follows:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:546
+#: ../../releng-tool/Documentation/developer-guide/packages:563
 msgid "``bzr`` (Bazaar)"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:547
+#: ../../releng-tool/Documentation/developer-guide/packages:564
 msgid "``cvs`` (CVS)"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:548
+#: ../../releng-tool/Documentation/developer-guide/packages:565
 msgid "``git`` (Git)"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:549
+#: ../../releng-tool/Documentation/developer-guide/packages:566
 msgid "``hg``  (Mercurial)"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:550
+#: ../../releng-tool/Documentation/developer-guide/packages:567
 msgid "``local`` (no VCS; local interim-development package)"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:551
+#: ../../releng-tool/Documentation/developer-guide/packages:568
 msgid "``none`` (no VCS; virtual package)"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:552
+#: ../../releng-tool/Documentation/developer-guide/packages:569
 msgid "``scp`` (SCP)"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:553
+#: ../../releng-tool/Documentation/developer-guide/packages:570
 msgid "``svn`` (SVN)"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:554
+#: ../../releng-tool/Documentation/developer-guide/packages:571
 msgid "``url`` (URL)"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:560
+#: ../../releng-tool/Documentation/developer-guide/packages:577
 msgid "If a project registers a custom extension which provides a custom VCS type, the extension type can be set in this option."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:563
+#: ../../releng-tool/Documentation/developer-guide/packages:580
 msgid "Using a specific type will create a dependency for a project that the respective host tool is installed on the host system. For example, if a Git VCS-type is set, the host system will need to have ``git`` installed on the system."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:567
+#: ../../releng-tool/Documentation/developer-guide/packages:584
 msgid "Note that the ``local`` type is designed to be a special/development-helper type only. When set, this option allows placing the contents of a module directly inside the definition folder (alongside the definition file). This approach is similar to using :ref:`local-sources mode` where it avoids the need to have the module content located in a site to be fetched -- specifically, for initial development/testing/training scenarios. It is never recommended to store the package's \"main content\" inside a releng-tool project, thus using the ``local`` type will always generate a warning message."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:579
+#: ../../releng-tool/Documentation/developer-guide/packages:596
 msgid "package bootstrapping and post-processing"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:581
+#: ../../releng-tool/Documentation/developer-guide/packages:598
 msgid "Every package, no matter which package |LIBFOO_TYPE|_ is defined, can create a bootstrapping or post-processing script to invoke before a package starts a configuration stage or after a package has completed an installation stage, respectively."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:586
+#: ../../releng-tool/Documentation/developer-guide/packages:603
 msgid "The existence of a ``<package>-bootstrap`` inside a package directory will trigger the bootstrapping stage for the package. An example bootstrapping script (``libfoo-bootstrap``) can be as follows:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:597
+#: ../../releng-tool/Documentation/developer-guide/packages:614
 msgid "The existence of a ``<package>-post`` inside a package directory will trigger the post-processing stage for the package. An example post-processing script (``libfoo-post``) can be as follows:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:608
+#: ../../releng-tool/Documentation/developer-guide/packages:625
 msgid "Bootstrapping or post-processing scripts for a package are optional; thus, if no scripts are provided for a package, no bootstrapping or post-processing will be performed for the package."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages:612
+#: ../../releng-tool/Documentation/developer-guide/packages:629
 msgid "See also `script helpers`_ for helper functions/variables available for use."
 msgstr ""
 
@@ -1473,36 +1481,56 @@ msgstr ""
 msgid "hash file"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages-hashes:6
-msgid "When downloading assets from a remote instance, a package's hash file can be used to help verify the integrity of any fetched content. For example, if a package lists a host with a ``my-archive.tgz`` to download, the fetch process will download the archive and verify its hash to a listed entry before continuing. If a hash does not match, the build process stops indicating an unexpected asset was downloaded."
+#: ../../releng-tool/Documentation/developer-guide/packages-hashes:8
+msgid "An alternative to using a hash to validate a package's cache is to use an :ref:`ASCII-armor <ascii_armor>` instead. Although users can benefit from using both validation methods, if desired."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages-hashes:13
+#: ../../releng-tool/Documentation/developer-guide/packages-hashes:12
+msgid "When downloading assets from a remote instance, a package's hash file can be used to help verify the integrity of any fetched content. For example, if a package lists a site with a ``my-archive.tgz`` to download, the fetch process will download the archive and verify its hash to a listed entry before continuing. If a hash does not match, the build process stops indicating an unexpected asset was downloaded."
+msgstr ""
+
+#: ../../releng-tool/Documentation/developer-guide/packages-hashes:19
 msgid "It is recommended that:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages-hashes:15
+#: ../../releng-tool/Documentation/developer-guide/packages-hashes:21
 msgid "Any URL-based site asset have a hash entry defined for the asset (to ensure the package sources are not corrupted or have been unexpectedly replaced)."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages-hashes:17
+#: ../../releng-tool/Documentation/developer-guide/packages-hashes:23
 msgid "A hash entry should exist for license files (additional sanity check if a package's license has change)."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages-hashes:20
+#: ../../releng-tool/Documentation/developer-guide/packages-hashes:26
 msgid "To create a hash file for a package, add a ``<my-package>.hash`` file inside the package's directory. The hash file should be a UTF-8 encoded file and can contain multiple hash entries. A hash entry is a 3-tuple defining the type of hash algorithm used, the hash value expected and the asset associated with the hash. A tuple entry is defined on a single line with each entry separated by whitespace characters. For example:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages-hashes:33
+#: ../../releng-tool/Documentation/developer-guide/packages-hashes:39
 msgid "Comments are permitted in the file. Lines leading with a ``#`` character or inlined leading ``#`` character after a whitespace character will be ignored."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages-hashes:36
+#: ../../releng-tool/Documentation/developer-guide/packages-hashes:42
 msgid "Officially supported hash types are FIPS-180 algorithms (``sha1``, ``sha224``, ``sha256``, ``sha384`` and ``sha512``) as well as (but not recommended) RSA'S MD5 algorithm. Other algorithms, while unofficially supported, can be used if provided by the system's OpenSSL library."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/packages-hashes:41
+#: ../../releng-tool/Documentation/developer-guide/packages-hashes:47
 msgid "Multiple hash entries can be provided for the same file if desired. This is to assist in scenarios where a checked out asset's content changes based on the system it is checked out on. For example, a text file checked out from Git may use Windows line-ending on Windows system, and Unix-line endings on other systems:"
+msgstr ""
+
+#: ../../releng-tool/Documentation/developer-guide/packages-ascii-armor:4
+msgid "ascii armor"
+msgstr ""
+
+#: ../../releng-tool/Documentation/developer-guide/packages-ascii-armor:8
+msgid "An alternative to using an ASCII-armor to validate a package's cache is to use :ref:`hashes <hash_files>` instead."
+msgstr ""
+
+#: ../../releng-tool/Documentation/developer-guide/packages-ascii-armor:11
+msgid "When downloading assets from a remote instance, an ASCII-armor file can be used to help verify the integrity of any fetched content. For example, if a package lists a site with a ``my-archive.tgz`` to download, the fetch process will download the archive and verify its contents with an associated ASCII-armor file (if one is provided). If the integrity of the file cannot be verified, the build process stops indicating an unexpected asset was downloaded."
+msgstr ""
+
+#: ../../releng-tool/Documentation/developer-guide/packages-ascii-armor:18
+msgid "To include an ASCII-armor file for a package, add a ``<my-package>.asc`` file inside the package's directory. Verification is performed using the host system's ``gpg``. For verification's to succeed, the system must already have the required public keys registered."
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide/packages-type-script:2
@@ -1724,11 +1752,11 @@ msgid "A post-processing script (if used) will be invoked each time ``releng-too
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide/other:12
-msgid "After each package has been processed, a project has the ability to perform post-processing. Post-processing allows a developer to cleanup the target directory, build an archive/package from generated results and more. If a project contains a ``releng-post`` inside the root directory, the post-processing script will be invoked in the final stage of a build."
+msgid "After each package has been processed, a project has the ability to perform post-processing. Post-processing allows a developer to cleanup the target directory, build an archive/package from generated results and more. If a project contains a ``releng-post-build`` inside the root directory, the post-processing script will be invoked in the final stage of a build."
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide/other:18
-msgid "A developer may start out with the following post-processing script ``<root>/releng-post``:"
+msgid "A developer may start out with the following post-processing script ``<root>/releng-post-build``:"
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide/other:28
@@ -1804,38 +1832,38 @@ msgid "Packages are either internal packages or external packages. All packages 
 msgstr ""
 
 #: ../../releng-tool/Documentation/developer-guide/other:148
-msgid "An internal package will not generate output warnings if the package is missing :ref:`hash information <hash_files>`."
+msgid "An internal package will not generate output warnings if the package is missing :ref:`hash information <hash_files>` or an :ref:`ASCII-armor <ascii_armor>`."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:150
+#: ../../releng-tool/Documentation/developer-guide/other:151
 msgid "An internal package will not generate output warnings if the package is missing :ref:`license information <license_information>`."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:152
+#: ../../releng-tool/Documentation/developer-guide/other:153
 msgid "When configured for :ref:`development mode`; the patch stage will not be performed if the package specifies a development revision (|LIBFOO_DEVMODE_REVISION|_)."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:155
+#: ../../releng-tool/Documentation/developer-guide/other:156
 msgid "When configured for :ref:`local-sources mode`; the fetch, extract and patch stages will not be performed."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:159
+#: ../../releng-tool/Documentation/developer-guide/other:160
 msgid "script helpers"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:161
+#: ../../releng-tool/Documentation/developer-guide/other:162
 msgid "releng-tool provides a series of helper functions which can be used in script-based packages, post-processing and more. Helper functions provided are listed below:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:166
+#: ../../releng-tool/Documentation/developer-guide/other:167
 msgid "method"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:166
+#: ../../releng-tool/Documentation/developer-guide/other:167
 msgid "documentation"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:168
+#: ../../releng-tool/Documentation/developer-guide/other:169
 msgid "``debug``"
 msgstr ""
 
@@ -1890,7 +1918,7 @@ msgstr ""
 msgid "an arbitrary set of positional and keyword arguments used when generating a formatted message"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:172
+#: ../../releng-tool/Documentation/developer-guide/other:173
 msgid "``err``"
 msgstr ""
 
@@ -1902,7 +1930,7 @@ msgstr ""
 msgid "Logs an error message to standard error with a trailing new line and (if enabled) a red colorization."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:176
+#: ../../releng-tool/Documentation/developer-guide/other:177
 msgid "``log``"
 msgstr ""
 
@@ -1914,7 +1942,7 @@ msgstr ""
 msgid "Logs a (normal) message to standard out with a trailing new line."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:180
+#: ../../releng-tool/Documentation/developer-guide/other:181
 msgid "``note``"
 msgstr ""
 
@@ -1926,7 +1954,7 @@ msgstr ""
 msgid "Logs a notification message to standard out with a trailing new line and (if enabled) an inverted colorization."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:184
+#: ../../releng-tool/Documentation/developer-guide/other:185
 msgid "``releng_copy``"
 msgstr ""
 
@@ -2006,7 +2034,7 @@ msgstr ""
 msgid "if the copy operation fails with ``critical=True``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:188
+#: ../../releng-tool/Documentation/developer-guide/other:189
 msgid "``releng_env``"
 msgstr ""
 
@@ -2030,7 +2058,7 @@ msgstr ""
 msgid "the value of the environment variable"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:192
+#: ../../releng-tool/Documentation/developer-guide/other:193
 msgid "``releng_execute``"
 msgstr ""
 
@@ -2104,7 +2132,7 @@ msgstr ""
 msgid "if the execution operation fails with ``critical=True``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:196
+#: ../../releng-tool/Documentation/developer-guide/other:197
 msgid "``releng_execute_rv``"
 msgstr ""
 
@@ -2124,7 +2152,7 @@ msgstr ""
 msgid "the return code and output of the execution request"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:200
+#: ../../releng-tool/Documentation/developer-guide/other:201
 msgid "``releng_exists``"
 msgstr ""
 
@@ -2148,7 +2176,7 @@ msgstr ""
 msgid "``True`` if the path exists; ``False`` otherwise"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:204
+#: ../../releng-tool/Documentation/developer-guide/other:205
 msgid "``releng_exit``"
 msgstr ""
 
@@ -2172,7 +2200,7 @@ msgstr ""
 msgid "always raised"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:208
+#: ../../releng-tool/Documentation/developer-guide/other:209
 msgid "``releng_expand``"
 msgstr ""
 
@@ -2196,15 +2224,15 @@ msgstr ""
 msgid "the expanded object"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:212
+#: ../../releng-tool/Documentation/developer-guide/other:213
 msgid "``releng_join``"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:217
+#: ../../releng-tool/Documentation/developer-guide/other:218
 msgid "An alias for |os.path.join|_."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:219
+#: ../../releng-tool/Documentation/developer-guide/other:220
 msgid "``releng_mkdir``"
 msgstr ""
 
@@ -2224,7 +2252,7 @@ msgstr ""
 msgid "``True`` if the directory exists; ``False`` if the directory could not be created"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:223
+#: ../../releng-tool/Documentation/developer-guide/other:224
 msgid "``releng_move``"
 msgstr ""
 
@@ -2244,7 +2272,7 @@ msgstr ""
 msgid "``True`` if the move has completed with no error; ``False`` if the move has failed"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:227
+#: ../../releng-tool/Documentation/developer-guide/other:228
 msgid "``releng_remove``"
 msgstr ""
 
@@ -2264,7 +2292,7 @@ msgstr ""
 msgid "``True`` if the path was removed or does not exist; ``False`` if the path could not be removed from the system"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:231
+#: ../../releng-tool/Documentation/developer-guide/other:232
 msgid "``releng_tmpdir``"
 msgstr ""
 
@@ -2284,7 +2312,7 @@ msgstr ""
 msgid "the base directory does not exist and     could not be created"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:235
+#: ../../releng-tool/Documentation/developer-guide/other:236
 msgid "``releng_touch``"
 msgstr ""
 
@@ -2304,7 +2332,7 @@ msgstr ""
 msgid "``True`` if the file was created/updated; ``False`` if the file could not be created/updated"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:239
+#: ../../releng-tool/Documentation/developer-guide/other:240
 msgid "``releng_wd``"
 msgstr ""
 
@@ -2324,7 +2352,7 @@ msgstr ""
 msgid "the working directory does not     exist and could not be created"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:243
+#: ../../releng-tool/Documentation/developer-guide/other:244
 msgid "``success``"
 msgstr ""
 
@@ -2336,7 +2364,7 @@ msgstr ""
 msgid "Logs a success message to standard error with a trailing new line and (if enabled) a green colorization."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:247
+#: ../../releng-tool/Documentation/developer-guide/other:248
 msgid "``verbose``"
 msgstr ""
 
@@ -2348,7 +2376,7 @@ msgstr ""
 msgid "Logs a verbose message to standard out with a trailing new line and (if enabled) an inverted colorization. By default, verbose messages will not be output to standard out unless the instance is configured with verbosity."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:251
+#: ../../releng-tool/Documentation/developer-guide/other:252
 msgid "``warn``"
 msgstr ""
 
@@ -2360,75 +2388,75 @@ msgstr ""
 msgid "Logs a warning message to standard error with a trailing new line and (if enabled) a purple colorization."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:259
+#: ../../releng-tool/Documentation/developer-guide/other:260
 msgid "Scripts directly invoked by releng-tool will automatically have these helpers registered in the script's globals module (i.e. no import is necessary). If a project defines custom Python modules in their project and wishes to take advantage of these helper functions, the following import can be used to, for example, import a specific function:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:269
+#: ../../releng-tool/Documentation/developer-guide/other:270
 msgid "Or, if desired, all helper methods can be imported at once:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:276
+#: ../../releng-tool/Documentation/developer-guide/other:277
 msgid "vcs ignore"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:278
+#: ../../releng-tool/Documentation/developer-guide/other:279
 msgid "When invoking releng-tool on a project, the project's root directory will be populated with cached assets and other output files. A series of standard ignore patterns can be applied to a repository to prevent observing these generated files using VCS tools. The following is an example ignore configuration which can be applied for Git-based repositories (via ``.gitignore``):"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:295
+#: ../../releng-tool/Documentation/developer-guide/other:296
 msgid "quirks"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:297
+#: ../../releng-tool/Documentation/developer-guide/other:298
 msgid "The following outlines a series of configuration |CONF_QUIRKS|_ that can be applied to deal with rare host environment scenarios."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:300
+#: ../../releng-tool/Documentation/developer-guide/other:301
 msgid "``releng.cmake.disable_parallel_option`` -- Disables the ``--parallel`` option from being injected when a CMake-package is performing a build stage. This is to help support host systems running variants of CMake which do not explicitly provide a parallelization option."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:304
+#: ../../releng-tool/Documentation/developer-guide/other:305
 msgid "``releng.disable_prerequisites_check`` -- Disables the fast-fail prerequisites check from running."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:306
+#: ../../releng-tool/Documentation/developer-guide/other:307
 msgid "``releng.disable_remote_configs`` -- Disables any attempt to load remote-defined configurations for a package."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:308
+#: ../../releng-tool/Documentation/developer-guide/other:309
 msgid "``releng.disable_remote_scripts`` -- Disables any attempt to load remote-defined scripts for a package."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:310
+#: ../../releng-tool/Documentation/developer-guide/other:311
 msgid "``releng.git.no_depth`` -- Disables the ``--depth`` option from being injected when a Git-site-defined package is performing a fetch stage."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:312
+#: ../../releng-tool/Documentation/developer-guide/other:313
 msgid "``releng.git.no_quick_fetch`` -- Disables quick fetching (a specific reference fetch) for any Git-site-defined package."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:315
+#: ../../releng-tool/Documentation/developer-guide/other:316
 msgid "Quirks are enabled through a configuration (override) script such as follows:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:324
+#: ../../releng-tool/Documentation/developer-guide/other:325
 msgid "loading extensions"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:328
+#: ../../releng-tool/Documentation/developer-guide/other:329
 msgid "If looking for information on developing extensions for releng-tool, consult the :ref:`contributor's guide -- extensions <contributor_guide_ext>`."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:331
+#: ../../releng-tool/Documentation/developer-guide/other:332
 msgid "A releng-tool project can define one or more extensions to load for externally implemented capabilities. For example, a project can load extensions ``ext-a`` and ``ext-b`` with the following defined in their project's configuration:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:343
+#: ../../releng-tool/Documentation/developer-guide/other:344
 msgid "During the initial stages of a release engineering process, releng-tool will check and load any configured extension. In the event that an extension is missing, is unsupported for the running releng-tool version or fails to load, a detailed error message will be presented to the user."
 msgstr ""
 
-#: ../../releng-tool/Documentation/developer-guide/other:348
+#: ../../releng-tool/Documentation/developer-guide/other:349
 msgid "While the ability to load extensions is supported, capabilities provided by extensions are not officially supported by releng-tool. For issues related to specific extension use, it is recommended to consult the documentation provided by the providers of said extensions."
 msgstr ""
 

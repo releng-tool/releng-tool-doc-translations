@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-13 23:21-0400\n"
+"POT-Creation-Date: 2021-10-02 18:45-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,35 +48,39 @@ msgstr ""
 msgid "arch"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:46
+#: ../../releng-tool/Documentation/install.rst:45
+msgid "This package is also `available on AUR <https://aur.archlinux.org/packages/releng-tool/>`_."
+msgstr ""
+
+#: ../../releng-tool/Documentation/install.rst:49
 msgid "centos"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:57
+#: ../../releng-tool/Documentation/install.rst:60
 msgid "fedora"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:67
+#: ../../releng-tool/Documentation/install.rst:70
 msgid "opensuse"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:76
+#: ../../releng-tool/Documentation/install.rst:79
 msgid "ubuntu"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:87
+#: ../../releng-tool/Documentation/install.rst:90
 msgid "os x"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:89
+#: ../../releng-tool/Documentation/install.rst:92
 msgid "From a terminal, invoke the following commands:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:99
+#: ../../releng-tool/Documentation/install.rst:102
 msgid "windows"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:101
+#: ../../releng-tool/Documentation/install.rst:104
 msgid "If not already installed, download the most recent version of Python_:"
 msgstr ""
 
@@ -88,18 +92,18 @@ msgstr ""
 msgid "https://www.python.org/downloads/"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:106
+#: ../../releng-tool/Documentation/install.rst:109
 msgid "When invoking the installer, it is recommended to select the option to \"Add Python to PATH\"; however, users can explicitly invoked Python from an absolute path (the remainder of these steps will assume Python is available in the path)."
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:110
+#: ../../releng-tool/Documentation/install.rst:113
 msgid "Open a Windows command prompt and invoke the following:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:119
+#: ../../releng-tool/Documentation/install.rst:122
 msgid "development"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:121
+#: ../../releng-tool/Documentation/install.rst:124
 msgid "To install the most recent development sources, the following pip_ command can be used:"
 msgstr ""

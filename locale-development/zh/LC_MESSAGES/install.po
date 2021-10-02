@@ -6,13 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-05 00:18-0500\n"
+"POT-Creation-Date: 2021-10-02 18:45-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FO7E3FBD5BC2\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../releng-tool/Documentation/install.rst:2
 msgid "installation"
@@ -49,41 +50,49 @@ msgid ""
 "distributions, the following are a series of helpful steps to install "
 "this package under specific distributions of Linux. From a terminal, "
 "invoke the following commands:"
-msgstr "虽然 Python_/pip_ 的使用在 Linux 发行版之间几乎是一致的，但以下是在 Linux 的特定发行版下安装此组件的一系列有用步骤。从终端开始，调用以下命令："
+msgstr ""
+"虽然 Python_/pip_ 的使用在 Linux 发行版之间几乎是一致的，但以下是在 Linux "
+"的特定发行版下安装此组件的一系列有用步骤。从终端开始，调用以下命令："
 
 #: ../../releng-tool/Documentation/install.rst:35
 msgid "arch"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:46
+#: ../../releng-tool/Documentation/install.rst:45
+msgid ""
+"This package is also `available on AUR "
+"<https://aur.archlinux.org/packages/releng-tool/>`_."
+msgstr ""
+
+#: ../../releng-tool/Documentation/install.rst:49
 msgid "centos"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:57
+#: ../../releng-tool/Documentation/install.rst:60
 msgid "fedora"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:67
+#: ../../releng-tool/Documentation/install.rst:70
 msgid "opensuse"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:76
+#: ../../releng-tool/Documentation/install.rst:79
 msgid "ubuntu"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:87
+#: ../../releng-tool/Documentation/install.rst:90
 msgid "os x"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:89
+#: ../../releng-tool/Documentation/install.rst:92
 msgid "From a terminal, invoke the following commands:"
 msgstr "从终端开始，调用以下命令："
 
-#: ../../releng-tool/Documentation/install.rst:99
+#: ../../releng-tool/Documentation/install.rst:102
 msgid "windows"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:101
+#: ../../releng-tool/Documentation/install.rst:104
 msgid "If not already installed, download the most recent version of Python_:"
 msgstr "请先下载最新版本的 Python_："
 
@@ -95,23 +104,25 @@ msgstr "Python - 下载"
 msgid "https://www.python.org/downloads/"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:106
+#: ../../releng-tool/Documentation/install.rst:109
 msgid ""
 "When invoking the installer, it is recommended to select the option to "
 "\"Add Python to PATH\"; however, users can explicitly invoked Python from"
 " an absolute path (the remainder of these steps will assume Python is "
 "available in the path)."
-msgstr "调用安装程序时，建议选择 ["Add Python to PATH"] 选项。但是，用户可以从绝对路径显式调用 Python （这些步骤的其余部分将假设 Python 在路径中可用）。"
+msgstr ""
+"调用安装程序时，建议选择 [\"Add Python to PATH\"] 选项。但是，用户可以从绝对路径显式调用 Python "
+"（这些步骤的其余部分将假设 Python 在路径中可用）。"
 
-#: ../../releng-tool/Documentation/install.rst:110
+#: ../../releng-tool/Documentation/install.rst:113
 msgid "Open a Windows command prompt and invoke the following:"
 msgstr "打开 Windows 命令提示符并调用以下内容："
 
-#: ../../releng-tool/Documentation/install.rst:119
+#: ../../releng-tool/Documentation/install.rst:122
 msgid "development"
 msgstr "发展"
 
-#: ../../releng-tool/Documentation/install.rst:121
+#: ../../releng-tool/Documentation/install.rst:124
 msgid ""
 "To install the most recent development sources, the following pip_ "
 "command can be used:"
