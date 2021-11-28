@@ -3,4 +3,4 @@
 set -e
 
 # folder with documentation information
-doc_container=releng-tool
+doc_container=.releng_cache/releng-tool
