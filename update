@@ -78,13 +78,8 @@ for version in "${!versions[@]}"; do
         lang_dir=${ref%%/}
         lang=${lang_dir##*/}
 
-        # skip pot directory
-        if [[ "$lang" == 'pot' ]]; then
-            continue
-        fi
-
         # update language files
         echo -e "\e[7mupdating $version ($lang)...\e[0m"
-        python -m sphinx_intl update -p $base/locale-$version/pot -l $lang
+        python -m sphinx_intl update -p $base/locale-$version -l $lang
     done
 done
