@@ -1,19 +1,25 @@
-# Copyright (C) 2019 releng-tool
-# This file is distributed under the same license as the releng-tool
-# package.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# James Knight <james.d.knight@live.com>, 2021
+# 
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: releng-tool \n"
+"Project-Id-Version: releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-28 17:59-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2021-11-29 00:10+0000\n"
+"Last-Translator: James Knight <james.d.knight@live.com>, 2021\n"
+"Language-Team: German (https://www.transifex.com/releng-tool/teams/119434/de/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../.releng_cache/releng-tool/Documentation/tips.rst:2
 msgid "Tips"
@@ -24,14 +30,15 @@ msgid "Examples"
 msgstr "Beispiele"
 
 #: ../.releng_cache/releng-tool/Documentation/tips.rst:7
-msgid "Examples of releng-tool projects can be found in the following repository:"
+msgid ""
+"Examples of releng-tool projects can be found in the following repository:"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/tips.rst
+#: ../.releng_cache/releng-tool/Documentation/tips.rst:0
 msgid "releng-tool - examples repository"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/tips.rst
+#: ../.releng_cache/releng-tool/Documentation/tips.rst:0
 msgid "https://github.com/releng-tool/releng-tool-examples"
 msgstr ""
 
@@ -41,15 +48,14 @@ msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/tips.rst:15
 msgid ""
-"If experience issues with using releng-tool, developing extensions, etc.;"
-" do not hesitate to create an issue in this project's GitHub page:"
+"If experience issues with using releng-tool, developing extensions, etc.; do"
+" not hesitate to create an issue in this project's GitHub page:"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/tips.rst
+#: ../.releng_cache/releng-tool/Documentation/tips.rst:0
 msgid "releng-tool - Issues"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/tips.rst
+#: ../.releng_cache/releng-tool/Documentation/tips.rst:0
 msgid "https://github.com/releng-tool/releng-tool/issues"
 msgstr ""
-

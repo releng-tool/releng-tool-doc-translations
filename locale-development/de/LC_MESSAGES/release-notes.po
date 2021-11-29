@@ -1,21 +1,25 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019 releng-tool
-# This file is distributed under the same license as the releng-tool
-# package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
-#
+# Copyright (C) 2021 releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# James Knight <james.d.knight@live.com>, 2021
+# 
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: releng-tool \n"
+"Project-Id-Version: releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-28 17:59-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2021-11-29 00:10+0000\n"
+"Last-Translator: James Knight <james.d.knight@live.com>, 2021\n"
+"Language-Team: German (https://www.transifex.com/releng-tool/teams/119434/de/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../.releng_cache/releng-tool/Documentation/release-notes.rst:2
 msgid "Release notes"
@@ -24,8 +28,8 @@ msgstr "Versionshinweise"
 #: ../.releng_cache/releng-tool/Documentation/release-notes.rst:4
 msgid ""
 "The following provides the notable features, bug fixes and more for each "
-"release of releng-tool. For a complete list of detailed changes to "
-"releng-tool, please consult the project's `repository commits`_."
+"release of releng-tool. For a complete list of detailed changes to releng-"
+"tool, please consult the project's `repository commits`_."
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:2
@@ -34,8 +38,8 @@ msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:4
 msgid ""
-"fixed an issue where ``releng_mkdir`` reports success if the target path "
-"is a file that already exists"
+"fixed an issue where ``releng_mkdir`` reports success if the target path is "
+"a file that already exists"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:6
@@ -88,21 +92,20 @@ msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:24
 msgid ""
-"fixed an issue where tools/``releng_execute`` requests would fail on "
-"python 2.7 with unicode-defined environment variables"
+"fixed an issue where tools/``releng_execute`` requests would fail on python "
+"2.7 with unicode-defined environment variables"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:26
 msgid ""
-"fixed an issue where a diverged revision in git would incorrectly "
-"populate a package's build directory with the cached revision instead of "
-"the remote revision"
+"fixed an issue where a diverged revision in git would incorrectly populate a"
+" package's build directory with the cached revision instead of the remote "
+"revision"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:29
 msgid ""
-"introduce ``LIBFOO_GIT_SUBMODULES`` for package git-specific "
-"configurations"
+"introduce ``LIBFOO_GIT_SUBMODULES`` for package git-specific configurations"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:30
@@ -111,8 +114,8 @@ msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:31
 msgid ""
-"introduce statistic tracking (stage durations) which generate to into the"
-" output folder after execution"
+"introduce statistic tracking (stage durations) which generate to into the "
+"output folder after execution"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:33
@@ -126,8 +129,8 @@ msgstr ""
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:35
 msgid ""
 "rework ``LIBTOOL_GIT_REFSPECS`` to provide more control over custom "
-"revisions that can be fixed (i.e. no longer fixed on ``<target>/*/head``;"
-" instead, a configured value-wildcard string should be used)"
+"revisions that can be fixed (i.e. no longer fixed on ``<target>/*/head``; "
+"instead, a configured value-wildcard string should be used)"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:38
@@ -140,8 +143,8 @@ msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:40
 msgid ""
-"support pruning any remote-tracked references in a git-cached project "
-"when a forced fetch request is made"
+"support pruning any remote-tracked references in a git-cached project when a"
+" forced fetch request is made"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:42
@@ -177,7 +180,8 @@ msgid ""
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:54
-msgid "fixed issue where the host directory was not registered in a stage's path"
+msgid ""
+"fixed issue where the host directory was not registered in a stage's path"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:55
@@ -188,8 +192,7 @@ msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:56
 msgid ""
-"only fetch a single package if only said package is requested to be "
-"fetched"
+"only fetch a single package if only said package is requested to be fetched"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:57
@@ -198,15 +201,14 @@ msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:58
 msgid ""
-"reconfigure/rebuild requests will now perform all trailing stages for the"
-" package(s) being redone; rebuild/reconfigure-only actions have been "
+"reconfigure/rebuild requests will now perform all trailing stages for the "
+"package(s) being redone; rebuild/reconfigure-only actions have been "
 "introduced to force re-invoking a specific stage"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:61
 msgid ""
-"releng-tool will now full stop if external package definition fails to "
-"load"
+"releng-tool will now full stop if external package definition fails to load"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:62
@@ -223,19 +225,20 @@ msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:68
 msgid ""
-"always register optional flags inside scripts (allowing developers to use"
-" flags like ``RELENG_RECONFIGURE`` without needing to check environment "
+"always register optional flags inside scripts (allowing developers to use "
+"flags like ``RELENG_RECONFIGURE`` without needing to check environment "
 "variables)"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:71
 msgid ""
-"fixed issued when capturing with ``releng_execute`` which did not "
-"suppress output by default"
+"fixed issued when capturing with ``releng_execute`` which did not suppress "
+"output by default"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:73
-msgid "introduce ``LIBTOOL_GIT_CONFIG`` for package git-specific configurations"
+msgid ""
+"introduce ``LIBTOOL_GIT_CONFIG`` for package git-specific configurations"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:74
@@ -252,8 +255,8 @@ msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:77
 msgid ""
-"namespace moved from ``releng`` to ``releng_tool`` (``releng`` deprecated"
-" for an interim)"
+"namespace moved from ``releng`` to ``releng_tool`` (``releng`` deprecated "
+"for an interim)"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:81
@@ -269,7 +272,8 @@ msgid "0.4 (2020-09-07)"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:88
-msgid "allow developers to fetch from addition git refspecs (e.g. pull requests)"
+msgid ""
+"allow developers to fetch from addition git refspecs (e.g. pull requests)"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:89
@@ -339,7 +343,8 @@ msgid ""
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:112
-msgid "allow tracking project's license files when found in multiple directories"
+msgid ""
+"allow tracking project's license files when found in multiple directories"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:113
@@ -357,4 +362,3 @@ msgstr ""
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:119
 msgid "hello world"
 msgstr ""
-

@@ -1,19 +1,25 @@
-# Copyright (C) 2019 releng-tool
-# This file is distributed under the same license as the releng-tool
-# package.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# James Knight <james.d.knight@live.com>, 2021
+# 
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: releng-tool \n"
+"Project-Id-Version: releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-28 17:59-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2021-11-29 00:09+0000\n"
+"Last-Translator: James Knight <james.d.knight@live.com>, 2021\n"
+"Language-Team: German (https://www.transifex.com/releng-tool/teams/119434/de/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../.releng_cache/releng-tool/Documentation/annex-a.rst:2
 msgid "ANNEX A - Quick reference"
@@ -21,9 +27,9 @@ msgstr "ANHANG A - Kurzreferenz"
 
 #: ../.releng_cache/releng-tool/Documentation/annex-a.rst:4
 msgid ""
-"A quick reference document listing available options to developers "
-"building a releng-tool project. Consult the :doc:`developer's guide "
-"<developer-guide>` for more detailed information."
+"A quick reference document listing available options to developers building "
+"a releng-tool project. Consult the :doc:`developer's guide <developer-"
+"guide>` for more detailed information."
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/annex-a.rst:9
@@ -32,8 +38,7 @@ msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/annex-a.rst:11
 msgid ""
-"Options which are read by releng-tool from a project's configuration "
-"script:"
+"Options which are read by releng-tool from a project's configuration script:"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/annex-a.rst:30
@@ -42,8 +47,8 @@ msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/annex-a.rst:32
 msgid ""
-"Environment (and script) variables available to context's invoked by "
-"releng-tool (may vary per context):"
+"Environment (and script) variables available to context's invoked by releng-"
+"tool (may vary per context):"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/annex-a.rst:79
@@ -71,4 +76,3 @@ msgstr ""
 #: ../.releng_cache/releng-tool/Documentation/annex-a.rst:158
 msgid "Quirk options used by releng-tool:"
 msgstr ""
-
