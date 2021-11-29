@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-10 23:43-0400\n"
+"POT-Creation-Date: 2021-11-28 17:59-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,142 +16,142 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../releng-tool/Documentation/release-notes.rst:2
+#: ../.releng_cache/releng-tool/Documentation/release-notes.rst:2
 msgid "release notes"
 msgstr ""
 
-#: ../../releng-tool/Documentation/release-notes.rst:4
+#: ../.releng_cache/releng-tool/Documentation/release-notes.rst:4
 msgid "The following provides the notable features, bug fixes and more for each release of releng-tool. For a complete list of detailed changes to releng-tool, please consult the project's `repository commits`_."
 msgstr ""
 
-#: ../../releng-tool/CHANGELOG.rst:2
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:2
 msgid "0.6 (2020-10-10)"
 msgstr ""
 
-#: ../../releng-tool/CHANGELOG.rst:4
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:4
 msgid "always register optional flags inside scripts (allowing developers to use flags like ``RELENG_RECONFIGURE`` without needing to check environment variables)"
 msgstr ""
 
-#: ../../releng-tool/CHANGELOG.rst:7
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:7
 msgid "fixed issued when capturing with ``releng_execute`` which did not suppress output by default"
 msgstr ""
 
-#: ../../releng-tool/CHANGELOG.rst:9
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:9
 msgid "introduce ``LIBTOOL_GIT_CONFIG`` for package git-specific configurations"
 msgstr ""
 
-#: ../../releng-tool/CHANGELOG.rst:10
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:10
 msgid "introduce a ``releng-tool init`` action for a quick-sample project"
 msgstr ""
 
-#: ../../releng-tool/CHANGELOG.rst:11
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:11
 msgid "introduce support for distclean"
 msgstr ""
 
-#: ../../releng-tool/CHANGELOG.rst:12
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:12
 msgid "introduce support for prerequisites"
 msgstr ""
 
-#: ../../releng-tool/CHANGELOG.rst:13
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:13
 msgid "namespace moved from ``releng`` to ``releng_tool`` (``releng`` deprecated for an interim)"
 msgstr ""
 
-#: ../../releng-tool/CHANGELOG.rst:17
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:17
 msgid "0.5 (2020-09-07)"
 msgstr ""
 
-#: ../../releng-tool/CHANGELOG.rst:19
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:19
 msgid "fixed false error when verifying cached git reference"
 msgstr ""
 
-#: ../../releng-tool/CHANGELOG.rst:22
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:22
 msgid "0.4 (2020-09-07)"
 msgstr ""
 
-#: ../../releng-tool/CHANGELOG.rst:24
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:24
 msgid "allow developers to fetch from addition git refspecs (e.g. pull requests)"
 msgstr ""
 
-#: ../../releng-tool/CHANGELOG.rst:25
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:25
 msgid "allow setting quirks in command line"
 msgstr ""
 
-#: ../../releng-tool/CHANGELOG.rst:26
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:26
 msgid "fixed a scenario where a git extraction stage could fetch sources"
 msgstr ""
 
-#: ../../releng-tool/CHANGELOG.rst:27
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:27
 msgid "fixed git fetch/extraction if package is cached and site has changed"
 msgstr ""
 
-#: ../../releng-tool/CHANGELOG.rst:28
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:28
 msgid "improved handling of output files which may set the readonly attribute"
 msgstr ""
 
-#: ../../releng-tool/CHANGELOG.rst:29
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:29
 msgid "introduce support for local interim-development package content"
 msgstr ""
 
-#: ../../releng-tool/CHANGELOG.rst:30
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:30
 msgid "introduce support for shallow git fetching"
 msgstr ""
 
-#: ../../releng-tool/CHANGELOG.rst:33
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:33
 msgid "0.3 (2019-10-19)"
 msgstr ""
 
-#: ../../releng-tool/CHANGELOG.rst:35
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:35
 msgid "allow packages to configure to ignore cache while in development mode"
 msgstr ""
 
-#: ../../releng-tool/CHANGELOG.rst:36
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:36
 msgid "allow packages to configure for no-extraction for sources"
 msgstr ""
 
-#: ../../releng-tool/CHANGELOG.rst:37
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:37
 msgid "fixed default interpreter detection for python packages"
 msgstr ""
 
-#: ../../releng-tool/CHANGELOG.rst:38
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:38
 msgid "fixed fetching from mercurial sources"
 msgstr ""
 
-#: ../../releng-tool/CHANGELOG.rst:39
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:39
 msgid "fixed fetching from newer git hashes if repository was already cached"
 msgstr ""
 
-#: ../../releng-tool/CHANGELOG.rst:40
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:40
 msgid "introduce ``releng_env`` and ``releng_mkdir`` helper script functions"
 msgstr ""
 
-#: ../../releng-tool/CHANGELOG.rst:41
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:41
 msgid "introduce support for package-specific bootstrapping stage"
 msgstr ""
 
-#: ../../releng-tool/CHANGELOG.rst:44
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:44
 msgid "0.2 (2019-03-15)"
 msgstr ""
 
-#: ../../releng-tool/CHANGELOG.rst:46
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:46
 msgid "a project's host directory will now be registered in the system's path during execution"
 msgstr ""
 
-#: ../../releng-tool/CHANGELOG.rst:48
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:48
 msgid "allow tracking project's license files when found in multiple directories"
 msgstr ""
 
-#: ../../releng-tool/CHANGELOG.rst:49
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:49
 msgid "fixed loading configuration overrides script if one actually exists"
 msgstr ""
 
-#: ../../releng-tool/CHANGELOG.rst:50
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:50
 msgid "re-work various script names (e.g. ``releng.py`` -> ``releng``)"
 msgstr ""
 
-#: ../../releng-tool/CHANGELOG.rst:53
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:53
 msgid "0.1 (2019-02-24)"
 msgstr ""
 
-#: ../../releng-tool/CHANGELOG.rst:55
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:55
 msgid "hello world"
 msgstr ""

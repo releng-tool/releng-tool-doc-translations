@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-13 23:21-0400\n"
+"POT-Creation-Date: 2021-11-28 17:59-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,14 +16,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../releng-tool/Documentation/index.rst:2
+#: ../.releng_cache/releng-tool/Documentation/index.rst:2
 msgid "releng-tool"
 msgstr ""
 
-#: ../../releng-tool/Documentation/index.rst:4
+#: ../.releng_cache/releng-tool/Documentation/index.rst:4
 msgid "releng-tool can be used to assist in the release engineering of a project. This tool allows a user to define one or more packages to process. Each package has the ability to perform several stages: fetching, extraction, patching, configuration, building and installation. What a package defines will vary for a given project. The simplest type of package is script-based that allows a user to define custom scripts on how to perform various stages of the release engineering process. A package is not required to handle every stage. Helper package types are provided, such as autotools, for projects using common build capabilities."
 msgstr ""
 
-#: ../../releng-tool/Documentation/index.rst:17
+#: ../.releng_cache/releng-tool/Documentation/index.rst:17
 msgid "While this tool can assist in the configuration and building of a project, the framework does not attempt to provide a perfect sandbox for the process. Users defining their projects will have ownership on what compilers/toolchains are used and the interaction between the staging/target area and the host system."
 msgstr ""

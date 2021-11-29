@@ -6,69 +6,69 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-10 23:43-0400\n"
+"POT-Creation-Date: 2021-11-28 17:59-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.7.0\n"
+"Generated-By: Babel 2.9.1\n"
 
-#: ../../releng-tool/Documentation/annex-a.rst:2
-msgid "annex a - quick reference"
-msgstr "anhang a - kurzreferenz"
+#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:2
+msgid "ANNEX A - Quick reference"
+msgstr "ANHANG A - Kurzreferenz"
 
-#: ../../releng-tool/Documentation/annex-a.rst:4
+#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:4
 msgid ""
 "A quick reference document listing available options to developers "
 "building a releng-tool project. Consult the :doc:`developer's guide "
 "<developer-guide>` for more detailed information."
 msgstr ""
 
-#: ../../releng-tool/Documentation/annex-a.rst:9
-msgid "configuration options"
+#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:9
+msgid "Configuration options"
 msgstr ""
 
-#: ../../releng-tool/Documentation/annex-a.rst:11
+#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:11
 msgid ""
 "Options which are read by releng-tool from a project's configuration "
 "script:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/annex-a.rst:30
-msgid "environment variables"
+#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:30
+msgid "Environment variables"
 msgstr ""
 
-#: ../../releng-tool/Documentation/annex-a.rst:32
+#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:32
 msgid ""
 "Environment (and script) variables available to context's invoked by "
 "releng-tool (may vary per context):"
 msgstr ""
 
-#: ../../releng-tool/Documentation/annex-a.rst:71
-msgid "package options"
+#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:79
+msgid "Package options"
 msgstr ""
 
-#: ../../releng-tool/Documentation/annex-a.rst:73
+#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:81
 msgid "Configuration options parsed by releng-tool for a package definition:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/annex-a.rst:114
-msgid "script helpers"
+#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:126
+msgid "Script helpers"
 msgstr ""
 
-#: ../../releng-tool/Documentation/annex-a.rst:116
+#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:128
 msgid ""
 "Functions available to scripts invoked by releng-tool or importable via "
 "``from releng_tool import *``:"
 msgstr ""
 
-#: ../../releng-tool/Documentation/annex-a.rst:143
-msgid "quirks"
+#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:156
+msgid "Quirks"
 msgstr ""
 
-#: ../../releng-tool/Documentation/annex-a.rst:145
+#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:158
 msgid "Quirk options used by releng-tool:"
 msgstr ""
 

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-02 18:45-0400\n"
+"POT-Creation-Date: 2021-11-28 17:59-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FO7E3FBD5BC2\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,36 +15,36 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: ../../releng-tool/Documentation/install.rst:2
-msgid "installation"
+#: ../.releng_cache/releng-tool/Documentation/install.rst:2
+msgid "Installation"
 msgstr "安装"
 
-#: ../../releng-tool/Documentation/install.rst:4
+#: ../.releng_cache/releng-tool/Documentation/install.rst:4
 msgid "The recommended method of installation is using pip_:"
 msgstr "我们推荐的安装方法是使用 pip_："
 
-#: ../../releng-tool/Documentation/install.rst:12
+#: ../.releng_cache/releng-tool/Documentation/install.rst:12
 msgid ""
 "To verify the package has been installed the following command can be "
 "used:"
 msgstr "要验证是否已安装组件，可以使用以下命令："
 
-#: ../../releng-tool/Documentation/install.rst:21
-msgid "quick-start"
+#: ../.releng_cache/releng-tool/Documentation/install.rst:21
+msgid "Quick-start"
 msgstr "快速开始"
 
-#: ../../releng-tool/Documentation/install.rst:23
+#: ../.releng_cache/releng-tool/Documentation/install.rst:23
 msgid ""
 "The following provides a series of steps to assist in preparing a new "
 "environment to use this package. This quick-start will aim to use the "
 "most recent version of Python."
 msgstr "以下我们提供了一系列步骤，以帮助你准备使用此组件的新环境。这个快速入门旨在让你使用最新版本的 Python。"
 
-#: ../../releng-tool/Documentation/install.rst:28
-msgid "linux"
+#: ../.releng_cache/releng-tool/Documentation/install.rst:28
+msgid "Linux"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:30
+#: ../.releng_cache/releng-tool/Documentation/install.rst:30
 msgid ""
 "While the use of Python_/pip_ is almost consistent between Linux "
 "distributions, the following are a series of helpful steps to install "
@@ -54,57 +54,57 @@ msgstr ""
 "虽然 Python_/pip_ 的使用在 Linux 发行版之间几乎是一致的，但以下是在 Linux "
 "的特定发行版下安装此组件的一系列有用步骤。从终端开始，调用以下命令："
 
-#: ../../releng-tool/Documentation/install.rst:35
-msgid "arch"
+#: ../.releng_cache/releng-tool/Documentation/install.rst:35
+msgid "Arch"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:45
+#: ../.releng_cache/releng-tool/Documentation/install.rst:45
 msgid ""
 "This package is also `available on AUR "
 "<https://aur.archlinux.org/packages/releng-tool/>`_."
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:49
-msgid "centos"
+#: ../.releng_cache/releng-tool/Documentation/install.rst:49
+msgid "CentOS"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:60
-msgid "fedora"
+#: ../.releng_cache/releng-tool/Documentation/install.rst:60
+msgid "Fedora"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:70
-msgid "opensuse"
+#: ../.releng_cache/releng-tool/Documentation/install.rst:70
+msgid "openSUSE"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:79
-msgid "ubuntu"
+#: ../.releng_cache/releng-tool/Documentation/install.rst:79
+msgid "Ubuntu"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:90
-msgid "os x"
+#: ../.releng_cache/releng-tool/Documentation/install.rst:90
+msgid "OS X"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:92
+#: ../.releng_cache/releng-tool/Documentation/install.rst:92
 msgid "From a terminal, invoke the following commands:"
 msgstr "从终端开始，调用以下命令："
 
-#: ../../releng-tool/Documentation/install.rst:102
-msgid "windows"
+#: ../.releng_cache/releng-tool/Documentation/install.rst:102
+msgid "Windows"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:104
+#: ../.releng_cache/releng-tool/Documentation/install.rst:104
 msgid "If not already installed, download the most recent version of Python_:"
 msgstr "请先下载最新版本的 Python_："
 
-#: ../../releng-tool/Documentation/install.rst
+#: ../.releng_cache/releng-tool/Documentation/install.rst
 msgid "Python - Downloads"
 msgstr "Python - 下载"
 
-#: ../../releng-tool/Documentation/install.rst
+#: ../.releng_cache/releng-tool/Documentation/install.rst
 msgid "https://www.python.org/downloads/"
 msgstr ""
 
-#: ../../releng-tool/Documentation/install.rst:109
+#: ../.releng_cache/releng-tool/Documentation/install.rst:109
 msgid ""
 "When invoking the installer, it is recommended to select the option to "
 "\"Add Python to PATH\"; however, users can explicitly invoked Python from"
@@ -114,15 +114,15 @@ msgstr ""
 "调用安装程序时，建议选择 [\"Add Python to PATH\"] 选项。但是，用户可以从绝对路径显式调用 Python "
 "（这些步骤的其余部分将假设 Python 在路径中可用）。"
 
-#: ../../releng-tool/Documentation/install.rst:113
+#: ../.releng_cache/releng-tool/Documentation/install.rst:113
 msgid "Open a Windows command prompt and invoke the following:"
 msgstr "打开 Windows 命令提示符并调用以下内容："
 
-#: ../../releng-tool/Documentation/install.rst:122
-msgid "development"
+#: ../.releng_cache/releng-tool/Documentation/install.rst:122
+msgid "Development"
 msgstr "发展"
 
-#: ../../releng-tool/Documentation/install.rst:124
+#: ../.releng_cache/releng-tool/Documentation/install.rst:124
 msgid ""
 "To install the most recent development sources, the following pip_ "
 "command can be used:"

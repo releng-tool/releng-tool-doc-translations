@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-07 14:31-0400\n"
+"POT-Creation-Date: 2021-11-28 17:59-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,10 +16,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../releng-tool/Documentation/requirements.rst:2
+#: ../.releng_cache/releng-tool/Documentation/requirements.rst:2
 msgid "requirements"
 msgstr ""
 
-#: ../../releng-tool/Documentation/requirements.rst:4
+#: ../.releng_cache/releng-tool/Documentation/requirements.rst:4
 msgid "releng-tool is developed in Python_ is requires either Python_ 2.7 or 3.4+ to run on a host system. A series of optional tools are required if certain stages and/or features are used. For example, projects fetching sources from Git_ will require the ``git`` tool installed; projects with patches will required the ``patch`` tool.  While some features may be operating system-specific (e.g. autotools features are designed for Linux-based hosts), releng-tool can work on various operating system variants."
 msgstr ""
