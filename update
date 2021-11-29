@@ -72,7 +72,7 @@ for version in "${!versions[@]}"; do
 
     # generate translation files
     export RELENG_LOCALE_DIR=$base/locale-$version/
-    python -m sphinx -b gettext . $base/locale-$version/pot
+    python -m sphinx -b gettext . $base/locale-$version
 
     for ref in $(ls -d $base/locale-$version/*/); do
         lang_dir=${ref%%/}
