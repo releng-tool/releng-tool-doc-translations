@@ -1,0 +1,65 @@
+[main]
+host = https://www.transifex.com
+
+[releng-tool-doc-translations.annex-a-pot]
+file_filter = <lang>/LC_MESSAGES/annex-a.po
+minimum_perc = 0
+source_file = annex-a.pot
+source_lang = en
+type = PO
+
+[releng-tool-doc-translations.contributor-guide-pot]
+file_filter = <lang>/LC_MESSAGES/contributor-guide.po
+minimum_perc = 0
+source_file = contributor-guide.pot
+source_lang = en
+type = PO
+
+[releng-tool-doc-translations.developer-guide-pot]
+file_filter = <lang>/LC_MESSAGES/developer-guide.po
+minimum_perc = 0
+source_file = developer-guide.pot
+source_lang = en
+type = PO
+
+[releng-tool-doc-translations.index-pot]
+file_filter = <lang>/LC_MESSAGES/index.po
+minimum_perc = 0
+source_file = index.pot
+source_lang = en
+type = PO
+
+[releng-tool-doc-translations.install-pot]
+file_filter = <lang>/LC_MESSAGES/install.po
+minimum_perc = 0
+source_file = install.pot
+source_lang = en
+type = PO
+
+[releng-tool-doc-translations.release-notes-pot]
+file_filter = <lang>/LC_MESSAGES/release-notes.po
+minimum_perc = 0
+source_file = release-notes.pot
+source_lang = en
+type = PO
+
+[releng-tool-doc-translations.requirements-pot]
+file_filter = <lang>/LC_MESSAGES/requirements.po
+minimum_perc = 0
+source_file = requirements.pot
+source_lang = en
+type = PO
+
+[releng-tool-doc-translations.tips-pot]
+file_filter = <lang>/LC_MESSAGES/tips.po
+minimum_perc = 0
+source_file = tips.pot
+source_lang = en
+type = PO
+
+[releng-tool-doc-translations.user-guide-pot]
+file_filter = <lang>/LC_MESSAGES/user-guide.po
+minimum_perc = 0
+source_file = user-guide.pot
+source_lang = en
+type = PO
