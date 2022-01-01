@@ -1,37 +1,43 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2021 releng-tool
-# This file is distributed under the same license as the releng-tool package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
 # Translators:
 # James Knight <james.d.knight@live.com>, 2021
-# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: releng-tool\n"
+"Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-28 17:59-0500\n"
+"POT-Creation-Date: 2021-12-31 21:26-0500\n"
 "PO-Revision-Date: 2021-11-29 00:10+0000\n"
 "Last-Translator: James Knight <james.d.knight@live.com>, 2021\n"
-"Language-Team: Polish (https://www.transifex.com/releng-tool/teams/119434/pl/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
 "Language: pl\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"Language-Team: Polish (https://www.transifex.com/releng-"
+"tool/teams/119434/pl/)\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && "
+"(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
+"n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../.releng_cache/releng-tool/Documentation/install.rst:2
 msgid "Installation"
 msgstr "Instalacja"
 
 #: ../.releng_cache/releng-tool/Documentation/install.rst:4
-msgid "The recommended method of installation is using pip_:"
+#, fuzzy
+msgid "The recommended method of installing/upgrading releng-tool is using pip_:"
 msgstr "releng-tool można zainstalować korzystając z pip_:"
 
 #: ../.releng_cache/releng-tool/Documentation/install.rst:12
 msgid ""
-"To verify the package has been installed the following command can be used:"
+"To verify the package has been installed the following command can be "
+"used:"
 msgstr "Następujące polecenie sprawdza, czy pakiet został zainstalowany:"
 
 #: ../.releng_cache/releng-tool/Documentation/install.rst:21
@@ -39,104 +45,73 @@ msgid "Quick-start"
 msgstr "Szybki start"
 
 #: ../.releng_cache/releng-tool/Documentation/install.rst:23
+#, fuzzy
 msgid ""
 "The following provides a series of steps to assist in preparing a new "
-"environment to use this package. This quick-start will aim to use the most "
-"recent version of Python."
+"environment to use this package."
 msgstr ""
-"Poniżej przedstawiono szereg kroków mających na celu pomoc w przygotowaniu "
-"nowego środowiska do korzystania z tego pakietu. Quick-start będzie "
-"korzystać z najnowszej wersji Pythona."
+"Poniżej przedstawiono szereg kroków mających na celu pomoc w "
+"przygotowaniu nowego środowiska do korzystania z tego pakietu. Quick-"
+"start będzie korzystać z najnowszej wersji Pythona."
 
 #: ../.releng_cache/releng-tool/Documentation/install.rst:28
-msgid "Linux"
-msgstr "Linuxa"
-
-#: ../.releng_cache/releng-tool/Documentation/install.rst:30
 msgid ""
 "While the use of Python_/pip_ is almost consistent between Linux "
-"distributions, the following are a series of helpful steps to install this "
-"package under specific distributions of Linux. From a terminal, invoke the "
-"following commands:"
+"distributions, the following are a series of helpful steps to install "
+"this package under specific distributions of Linux. From a terminal, "
+"invoke the following commands:"
 msgstr ""
 "Chociaż korzystanie z Python_/pip_ jest praktycznie zgodne pomiędzy "
-"dystrybucjami Linuxa, poniżej przedstawiono serię kroków pomocniczych, aby "
-"zainstalować dany pakiet w określonych dystrybucjach Linuxa. Z terminala "
-"wywołaj następujące polecenia:"
+"dystrybucjami Linuxa, poniżej przedstawiono serię kroków pomocniczych, "
+"aby zainstalować dany pakiet w określonych dystrybucjach Linuxa. Z "
+"terminala wywołaj następujące polecenia:"
 
-#: ../.releng_cache/releng-tool/Documentation/install.rst:35
-msgid "Arch"
-msgstr ""
-
-#: ../.releng_cache/releng-tool/Documentation/install.rst:45
+#: ../.releng_cache/releng-tool/Documentation/install.rst:43
 msgid ""
-"This package is also `available on AUR <https://aur.archlinux.org/packages"
-"/releng-tool/>`_."
+"This package is also `available on AUR "
+"<https://aur.archlinux.org/packages/releng-tool/>`_."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/install.rst:49
-msgid "CentOS"
-msgstr ""
-
-#: ../.releng_cache/releng-tool/Documentation/install.rst:60
-msgid "Fedora"
-msgstr ""
-
-#: ../.releng_cache/releng-tool/Documentation/install.rst:70
-msgid "openSUSE"
-msgstr ""
-
-#: ../.releng_cache/releng-tool/Documentation/install.rst:79
-msgid "Ubuntu"
-msgstr ""
-
-#: ../.releng_cache/releng-tool/Documentation/install.rst:90
-msgid "OS X"
-msgstr ""
-
-#: ../.releng_cache/releng-tool/Documentation/install.rst:92
+#: ../.releng_cache/releng-tool/Documentation/install.rst:85
 msgid "From a terminal, invoke the following commands:"
 msgstr "Z terminala wywołaj następujące polecenia:"
 
-#: ../.releng_cache/releng-tool/Documentation/install.rst:102
-msgid "Windows"
-msgstr ""
-
-#: ../.releng_cache/releng-tool/Documentation/install.rst:104
+#: ../.releng_cache/releng-tool/Documentation/install.rst:96
 msgid "If not already installed, download the most recent version of Python_:"
 msgstr "Należy upewnić się, że najnowsza wersja Pythona_ jest zainstalowana."
 
-#: ../.releng_cache/releng-tool/Documentation/install.rst:0
+#: ../.releng_cache/releng-tool/Documentation/install.rst
 msgid "Python - Downloads"
 msgstr "Python - Pliki do pobrania"
 
-#: ../.releng_cache/releng-tool/Documentation/install.rst:0
+#: ../.releng_cache/releng-tool/Documentation/install.rst
 msgid "https://www.python.org/downloads/"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/install.rst:109
+#: ../.releng_cache/releng-tool/Documentation/install.rst:101
 msgid ""
-"When invoking the installer, it is recommended to select the option to \"Add"
-" Python to PATH\"; however, users can explicitly invoked Python from an "
-"absolute path (the remainder of these steps will assume Python is available "
-"in the path)."
+"When invoking the installer, it is recommended to select the option to "
+"\"Add Python to PATH\"; however, users can explicitly invoked Python from"
+" an absolute path (the remainder of these steps will assume Python is "
+"available in the path)."
 msgstr ""
-"W momencie otarcia instalatora zaleca się wybrać opcję „Add Python to PATH”;"
-" jednakże użytkownicy mogą wybrać dowolną ścieżkę do otwarcia Pythona (w "
-"kolejnych krokach zakłada się, że Python jest dostępny w tej ścieżce)."
+"W momencie otarcia instalatora zaleca się wybrać opcję „Add Python to "
+"PATH”; jednakże użytkownicy mogą wybrać dowolną ścieżkę do otwarcia "
+"Pythona (w kolejnych krokach zakłada się, że Python jest dostępny w tej "
+"ścieżce)."
 
-#: ../.releng_cache/releng-tool/Documentation/install.rst:113
+#: ../.releng_cache/releng-tool/Documentation/install.rst:106
 msgid "Open a Windows command prompt and invoke the following:"
 msgstr "Otwórz wiersz poleceń Windowsa i wywołaj:"
 
-#: ../.releng_cache/releng-tool/Documentation/install.rst:122
+#: ../.releng_cache/releng-tool/Documentation/install.rst:115
 msgid "Development"
 msgstr "Oprogramowanie"
 
-#: ../.releng_cache/releng-tool/Documentation/install.rst:124
+#: ../.releng_cache/releng-tool/Documentation/install.rst:117
 msgid ""
-"To install the most recent development sources, the following pip_ command "
-"can be used:"
+"To install the most recent development sources, the following pip_ "
+"command can be used:"
 msgstr ""
 "Aby zainstalować najnowsze źródła oprogramowania, można skorzystać z "
 "następującego polecenia pip_:"
