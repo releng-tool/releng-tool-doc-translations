@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# James Knight <james.d.knight@live.com>, 2021
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-28 17:59-0500\n"
+"PO-Revision-Date: 2021-11-29 00:10+0000\n"
+"Last-Translator: James Knight <james.d.knight@live.com>, 2021\n"
+"Language-Team: Japanese (https://www.transifex.com/releng-tool/teams/119434/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../.releng_cache/releng-tool/Documentation/install.rst:2
+msgid "Installation"
+msgstr "インストール"
+
+#: ../.releng_cache/releng-tool/Documentation/install.rst:4
+msgid "The recommended method of installation is using pip_:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/install.rst:12
+msgid ""
+"To verify the package has been installed the following command can be used:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/install.rst:21
+msgid "Quick-start"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/install.rst:23
+msgid ""
+"The following provides a series of steps to assist in preparing a new "
+"environment to use this package. This quick-start will aim to use the most "
+"recent version of Python."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/install.rst:28
+msgid "Linux"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/install.rst:30
+msgid ""
+"While the use of Python_/pip_ is almost consistent between Linux "
+"distributions, the following are a series of helpful steps to install this "
+"package under specific distributions of Linux. From a terminal, invoke the "
+"following commands:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/install.rst:35
+msgid "Arch"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/install.rst:45
+msgid ""
+"This package is also `available on AUR <https://aur.archlinux.org/packages"
+"/releng-tool/>`_."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/install.rst:49
+msgid "CentOS"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/install.rst:60
+msgid "Fedora"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/install.rst:70
+msgid "openSUSE"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/install.rst:79
+msgid "Ubuntu"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/install.rst:90
+msgid "OS X"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/install.rst:92
+msgid "From a terminal, invoke the following commands:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/install.rst:102
+msgid "Windows"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/install.rst:104
+msgid "If not already installed, download the most recent version of Python_:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/install.rst:0
+msgid "Python - Downloads"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/install.rst:0
+msgid "https://www.python.org/downloads/"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/install.rst:109
+msgid ""
+"When invoking the installer, it is recommended to select the option to \"Add"
+" Python to PATH\"; however, users can explicitly invoked Python from an "
+"absolute path (the remainder of these steps will assume Python is available "
+"in the path)."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/install.rst:113
+msgid "Open a Windows command prompt and invoke the following:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/install.rst:122
+msgid "Development"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/install.rst:124
+msgid ""
+"To install the most recent development sources, the following pip_ command "
+"can be used:"
+msgstr ""
