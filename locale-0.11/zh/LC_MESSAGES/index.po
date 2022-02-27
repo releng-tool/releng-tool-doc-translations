@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# James Knight <james.d.knight@live.com>, 2021
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-28 17:59-0500\n"
+"PO-Revision-Date: 2021-11-29 00:10+0000\n"
+"Last-Translator: James Knight <james.d.knight@live.com>, 2021\n"
+"Language-Team: Chinese (https://www.transifex.com/releng-tool/teams/119434/zh/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../.releng_cache/releng-tool/Documentation/index.rst:2
+msgid "releng-tool"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/index.rst:4
+msgid ""
+"releng-tool can be used to assist in the release engineering of a project. "
+"This tool allows a user to define one or more packages to process. Each "
+"package has the ability to perform several stages: fetching, extraction, "
+"patching, configuration, building and installation. What a package defines "
+"will vary for a given project. The simplest type of package is script-based "
+"that allows a user to define custom scripts on how to perform various stages"
+" of the release engineering process. A package is not required to handle "
+"every stage. Helper package types are provided, such as autotools, for "
+"projects using common build capabilities."
+msgstr ""
+"releng-tool "
+"可用于协助项目的发布工程。此工具允许用户定义要处理的一个或多个组件。每个组件都能够执行几个阶段：拿到，提取，修补，配置，构建和安装。组件定义的内容会因应所给的项目而定。最简单的组件类型是以脚本为本的，它允许用户自定义脚本，从而决定如何执行发布工程过程的各个阶段。组件不一定在处理每个阶段时都用得上。为使用通用构建功能的项目，我们提供了帮助程序的组件类型，例如"
+" autotools。"
+
+#: ../.releng_cache/releng-tool/Documentation/index.rst:17
+msgid ""
+"While this tool can assist in the configuration and building of a project, "
+"the framework does not attempt to provide a perfect sandbox for the process."
+" Users defining their projects will have ownership on what "
+"compilers/toolchains are used and the interaction between the staging/target"
+" area and the host system."
+msgstr ""
+"虽然此工具可以帮助配置和构建项目，但此框架并不试图为该过程提供完美的沙盒。为他们的项目下定义的用户将拥有使用的编译器/工具链以及分级/目标区域，与主机系统之间的交流的所有权。"
