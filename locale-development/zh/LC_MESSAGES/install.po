@@ -1,41 +1,38 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2021 releng-tool
-# This file is distributed under the same license as the releng-tool
-# package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
-#
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
 # Translators:
 # James Knight <james.d.knight@live.com>, 2021
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version:  releng-tool\n"
+"Project-Id-Version: releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-31 21:26-0500\n"
 "PO-Revision-Date: 2021-11-29 00:10+0000\n"
 "Last-Translator: James Knight <james.d.knight@live.com>, 2021\n"
-"Language: zh\n"
-"Language-Team: Chinese (https://www.transifex.com/releng-"
-"tool/teams/119434/zh/)\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Team: Chinese (https://www.transifex.com/releng-tool/teams/119434/zh/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Language: zh\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../.releng_cache/releng-tool/Documentation/install.rst:2
 msgid "Installation"
 msgstr "安装"
 
 #: ../.releng_cache/releng-tool/Documentation/install.rst:4
-#, fuzzy
-msgid "The recommended method of installing/upgrading releng-tool is using pip_:"
-msgstr "我们推荐的安装方法是使用 pip_："
+msgid ""
+"The recommended method of installing/upgrading releng-tool is using pip_:"
+msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/install.rst:12
 msgid ""
-"To verify the package has been installed the following command can be "
-"used:"
+"To verify the package has been installed the following command can be used:"
 msgstr "要验证是否已安装组件，可以使用以下命令："
 
 #: ../.releng_cache/releng-tool/Documentation/install.rst:21
@@ -43,18 +40,17 @@ msgid "Quick-start"
 msgstr "快速开始"
 
 #: ../.releng_cache/releng-tool/Documentation/install.rst:23
-#, fuzzy
 msgid ""
 "The following provides a series of steps to assist in preparing a new "
 "environment to use this package."
-msgstr "以下我们提供了一系列步骤，以帮助你准备使用此组件的新环境。这个快速入门旨在让你使用最新版本的 Python。"
+msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/install.rst:28
 msgid ""
 "While the use of Python_/pip_ is almost consistent between Linux "
-"distributions, the following are a series of helpful steps to install "
-"this package under specific distributions of Linux. From a terminal, "
-"invoke the following commands:"
+"distributions, the following are a series of helpful steps to install this "
+"package under specific distributions of Linux. From a terminal, invoke the "
+"following commands:"
 msgstr ""
 "虽然 Python_/pip_ 的使用在 Linux 发行版之间几乎是一致的，但以下是在 Linux "
 "的特定发行版下安装此组件的一系列有用步骤。从终端开始，调用以下命令："
@@ -73,20 +69,20 @@ msgstr "从终端开始，调用以下命令："
 msgid "If not already installed, download the most recent version of Python_:"
 msgstr "请先下载最新版本的 Python_："
 
-#: ../.releng_cache/releng-tool/Documentation/install.rst
+#: ../.releng_cache/releng-tool/Documentation/install.rst:0
 msgid "Python - Downloads"
 msgstr "Python - 下载"
 
-#: ../.releng_cache/releng-tool/Documentation/install.rst
+#: ../.releng_cache/releng-tool/Documentation/install.rst:0
 msgid "https://www.python.org/downloads/"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/install.rst:101
 msgid ""
-"When invoking the installer, it is recommended to select the option to "
-"\"Add Python to PATH\"; however, users can explicitly invoked Python from"
-" an absolute path (the remainder of these steps will assume Python is "
-"available in the path)."
+"When invoking the installer, it is recommended to select the option to \"Add"
+" Python to PATH\"; however, users can explicitly invoked Python from an "
+"absolute path (the remainder of these steps will assume Python is available "
+"in the path)."
 msgstr ""
 "调用安装程序时，建议选择 [\"Add Python to PATH\"] 选项。但是，用户可以从绝对路径显式调用 Python "
 "（这些步骤的其余部分将假设 Python 在路径中可用）。"
@@ -101,6 +97,6 @@ msgstr "发展"
 
 #: ../.releng_cache/releng-tool/Documentation/install.rst:117
 msgid ""
-"To install the most recent development sources, the following pip_ "
-"command can be used:"
+"To install the most recent development sources, the following pip_ command "
+"can be used:"
 msgstr "要安装最新的开发源，可以使用以下 pip_ 命令："
