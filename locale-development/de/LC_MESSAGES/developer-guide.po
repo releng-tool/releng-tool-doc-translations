@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-31 21:26-0500\n"
+"POT-Creation-Date: 2022-02-26 20:03-0500\n"
 "PO-Revision-Date: 2021-11-29 00:09+0000\n"
 "Last-Translator: James Knight <james.d.knight@live.com>, 2021\n"
 "Language: de\n"
@@ -929,7 +929,7 @@ msgid "``PKG_NAME``"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:122
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:234
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:238
 msgid "The name of the package."
 msgstr ""
 
@@ -1010,94 +1010,102 @@ msgid "Flag set if performing an extreme pristine clean request."
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:162
-msgid "``RELENG_LOCALSRCS``"
+msgid "``RELENG_FORCE``"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:164
-msgid "Flag set if in :ref:`local-sources mode`."
+msgid "Flag set if performing a forced request from the command line."
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:166
-msgid "``RELENG_MRPROPER``"
+msgid "``RELENG_LOCALSRCS``"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:168
-msgid "Flag set if performing a pristine clean request."
+msgid "Flag set if in :ref:`local-sources mode`."
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:170
-msgid "``RELENG_REBUILD``"
+msgid "``RELENG_MRPROPER``"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:172
-msgid "Flag set if performing a re-build request."
+msgid "Flag set if performing a pristine clean request."
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:174
-msgid "``RELENG_RECONFIGURE``"
+msgid "``RELENG_REBUILD``"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:176
-msgid "Flag set if performing a re-configuration request."
+msgid "Flag set if performing a re-build request."
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:178
-msgid "``RELENG_REINSTALL``"
+msgid "``RELENG_RECONFIGURE``"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:180
-msgid "Flag set if performing a re-install request."
+msgid "Flag set if performing a re-configuration request."
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:182
-msgid "``RELENG_VERBOSE``"
+msgid "``RELENG_REINSTALL``"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:184
-msgid "Flag set if verbose-related information should be shown."
+msgid "Flag set if performing a re-install request."
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:186
-msgid "``RELENG_VERSION``"
+msgid "``RELENG_VERBOSE``"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:188
-msgid "The version of releng-tool."
+msgid "Flag set if verbose-related information should be shown."
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:190
-msgid "``ROOT_DIR``"
+msgid "``RELENG_VERSION``"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:192
-msgid "The root directory."
+msgid "The version of releng-tool."
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:194
-msgid "``STAGING_DIR``"
+msgid "``ROOT_DIR``"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:196
-msgid "The staging area directory."
+msgid "The root directory."
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:198
-msgid "``SYMBOLS_DIR``"
+msgid "``STAGING_DIR``"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:200
-msgid "The symbols area directory."
+msgid "The staging area directory."
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:202
-msgid "``TARGET_DIR``"
+msgid "``SYMBOLS_DIR``"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:204
+msgid "The symbols area directory."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:206
+msgid "``TARGET_DIR``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:208
 msgid "The target area directory."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:211
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:215
 msgid ""
 "Package-specific environment variables are also available if another "
 "package or script needs to rely on the (generated) configuration of "
@@ -1106,86 +1114,86 @@ msgid ""
 "determined package key):"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:219
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:223
 msgid "``<PKG>_BUILD_DIR``"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:221
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:225
 msgid "The directory for a defined package's buildable content."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:223
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:227
 msgid "``<PKG>_BUILD_OUTPUT_DIR``"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:225
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:229
 msgid "The directory for where a defined package's build output will be stored."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:228
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:232
 msgid "``<PKG>_DEFDIR``"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:230
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:234
 msgid "The directory where a defined package's definition is stored."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:232
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:236
 msgid "``<PKG>_NAME``"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:236
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:240
 msgid "``<PKG>_REVISION``"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:238
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:242
 msgid "The revision of a defined package."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:240
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:244
 msgid "``<PKG>_VERSION``"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:242
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:246
 msgid "The version of a defined package."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:244
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:248
 msgid ""
 "releng-tool also accepts environment variables for configuring specific "
 "features of the releng-tool process. The following environment variables "
 "are accepted:"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:251
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:255
 msgid "``RELENG_ASSETS_DIR=<dir>``"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:253
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:257
 msgid "The asset directory to use."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:255
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:259
 msgid "``RELENG_CACHE_DIR=<dir>``"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:257
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:261
 msgid "The cache directory to use."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:259
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:263
 msgid "``RELENG_DL_DIR=<dir>``"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:261
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:265
 msgid "The download directory to use."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:263
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:267
 msgid "``RELENG_IGNORE_RUNNING_AS_ROOT=1``"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:265
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:269
 msgid "Suppress the warning generated when running releng-tool with a root user."
 msgstr ""
 
@@ -2807,15 +2815,15 @@ msgid ""
 "provided are listed below:"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:168
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:171
 msgid "Method"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:168
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:173
 msgid "Documentation"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:170
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:175
 msgid "``debug``"
 msgstr ""
 
@@ -2830,16 +2838,18 @@ msgid ""
 "instance is configured with debugging enabled."
 msgstr ""
 
-#: of releng_tool.util.env.env_value releng_tool.util.io.ensure_dir_exists
+#: of releng_tool.support.require_version releng_tool.util.env.env_value
+#: releng_tool.util.io.cat releng_tool.util.io.ensure_dir_exists
 #: releng_tool.util.io.execute releng_tool.util.io.execute_rv
 #: releng_tool.util.io.generate_temp_dir
-#: releng_tool.util.io.interim_working_dir releng_tool.util.io.path_copy
-#: releng_tool.util.io.path_exists releng_tool.util.io.path_move
-#: releng_tool.util.io.path_remove releng_tool.util.io.touch
-#: releng_tool.util.log.debug releng_tool.util.log.err releng_tool.util.log.log
-#: releng_tool.util.log.note releng_tool.util.log.success
-#: releng_tool.util.log.verbose releng_tool.util.log.warn
-#: releng_tool.util.platform.platform_exit releng_tool.util.string.expand
+#: releng_tool.util.io.interim_working_dir releng_tool.util.io.ls
+#: releng_tool.util.io.path_copy releng_tool.util.io.path_exists
+#: releng_tool.util.io.path_move releng_tool.util.io.path_remove
+#: releng_tool.util.io.touch releng_tool.util.log.debug
+#: releng_tool.util.log.err releng_tool.util.log.log releng_tool.util.log.note
+#: releng_tool.util.log.success releng_tool.util.log.verbose
+#: releng_tool.util.log.warn releng_tool.util.platform.platform_exit
+#: releng_tool.util.string.expand
 msgid "Parameters"
 msgstr ""
 
@@ -2859,7 +2869,7 @@ msgid ""
 " a formatted message"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:174
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:181
 msgid "``err``"
 msgstr ""
 
@@ -2873,7 +2883,7 @@ msgid ""
 "enabled) a red colorization."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:178
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:187
 msgid "``log``"
 msgstr ""
 
@@ -2885,7 +2895,7 @@ msgstr ""
 msgid "Logs a (normal) message to standard out with a trailing new line."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:182
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:193
 msgid "``note``"
 msgstr ""
 
@@ -2899,7 +2909,57 @@ msgid ""
 "(if enabled) an inverted colorization."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:186
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:199
+msgid "``releng_cat``"
+msgstr ""
+
+#: of releng_tool.util.io.cat:1
+msgid "concatenate files and print on the standard output"
+msgstr ""
+
+#: of releng_tool.util.io.cat:3
+msgid ""
+"Attempts to read one or more files provided to this call. For each file, "
+"it will be read and printed out to the standard output."
+msgstr ""
+
+#: of releng_tool.support.require_version:11 releng_tool.util.env.env_value:10
+#: releng_tool.util.io.cat:6 releng_tool.util.io.ensure_dir_exists:9
+#: releng_tool.util.io.execute:39 releng_tool.util.io.execute_rv:22
+#: releng_tool.util.io.generate_temp_dir:9
+#: releng_tool.util.io.interim_working_dir:9 releng_tool.util.io.ls:6
+#: releng_tool.util.io.path_copy:14 releng_tool.util.io.path_exists:6
+#: releng_tool.util.io.path_move:16 releng_tool.util.io.path_remove:9
+#: releng_tool.util.io.touch:7 releng_tool.util.platform.platform_exit:12
+#: releng_tool.util.string.expand:15
+msgid "An example when using in the context of script helpers is as follows:"
+msgstr ""
+
+#: of releng_tool.util.io.cat:12 releng_tool.util.io.touch:16
+msgid "the file"
+msgstr ""
+
+#: of releng_tool.util.io.cat:13
+msgid "additional files to include"
+msgstr ""
+
+#: of releng_tool.support.require_version releng_tool.util.env.env_value
+#: releng_tool.util.io.cat releng_tool.util.io.ensure_dir_exists
+#: releng_tool.util.io.execute releng_tool.util.io.execute_rv
+#: releng_tool.util.io.ls releng_tool.util.io.path_copy
+#: releng_tool.util.io.path_exists releng_tool.util.io.path_move
+#: releng_tool.util.io.path_remove releng_tool.util.io.touch
+#: releng_tool.util.string.expand
+msgid "Returns"
+msgstr ""
+
+#: of releng_tool.util.io.cat:16
+msgid ""
+"``True`` if all the files exists and were printed to the standard output;"
+" ``False`` if one or more files could not be read"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:205
 msgid "``releng_copy``"
 msgstr ""
 
@@ -2921,16 +2981,6 @@ msgid ""
 "will issue a system exit (``SystemExit``)."
 msgstr ""
 
-#: of releng_tool.util.env.env_value:10 releng_tool.util.io.ensure_dir_exists:9
-#: releng_tool.util.io.execute:39 releng_tool.util.io.execute_rv:22
-#: releng_tool.util.io.generate_temp_dir:9
-#: releng_tool.util.io.interim_working_dir:9 releng_tool.util.io.path_copy:14
-#: releng_tool.util.io.path_exists:6 releng_tool.util.io.path_move:16
-#: releng_tool.util.io.path_remove:9 releng_tool.util.io.touch:7
-#: releng_tool.util.platform.platform_exit:12 releng_tool.util.string.expand:15
-msgid "An example when using in the context of script helpers is as follows:"
-msgstr ""
-
 #: of releng_tool.util.io.path_copy:36 releng_tool.util.io.path_move:32
 msgid "the source directory or file"
 msgstr ""
@@ -2939,21 +2989,14 @@ msgstr ""
 msgid "the destination directory or file\\* (\\*if ``src`` is a file)"
 msgstr ""
 
-#: of releng_tool.util.io.path_copy:38 releng_tool.util.io.path_move:34
-#: releng_tool.util.io.path_remove:18
+#: of releng_tool.support.require_version:19 releng_tool.util.io.path_copy:38
+#: releng_tool.util.io.path_move:34 releng_tool.util.io.path_remove:18
 msgid "whether or not to suppress output"
 msgstr ""
 
-#: of releng_tool.util.io.path_copy:40 releng_tool.util.io.path_move:36
+#: of releng_tool.support.require_version:21 releng_tool.util.io.path_copy:40
+#: releng_tool.util.io.path_move:36
 msgid "whether or not to stop execution on failure"
-msgstr ""
-
-#: of releng_tool.util.env.env_value releng_tool.util.io.ensure_dir_exists
-#: releng_tool.util.io.execute releng_tool.util.io.execute_rv
-#: releng_tool.util.io.path_copy releng_tool.util.io.path_exists
-#: releng_tool.util.io.path_move releng_tool.util.io.path_remove
-#: releng_tool.util.io.touch releng_tool.util.string.expand
-msgid "Returns"
 msgstr ""
 
 #: of releng_tool.util.io.path_copy:43
@@ -2962,7 +3005,8 @@ msgid ""
 "has failed"
 msgstr ""
 
-#: of releng_tool.util.io.execute releng_tool.util.io.generate_temp_dir
+#: of releng_tool.support.require_version releng_tool.util.io.execute
+#: releng_tool.util.io.generate_temp_dir
 #: releng_tool.util.io.interim_working_dir releng_tool.util.io.path_copy
 #: releng_tool.util.io.path_move releng_tool.util.platform.platform_exit
 msgid "Raises"
@@ -2972,7 +3016,7 @@ msgstr ""
 msgid "if the copy operation fails with ``critical=True``"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:190
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:211
 msgid "``releng_env``"
 msgstr ""
 
@@ -3002,7 +3046,7 @@ msgstr ""
 msgid "the value of the environment variable"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:194
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:217
 msgid "``releng_execute``"
 msgstr ""
 
@@ -3105,7 +3149,7 @@ msgstr ""
 msgid "if the execution operation fails with ``critical=True``"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:198
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:223
 msgid "``releng_execute_rv``"
 msgstr ""
 
@@ -3129,7 +3173,7 @@ msgstr ""
 msgid "the return code and output of the execution request"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:202
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:229
 msgid "``releng_exists``"
 msgstr ""
 
@@ -3155,7 +3199,7 @@ msgstr ""
 msgid "``True`` if the path exists; ``False`` otherwise"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:206
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:235
 msgid "``releng_exit``"
 msgstr ""
 
@@ -3189,7 +3233,7 @@ msgstr ""
 msgid "always raised"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:210
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:241
 msgid "``releng_expand``"
 msgstr ""
 
@@ -3224,15 +3268,40 @@ msgstr ""
 msgid "the expanded object"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:214
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:247
 msgid "``releng_join``"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:219
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:254
 msgid "An alias for |os.path.join|_."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:221
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:256
+msgid "``releng_ls``"
+msgstr ""
+
+#: of releng_tool.util.io.ls:1
+msgid "list a directory's contents"
+msgstr ""
+
+#: of releng_tool.util.io.ls:3
+msgid ""
+"Attempts to read a directory for its contents and prints this information"
+" to the configured standard output stream."
+msgstr ""
+
+#: of releng_tool.util.io.ensure_dir_exists:18 releng_tool.util.io.ls:12
+msgid "the directory"
+msgstr ""
+
+#: of releng_tool.util.io.ls:14
+msgid ""
+"``True`` if the directory could be read and its contents have been "
+"printed to the standard output; ``False`` if the directory could not be "
+"read"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:262
 msgid "``releng_mkdir``"
 msgstr ""
 
@@ -3249,17 +3318,13 @@ msgid ""
 "error (unless ``quiet`` is set to ``True``)."
 msgstr ""
 
-#: of releng_tool.util.io.ensure_dir_exists:18
-msgid "the directory"
-msgstr ""
-
 #: of releng_tool.util.io.ensure_dir_exists:23
 msgid ""
 "``True`` if the directory exists; ``False`` if the directory could not be"
 " created"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:225
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:268
 msgid "``releng_move``"
 msgstr ""
 
@@ -3292,7 +3357,7 @@ msgid ""
 "has failed"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:229
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:274
 msgid "``releng_remove``"
 msgstr ""
 
@@ -3320,7 +3385,40 @@ msgid ""
 " could not be removed from the system"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:233
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:280
+msgid "``releng_require_version``"
+msgstr ""
+
+#: of releng_tool.support.require_version:1
+msgid "perform a required-version check"
+msgstr ""
+
+#: of releng_tool.support.require_version:3
+msgid ""
+"Enables a caller to explicitly check for a required releng-tool version. "
+"Invoking this function with a dotted-separated ``version`` string, the "
+"string will be parsed and compared with the running releng-tool version. "
+"If the required version is met, this method will have no effect. In the "
+"event that the required version is not met, the exception ``SystemExit`` "
+"will be raised if the critical flag is set; otherwise this call will "
+"return ``False``."
+msgstr ""
+
+#: of releng_tool.support.require_version:18
+msgid "dotted-separated version string"
+msgstr ""
+
+#: of releng_tool.support.require_version:24
+msgid ""
+"``True`` if the version check is met; ``False`` if the version check has "
+"failed"
+msgstr ""
+
+#: of releng_tool.support.require_version:27
+msgid "if the version check fails with ``critical=True``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:286
 msgid "``releng_tmpdir``"
 msgstr ""
 
@@ -3346,7 +3444,7 @@ msgstr ""
 msgid "the base directory does not exist and     could not be created"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:237
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:292
 msgid "``releng_touch``"
 msgstr ""
 
@@ -3361,17 +3459,13 @@ msgid ""
 "same fashion as the ``touch`` system command."
 msgstr ""
 
-#: of releng_tool.util.io.touch:16
-msgid "the file"
-msgstr ""
-
 #: of releng_tool.util.io.touch:18
 msgid ""
 "``True`` if the file was created/updated; ``False`` if the file could not"
 " be created/updated"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:241
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:298
 msgid "``releng_wd``"
 msgstr ""
 
@@ -3396,7 +3490,7 @@ msgstr ""
 msgid "the working directory does not     exist and could not be created"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:245
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:304
 msgid "``success``"
 msgstr ""
 
@@ -3410,7 +3504,7 @@ msgid ""
 " enabled) a green colorization."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:249
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:310
 msgid "``verbose``"
 msgstr ""
 
@@ -3426,7 +3520,7 @@ msgid ""
 "verbosity."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:253
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:316
 msgid "``warn``"
 msgstr ""
 
@@ -3440,7 +3534,7 @@ msgid ""
 " enabled) a purple colorization."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:261
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:325
 msgid ""
 "Scripts directly invoked by releng-tool will automatically have these "
 "helpers registered in the script's globals module (i.e. no import is "
@@ -3449,15 +3543,15 @@ msgid ""
 "import can be used to, for example, import a specific function:"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:271
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:335
 msgid "Or, if desired, all helper methods can be imported at once:"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:278
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:342
 msgid "VCS Ignore"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:280
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:344
 msgid ""
 "When invoking releng-tool on a project, the project's root directory will"
 " be populated with cached assets and other output files. A series of "
@@ -3467,17 +3561,17 @@ msgid ""
 "repositories (via ``.gitignore``):"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:297
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:361
 msgid "Quirks"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:299
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:363
 msgid ""
 "The following outlines a series of configuration |CONF_QUIRKS|_ that can "
 "be applied to deal with rare host environment scenarios."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:302
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:366
 msgid ""
 "``releng.cmake.disable_parallel_option`` -- Disables the ``--parallel`` "
 "option from being injected when a CMake-package is performing a build "
@@ -3485,54 +3579,54 @@ msgid ""
 "which do not explicitly provide a parallelization option."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:306
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:370
 msgid ""
 "``releng.disable_prerequisites_check`` -- Disables the fast-fail "
 "prerequisites check from running."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:308
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:372
 msgid ""
 "``releng.disable_remote_configs`` -- Disables any attempt to load remote-"
 "defined configurations for a package."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:310
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:374
 msgid ""
 "``releng.disable_remote_scripts`` -- Disables any attempt to load remote-"
 "defined scripts for a package."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:312
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:376
 msgid ""
 "``releng.git.no_depth`` -- Disables the ``--depth`` option from being "
 "injected when a Git-site-defined package is performing a fetch stage."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:314
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:378
 msgid ""
 "``releng.git.no_quick_fetch`` -- Disables quick fetching (a specific "
 "reference fetch) for any Git-site-defined package."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:317
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:381
 msgid ""
 "Quirks are enabled through a configuration (override) script such as "
 "follows:"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:326
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:390
 msgid "Loading extensions"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:330
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:394
 msgid ""
 "If looking for information on developing extensions for releng-tool, "
 "consult the :ref:`contributor's guide -- extensions "
 "<contributor_guide_ext>`."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:333
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:397
 msgid ""
 "A releng-tool project can define one or more extensions to load for "
 "externally implemented capabilities. For example, a project can load "
@@ -3540,7 +3634,7 @@ msgid ""
 "project's configuration:"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:345
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:409
 msgid ""
 "During the initial stages of a releng-tool process, the process will "
 "check and load any configured extension. In the event that an extension "
@@ -3548,7 +3642,7 @@ msgid ""
 "to load, a detailed error message will be presented to the user."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:350
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/other:414
 msgid ""
 "While the ability to load extensions is supported, capabilities provided "
 "by extensions are not officially supported by releng-tool. For issues "
@@ -3595,3 +3689,4 @@ msgstr ""
 #: ../.releng_cache/releng-tool/Documentation/developer-guide.rst:26
 msgid "https://docs.python.org/3.7/library/urllib.request.html#urllib.request.urlopen"
 msgstr ""
+
