@@ -4,15 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# James Knight <james.d.knight@live.com>, 2021
+# James Knight <james.d.knight@live.com>, 2022
 # 
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-28 17:59-0500\n"
+"POT-Creation-Date: 2022-05-01 21:30-0400\n"
 "PO-Revision-Date: 2021-11-29 00:09+0000\n"
-"Last-Translator: James Knight <james.d.knight@live.com>, 2021\n"
+"Last-Translator: James Knight <james.d.knight@live.com>, 2022\n"
 "Language-Team: Chinese (https://www.transifex.com/releng-tool/teams/119434/zh/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -30,8 +31,8 @@ msgid ""
 "a releng-tool project. Consult the :doc:`developer's guide <developer-"
 "guide>` for more detailed information."
 msgstr ""
-"我们有一个快速参考文档，列出了构建 releng-tool 项目的开发人员的可用选项。有关更多详细信息，请参阅 :doc:`开发人员指南"
-"<developer-guide>` 。"
+"我们有一个快速参考文档，列出了构建 releng-tool 项目的开发人员的可用选项。有关更多详细信息，请参阅 "
+":doc:`开发人员指南<developer-guide>` 。"
 
 #: ../.releng_cache/releng-tool/Documentation/annex-a.rst:9
 msgid "Configuration options"
@@ -42,38 +43,38 @@ msgid ""
 "Options which are read by releng-tool from a project's configuration script:"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:30
+#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:31
 msgid "Environment variables"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:32
+#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:33
 msgid ""
 "Environment (and script) variables available to context's invoked by releng-"
 "tool (may vary per context):"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:79
+#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:92
 msgid "Package options"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:81
+#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:94
 msgid "Configuration options parsed by releng-tool for a package definition:"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:126
+#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:140
 msgid "Script helpers"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:128
+#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:142
 msgid ""
 "Functions available to scripts invoked by releng-tool or importable via "
 "``from releng_tool import *``:"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:156
+#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:174
 msgid "Quirks"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:158
+#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:176
 msgid "Quirk options used by releng-tool:"
 msgstr ""
