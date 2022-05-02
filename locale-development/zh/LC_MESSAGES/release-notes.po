@@ -1,25 +1,26 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2021 releng-tool
-# This file is distributed under the same license as the releng-tool package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
 # Translators:
 # James Knight <james.d.knight@live.com>, 2021
-# 
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: releng-tool\n"
+"Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-26 20:03-0500\n"
+"POT-Creation-Date: 2022-05-01 21:18-0400\n"
 "PO-Revision-Date: 2021-11-29 00:10+0000\n"
 "Last-Translator: James Knight <james.d.knight@live.com>, 2021\n"
-"Language-Team: Chinese (https://www.transifex.com/releng-tool/teams/119434/zh/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
 "Language: zh\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-Team: Chinese (https://www.transifex.com/releng-"
+"tool/teams/119434/zh/)\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../.releng_cache/releng-tool/Documentation/release-notes.rst:2
 msgid "Release notes"
@@ -28,428 +29,471 @@ msgstr "发行说明"
 #: ../.releng_cache/releng-tool/Documentation/release-notes.rst:4
 msgid ""
 "The following provides the notable features, bug fixes and more for each "
-"release of releng-tool. For a complete list of detailed changes to releng-"
-"tool, please consult the project's `repository commits`_."
+"release of releng-tool. For a complete list of detailed changes to "
+"releng-tool, please consult the project's `repository commits`_."
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:2
-msgid "0.11 (2022-02-26)"
+msgid "Development"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:4
+msgid "adding ``dst_dir`` to ``releng_copy`` for explicit copies to directories"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:5
+msgid ""
+"fixed an issue where forced git-fetches with branch revisions may have "
+"stale content on first extract"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:7
+msgid "fixed where package-specific prefixes/njobs would leak to other projects"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:8
+msgid "introduce ``releng_include`` helper script function"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:9
+msgid "introduce the ``*_[INCLUDE,LIB]_DIR`` environment/script variables"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:10
+msgid "introduce the ``PKG_BUILD_BASE_DIR`` environment/script variable"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:11
+msgid "introduce the ``PREFIXED_*_DIR`` environment/script variables"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:12
+msgid "support make-styled environment injections via command line"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:13
+msgid "support package variable overrides via command line"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:16
+msgid "0.11 (2022-02-26)"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:18
 msgid ""
 "always pre-create install directory before package install scripts are "
 "invoked"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:5
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:19
 msgid "fixed an issue where nested zip files could not extract"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:6
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:20
 msgid "introduce ``releng_cat`` helper script function"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:7
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:21
 msgid "introduce ``releng_ls`` helper script function"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:8
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:22
 msgid "introduce ``releng_require_version`` helper script function"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:9
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:23
 msgid ""
 "no longer extract with non-local-supported tar command if host format "
 "detected"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:10
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:24
 msgid "no longer warn if hash file is empty for extracted contents check"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:11
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:25
 msgid "support removing cached assets through a forced fetch argument"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:12
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:26
 msgid ""
 "support triggering a reconfiguration of all packages through a force "
 "argument"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:15
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:29
 msgid "0.10 (2021-12-31)"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:17
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:31
 msgid ""
-"fixed an issue where a configured ``sysroot_prefix`` bin path would not be "
-"registered in the script environment's path"
+"fixed an issue where a configured ``sysroot_prefix`` bin path would not "
+"be registered in the script environment's path"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:19
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:33
 msgid ""
-"fixed an issue where ``releng_mkdir`` reports success if the target path is "
-"a file that already exists"
+"fixed an issue where ``releng_mkdir`` reports success if the target path "
+"is a file that already exists"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:21
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:35
 msgid "fixed an issue where extensions may not load on python 2.7"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:22
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:36
 msgid ""
 "fixed an issue where post-processing may be invoked even if a package's "
 "stage would fail"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:24
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:38
 msgid ""
-"introduce ``LIBFOO_CMAKE_NOINSTALL`` for cmake packages with no install rule"
+"introduce ``LIBFOO_CMAKE_NOINSTALL`` for cmake packages with no install "
+"rule"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:25
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:39
 msgid "introduce support for rsync sites"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:26
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:40
 msgid "introduce the ``<PKG_NAME>_DEFDIR`` environment/script variable"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:27
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:41
 msgid "provide an option to suppress root warning (for zero-uid containers)"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:28
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:42
 msgid "remove the requirement to have a package version entry"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:29
-msgid ""
-"support configuring cache/download directories using environment variables"
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:43
+msgid "support configuring cache/download directories using environment variables"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:30
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:44
 msgid "support custom ssl context overrides via ``urlopen_context``"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:31
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:45
 msgid ""
-"support providing an assets container directory (for cache/download folders)"
+"support providing an assets container directory (for cache/download "
+"folders)"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:34
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:48
 msgid "0.9 (2021-10-02)"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:36
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:50
 msgid "fixed an import issue when running with python 3.10"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:37
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:51
 msgid "fixed an issue where a cyclic package check provided a bad message"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:38
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:52
 msgid ""
 "fixed an issue where a git submodule with a target branch may fail to "
 "extract"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:39
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:53
 msgid "post-processing script renamed to ``releng-post-build``"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:40
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:54
 msgid "support development mode relaxed branch fetching for git sites"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:41
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:55
 msgid "support requiring a git source's revision to be gpg-signed"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:42
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:56
 msgid "support using ascii-armor (asc) files to package integrity checks"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:45
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:59
 msgid "0.8 (2021-08-28)"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:47
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:61
 msgid "allow dvcs packages to share caches (to minimize space/time fetching)"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:48
-msgid ""
-"fixed an issue where tools/``releng_execute`` requests would fail on python "
-"2.7 with unicode-defined environment variables"
-msgstr ""
-
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:50
-msgid ""
-"fixed an issue where a diverged revision in git would incorrectly populate a"
-" package's build directory with the cached revision instead of the remote "
-"revision"
-msgstr ""
-
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:53
-msgid ""
-"introduce ``LIBFOO_GIT_SUBMODULES`` for package git-specific configurations"
-msgstr ""
-
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:54
-msgid "introduce ``releng_execute_rv`` helper script function"
-msgstr ""
-
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:55
-msgid ""
-"introduce statistic tracking (stage durations) which generate to into the "
-"output folder after execution"
-msgstr ""
-
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:57
-msgid "introduce support for package-specific distclean"
-msgstr ""
-
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:58
-msgid "introduce support for package-specific license processing"
-msgstr ""
-
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:59
-msgid ""
-"rework ``LIBTOOL_GIT_REFSPECS`` to provide more control over custom "
-"revisions that can be fixed (i.e. no longer fixed on ``<target>/*/head``; "
-"instead, a configured value-wildcard string should be used)"
-msgstr ""
-
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:62
-msgid "support auto-detecting python interpreter path overrides in windows"
-msgstr ""
-
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:63
-msgid "support faster git fetching"
+msgid ""
+"fixed an issue where tools/``releng_execute`` requests would fail on "
+"python 2.7 with unicode-defined environment variables"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:64
 msgid ""
-"support pruning any remote-tracked references in a git-cached project when a"
-" forced fetch request is made"
+"fixed an issue where a diverged revision in git would incorrectly "
+"populate a package's build directory with the cached revision instead of "
+"the remote revision"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:66
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:67
+msgid ""
+"introduce ``LIBFOO_GIT_SUBMODULES`` for package git-specific "
+"configurations"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:68
+msgid "introduce ``releng_execute_rv`` helper script function"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:69
+msgid ""
+"introduce statistic tracking (stage durations) which generate to into the"
+" output folder after execution"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:71
+msgid "introduce support for package-specific distclean"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:72
+msgid "introduce support for package-specific license processing"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:73
+msgid ""
+"rework ``LIBTOOL_GIT_REFSPECS`` to provide more control over custom "
+"revisions that can be fixed (i.e. no longer fixed on ``<target>/*/head``;"
+" instead, a configured value-wildcard string should be used)"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:76
+msgid "support auto-detecting python interpreter path overrides in windows"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:77
+msgid "support faster git fetching"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:78
+msgid ""
+"support pruning any remote-tracked references in a git-cached project "
+"when a forced fetch request is made"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:80
 msgid ""
 "package-specific extraction/patching no longer requires dependency "
 "processing"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:69
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:83
 msgid "0.7 (2021-08-08)"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:71
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:85
 msgid ""
 "fetch from an already cached package's site if the fetch is explicitly "
 "requested"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:73
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:87
 msgid "fixed an issue with registry failing to import on python 2.7"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:74
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:88
 msgid ""
 "fixed issue where build/install definitions where not used in in their "
 "respective stages"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:76
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:90
 msgid ""
 "fixed issue where mercurial packages fetched using the version option "
 "instead of the revision option"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:78
-msgid ""
-"fixed issue where the host directory was not registered in a stage's path"
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:92
+msgid "fixed issue where the host directory was not registered in a stage's path"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:79
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:93
 msgid ""
 "introduce clean, logging flags and releng-version into the script "
 "environments"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:80
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:94
 msgid ""
-"only fetch a single package if only said package is requested to be fetched"
-msgstr ""
-
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:81
-msgid "package without a site will throw an error when vcs-type is set"
-msgstr ""
-
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:82
-msgid ""
-"reconfigure/rebuild requests will now perform all trailing stages for the "
-"package(s) being redone; rebuild/reconfigure-only actions have been "
-"introduced to force re-invoking a specific stage"
-msgstr ""
-
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:85
-msgid ""
-"releng-tool will now full stop if external package definition fails to load"
-msgstr ""
-
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:86
-msgid "support loading remote package configuration"
-msgstr ""
-
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:87
-msgid "support loading remote package scripts"
-msgstr ""
-
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:90
-msgid "0.6 (2020-10-10)"
-msgstr ""
-
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:92
-msgid ""
-"always register optional flags inside scripts (allowing developers to use "
-"flags like ``RELENG_RECONFIGURE`` without needing to check environment "
-"variables)"
+"only fetch a single package if only said package is requested to be "
+"fetched"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:95
-msgid ""
-"fixed issued when capturing with ``releng_execute`` which did not suppress "
-"output by default"
+msgid "package without a site will throw an error when vcs-type is set"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:97
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:96
 msgid ""
-"introduce ``LIBTOOL_GIT_CONFIG`` for package git-specific configurations"
-msgstr ""
-
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:98
-msgid "introduce a ``releng-tool init`` action for a quick-sample project"
+"reconfigure/rebuild requests will now perform all trailing stages for the"
+" package(s) being redone; rebuild/reconfigure-only actions have been "
+"introduced to force re-invoking a specific stage"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:99
-msgid "introduce support for distclean"
+msgid ""
+"releng-tool will now full stop if external package definition fails to "
+"load"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:100
-msgid "introduce support for prerequisites"
+msgid "support loading remote package configuration"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:101
+msgid "support loading remote package scripts"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:104
+msgid "0.6 (2020-10-10)"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:106
 msgid ""
-"namespace moved from ``releng`` to ``releng_tool`` (``releng`` deprecated "
-"for an interim)"
+"always register optional flags inside scripts (allowing developers to use"
+" flags like ``RELENG_RECONFIGURE`` without needing to check environment "
+"variables)"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:105
-msgid "0.5 (2020-09-07)"
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:109
+msgid ""
+"fixed issued when capturing with ``releng_execute`` which did not "
+"suppress output by default"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:107
-msgid "fixed false error when verifying cached git reference"
-msgstr ""
-
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:110
-msgid "0.4 (2020-09-07)"
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:111
+msgid "introduce ``LIBTOOL_GIT_CONFIG`` for package git-specific configurations"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:112
-msgid ""
-"allow developers to fetch from addition git refspecs (e.g. pull requests)"
+msgid "introduce a ``releng-tool init`` action for a quick-sample project"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:113
-msgid "allow setting quirks in command line"
+msgid "introduce support for distclean"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:114
-msgid "fixed a scenario where a git extraction stage could fetch sources"
+msgid "introduce support for prerequisites"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:115
-msgid "fixed git fetch/extraction if package is cached and site has changed"
+msgid ""
+"namespace moved from ``releng`` to ``releng_tool`` (``releng`` deprecated"
+" for an interim)"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:116
-msgid "improved handling of output files which may set the readonly attribute"
-msgstr ""
-
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:117
-msgid "introduce support for local interim-development package content"
-msgstr ""
-
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:118
-msgid "introduce support for shallow git fetching"
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:119
+msgid "0.5 (2020-09-07)"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:121
-msgid "0.3 (2019-10-19)"
-msgstr ""
-
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:123
-msgid "allow packages to configure to ignore cache while in development mode"
+msgid "fixed false error when verifying cached git reference"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:124
-msgid "allow packages to configure for no-extraction for sources"
-msgstr ""
-
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:125
-msgid "fixed default interpreter detection for python packages"
+msgid "0.4 (2020-09-07)"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:126
-msgid "fixed fetching from mercurial sources"
+msgid "allow developers to fetch from addition git refspecs (e.g. pull requests)"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:127
-msgid "fixed fetching from newer git hashes if repository was already cached"
+msgid "allow setting quirks in command line"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:128
-msgid "introduce ``releng_env`` and ``releng_mkdir`` helper script functions"
+msgid "fixed a scenario where a git extraction stage could fetch sources"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:129
-msgid "introduce support for package-specific bootstrapping stage"
+msgid "fixed git fetch/extraction if package is cached and site has changed"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:130
+msgid "improved handling of output files which may set the readonly attribute"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:131
+msgid "introduce support for local interim-development package content"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:132
+msgid "introduce support for shallow git fetching"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:135
+msgid "0.3 (2019-10-19)"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:137
+msgid "allow packages to configure to ignore cache while in development mode"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:138
+msgid "allow packages to configure for no-extraction for sources"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:139
+msgid "fixed default interpreter detection for python packages"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:140
+msgid "fixed fetching from mercurial sources"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:141
+msgid "fixed fetching from newer git hashes if repository was already cached"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:142
+msgid "introduce ``releng_env`` and ``releng_mkdir`` helper script functions"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:143
+msgid "introduce support for package-specific bootstrapping stage"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:146
 msgid "0.2 (2019-03-15)"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:134
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:148
 msgid ""
 "a project's host directory will now be registered in the system's path "
 "during execution"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:136
-msgid ""
-"allow tracking project's license files when found in multiple directories"
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:150
+msgid "allow tracking project's license files when found in multiple directories"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:137
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:151
 msgid "fixed loading configuration overrides script if one actually exists"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:138
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:152
 msgid "re-work various script names (e.g. ``releng.py`` -> ``releng``)"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:141
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:155
 msgid "0.1 (2019-02-24)"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/CHANGELOG.rst:143
+#: ../.releng_cache/releng-tool/CHANGELOG.rst:157
 msgid "hello world"
 msgstr ""
+
