@@ -50,10 +50,17 @@ source_file = requirements.pot
 source_lang = en
 type = PO
 
-[releng-tool-doc-translations.tips-pot]
-file_filter = <lang>/LC_MESSAGES/tips.po
+[releng-tool-doc-translations.examples-pot]
+file_filter = <lang>/LC_MESSAGES/examples.po
 minimum_perc = 0
-source_file = tips.pot
+source_file = examples.pot
+source_lang = en
+type = PO
+
+[releng-tool-doc-translations.help-pot]
+file_filter = <lang>/LC_MESSAGES/help.po
+minimum_perc = 0
+source_file = help.pot
 source_lang = en
 type = PO
 
