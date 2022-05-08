@@ -74,8 +74,9 @@ for version in "${!versions[@]}"; do
     export RELENG_LOCALE_DIR=$base/locale-$version/
     python -m sphinx -b gettext . $base/locale-$version
 
-    for ref in $(ls -d $base/locale-$version/*/); do
-        lang_dir=${ref%%/}
+    for ref in $(ls -d $base/locale-$version/*/LC_MESSAGES); do
+        lang_dir=${ref%/*}
+        lang_dir=${lang_dir%%/}
         lang=${lang_dir##*/}
 
         # update language files
