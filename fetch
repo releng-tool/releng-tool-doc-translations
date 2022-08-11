@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Copyright 2019-2021 releng-tool
+# Copyright 2019-2022 releng-tool
 set -e
 
 ################################################################################
@@ -8,7 +8,7 @@ set -e
 doc_repo=https://github.com/releng-tool/releng-tool.git
 
 # target revision
-revision=master
+revision=main
 
 ################################################################################
 
