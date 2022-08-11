@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-01 21:18-0400\n"
+"POT-Creation-Date: 2022-08-10 23:57-0400\n"
 "PO-Revision-Date: 2021-11-29 00:10+0000\n"
 "Last-Translator: James Knight <james.d.knight@live.com>, 2021\n"
 "Language: zh\n"
@@ -432,123 +432,149 @@ msgid ""
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:263
-msgid "``--debug``"
+msgid "``--config <file>``"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:265
-msgid "Show debug-related messages."
+msgid "Configuration file to load (default: ``<root>/releng``)."
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:267
-msgid "``-D``, ``--development``"
+msgid "``--debug``"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:269
-msgid "Enables `development mode`_."
+msgid "Show debug-related messages."
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:271
-msgid "``--dl-dir <dir>``"
+msgid "``-D``, ``--development [<mode>]``"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:273
-msgid "Directory for download archives (defaults to ``<root>/dl``)."
+msgid "Enables `development mode`_."
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:275
-msgid "``-F``, ``--force``"
+msgid "``--dl-dir <dir>``"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:277
-msgid "Triggers a forced request for the releng-tool invoke. This entails:"
+msgid "Directory for download archives (defaults to ``<root>/dl``)."
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:279
-msgid "Packages will be processed as if a re-configuration request has been made."
+msgid "``-F``, ``--force``"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:281
+msgid "Triggers a forced request for the releng-tool invoke. This entails:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:283
+msgid "Packages will be processed as if a re-configuration request has been made."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:285
 msgid ""
 "If an explicit fetch request is made (``fetch`` or ``<pkg>-fetch``), any "
 "packages which cache to a file will have their cache files deleted to be "
 "re-fetched."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:285
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:289
 msgid "``-h``, ``--help``"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:287
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:291
 msgid "Show this help."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:289
-msgid "``-j``, ``--jobs <jobs>``"
-msgstr ""
-
-#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:291
-msgid "Numbers of jobs to handle (default to ``0``; automatic)."
-msgstr ""
-
 #: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:293
-msgid "``--local-sources``"
+msgid "``--images-dir <dir>``"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:295
-msgid "Enables `local-sources mode`_."
+msgid "Directory for image outputs (defaults to ``<root>/output/images``)."
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:297
-msgid "``--nocolorout``"
+msgid "``-j``, ``--jobs <jobs>``"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:299
-msgid "Explicitly disable colorized output."
+msgid "Numbers of jobs to handle (default to ``0``; automatic)."
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:301
-msgid "``--out-dir <dir>``"
+msgid "``-L``, ``--local-sources [[<pkg>@]<dir>]``"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:303
+msgid "Enables `local-sources mode`_."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:305
+msgid ""
+"Without a directory provided, sources of internal packages will be looked"
+" for in the parent directory of the configured root directory. Users may "
+"use this argument multiple times to override the local-sources "
+"configuration. If a package-specific override is provided (a value "
+"prefixed with a package's name with an at sign (``@``)), sources for that"
+" package will be looked for inside the provided path."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:313
+msgid "``--nocolorout``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:315
+msgid "Explicitly disable colorized output."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:317
+msgid "``--out-dir <dir>``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:319
 msgid ""
 "Directory for output (builds, images, etc.; defaults to "
 "``<root>/output``)."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:306
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:322
 msgid "``--root-dir <dir>``"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:308
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:324
 msgid ""
 "Directory to process a releng-tool project (defaults to the working "
 "directory)."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:311
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:327
 msgid "``--quirk <quirk-id>``"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:313
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:329
 msgid ""
 "Allows specifying a runtime :ref:`quirk <quirks>` for the releng-tool "
 "process. This option can be used multiple times to apply multiple quirks."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:317
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:333
 msgid "``-V``, ``--verbose``"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:319
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:335
 msgid "Show additional messages."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:321
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:337
 msgid "``--version``"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:323
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:339
 msgid "Show releng-tool's version."
 msgstr ""
 
@@ -692,58 +718,113 @@ msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:9
 msgid ""
-"Development mode provides a way for builder to request to process "
-"supported packages against a development version of sources rather than "
-"using fixed versions. Consider the following example: if a project has a "
-"package which sources are pulled from a Git repository, it is most likely"
-" the package definition will define the explicit tag to clone from (e.g. "
-"``v1.0``). However, a package may define that the ``main`` branch of a "
-"repository is used for the most recent development revision. If an "
-"environment is configured for development mode, the releng-tool process "
-"will instead pull sources from the ``main`` branch instead of a release "
-"tag."
+"Development mode provides a way for a user to request to process packages"
+" against development versions of sources rather than using fixed "
+"versions. A package will typically target a stable release, either "
+"pointing to a specific archive to download or a specific tag to clone "
+"from. However, for some builds, a user may wish to build a specific "
+"package against their main development branch (e.g. the ``main`` branch "
+"of a Git repository) or a long-term stable release branch. Packages can "
+"be defined to target these specific revisions if running in development "
+"mode."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:19
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:18
 msgid ""
 "To enable development mode, invoking ``releng-tool`` with the "
 "``--development`` argument will enable the mode. Future calls to releng-"
-"tool for the project will use the development revision for packages where"
-" define. For example:"
+"tool for the project will use a development revision for packages where "
+"appropriate. For example:"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:31
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:30
 msgid ""
 "Development mode is persisted through the use of a file flag in the root "
-"directory. A user can either disable development mode by performing a "
+"directory."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:33
+msgid ""
+"Consider the following example: a package defines multiple revisions to "
+"fetch sources from:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:45
+msgid ""
+"A build would normally use the ``1.2`` tag for this package. However, if "
+"an environment is configured to use the ``develop`` development mode:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:52
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:88
+msgid "This package would use the ``main`` branch instead."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:54
+msgid ""
+"Projects can also target specific sites based off the development mode. "
+"This can be useful if a package uses a built archive for a stable "
+"release, but having development sources fetched from a repository. For "
+"example:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:69
+msgid ""
+"In a normal execution, a tar.gz archive would be downloaded for the "
+"package. However, if an environment is configured to use the ``test`` "
+"development mode, sources will be fetched from the Git repository on the "
+"``main`` branch."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:73
+msgid ""
+"Simple development modes are also supported. Packages can use the "
+"``LIBFOO_DEVMODE_REVISION`` option to hint at a development revision to "
+"pull."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:81
+msgid ""
+"A build would normally use the ``v3.0`` tag for this package. However, if"
+" an environment is configured a non-explicit development mode:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:90
+msgid ""
+"A user can either disable development mode by performing a "
 "|ACTION_MRPROPER|_ or can manually remove the file flag."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:38
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:96
 msgid "Local-sources mode"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:42
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:100
 msgid ""
 "Clean events (such as ``releng-tool clean``) will not touch packages "
 "using sources found alongside the output directory"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:45
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:103
 msgid ""
 "Local-sources mode provides a way for a developer to build internal-"
-"flagged packages using sources found alongside the root directory, "
-"instead of having releng-tool attempt to fetch them from remote "
-"instances. This is primarily for developers who desire to manually manage"
-" source content outside the releng-tool environment. Local-sources mode "
-"only works for internally flagged packaged. Consider the following "
-"example: a releng-tool project has a package called ``liba``. When "
-"releng-tool is invoked in normal configurations, the package will do "
-"fetching, extraction and patching to prepare the directory "
-"``<root>/output/build/liba-<version>``. However, if a builder has "
-"configured the working root for local-sources mode, sources for ``liba`` "
-"will be used from the folder ``<root>/../liba`` instead. Also, when in "
-"local-sources mode, an internal package will skip the fetching, "
+"flagged packages using sources found alongside the root directory (or a "
+"specific provided directory), instead of having releng-tool attempt to "
+"fetch them from remote instances. This is primarily for developers who "
+"desire to manually manage source content outside the releng-tool "
+"environment. Local-sources mode only works for internally flagged "
+"packaged. Consider the following example: a releng-tool project has a "
+"package called ``liba``. When releng-tool is invoked in normal "
+"configurations, the package will do fetching, extraction and patching to "
+"prepare the directory ``<root>/output/build/liba-<version>``. However, if"
+" a builder has configured the working root for local-sources mode, "
+"sources for ``liba`` will be used from the folder ``<root>/../liba`` "
+"instead."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:116
+msgid ""
+"When in local-sources mode, an internal package will skip the fetching, "
 "extraction and patching stages in order to prevent undesired manipulation"
 " of developer-prepared sources. Another consideration to note is the use "
 "of clean operators while in local-sources mode. Continuing with the above"
@@ -752,7 +833,7 @@ msgid ""
 " a clean ``liba`` package will be left with the user."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:63
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:124
 msgid ""
 "To enable local-sources mode, invoking ``releng-tool`` with the "
 "``--local-sources`` argument will enable the mode. Future calls to "
@@ -760,18 +841,63 @@ msgid ""
 "as internal packages. For example:"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:76
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:138
 msgid ""
 "Local-sources mode is persisted through the use of a file flag in the "
-"root directory. A user can either disable local sources mode by "
-"performing a |ACTION_MRPROPER|_ or can manually remove the file flag."
+"root directory."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:83
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:141
+msgid ""
+"If a user provides a directory for the ``--local-sources`` argument, "
+"packages will be looked for in the provided folder instead of the parent "
+"of the configured root directory. For example:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:154
+msgid ""
+"In the above example, if a project had an internal package ``liba``, "
+"sources for ``liba`` will be used from the folder ``~/workdir/liba``."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:157
+msgid ""
+"Users can also provide package-specific overrides. If a user provides a "
+"path which is prefixed with a package's name and at sign (``@``), the "
+"sources for the provided package will be used from the respective folder:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:174
+msgid ""
+"In the above example, if a project had internal packages ``liba``, "
+"``libb`` and ``libc``, the following paths will be used:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:177
+msgid "Sources for ``liba`` will be used from the folder ``~/workdir/liba``,"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:178
+msgid ""
+"Sources for ``libb`` will be used from the folder ``/mnt/sources/libb``; "
+"and,"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:179
+msgid "Sources for ``libc`` will not be fetched locally."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:181
+msgid ""
+"A user can either disable local sources mode by performing a "
+"|ACTION_MRPROPER|_ or can manually remove the file flag."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:187
 msgid "Configuration overrides"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:85
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:189
 msgid ""
 "If a builder needs to (for example) override a tool location or package "
 "site, a user can define either environment options or setup a "
@@ -780,11 +906,11 @@ msgid ""
 "source repository."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:91
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:195
 msgid "Extraction tool overrides"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:93
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:197
 msgid ""
 "The ``override_extract_tools`` option inside a configuration override "
 "script allows a dictionary to be provided to map an extension type to an "
@@ -795,17 +921,17 @@ msgid ""
 "following example:"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:106
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:210
 msgid ""
 "The ``{file}`` key will be replaced with the file to be extracted, and "
 "the ``{dir}`` key will be replaced where the contents should extract to."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:110
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:214
 msgid "Revision overrides"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:112
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:216
 msgid ""
 "The ``override_revisions`` option inside a configuration override script "
 "allows a dictionary to be provided to map a package name to a new "
@@ -818,17 +944,17 @@ msgid ""
 "definition. To avoid this, an override can be used instead:"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:127
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:231
 msgid ""
 "The above example shows that package ``module-b`` will fetch using a test"
 " branch instead of what is defined in the actual package definition."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:131
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:235
 msgid "Site overrides"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:133
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:237
 msgid ""
 "The ``override_sites`` option inside a configuration override script "
 "allows a dictionary to be provided to map a package name to a new site "
@@ -842,11 +968,11 @@ msgid ""
 " used:"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:149
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:253
 msgid "Tool overrides"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:151
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:255
 msgid ""
 "Environment variables can be used to help override external tool invoked "
 "by the releng-tool process. For example, when invoking CMake-based "
@@ -856,13 +982,14 @@ msgid ""
 "set to switch which tool to invoke. Consider the following example:"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:165
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:269
 msgid "Quirks"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:167
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:271
 msgid ""
 "releng-tool also provides a series of configuration quirks to deal with "
 "rare host environment scenarios where releng-tool may be experiencing "
 "issues. See :ref:`configuration quirks <quirks>` for more information."
 msgstr ""
+

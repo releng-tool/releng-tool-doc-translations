@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-28 17:59-0500\n"
+"POT-Creation-Date: 2022-08-10 23:57-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -304,10 +304,10 @@ msgstr ""
 msgid "A flag to indicate that projects are implicitly loaded as internal projects. By default, packages not explicitly configured as internal or external are assumed to be external packages."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/releng-py:36
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:93
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/packages:303
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/packages:356
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/releng-py:36
 msgid "See also `internal and external packages`_."
 msgstr ""
 
@@ -339,8 +339,8 @@ msgstr ""
 msgid "As the releng-tool build process is finalized, a license document can be generated containing each package's license information. If a developer wishes to add a custom header to the generated document, a header can be defined by project's configuration. For example:"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/releng-py:81
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/environment:20
+#: ../.releng_cache/releng-tool/Documentation/developer-guide/releng-py:81
 msgid "See also `licenses`_."
 msgstr ""
 
@@ -1438,103 +1438,73 @@ msgid "Specifies whether or not the package needs to perform an autotools re-con
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-build-defs:2
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-build-defs:2
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-build-defs:2
 msgid "LIBFOO_BUILD_DEFS"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-build-defs:4
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-build-defs:4
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-build-defs:4
 msgid "Provides a means to pass definitions into the build process. This option can is defined as a dictionary of string pairs. This field is optional."
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-build-env:2
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-build-env:2
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-build-env:2
 msgid "LIBFOO_BUILD_ENV"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-build-env:4
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-build-env:4
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-build-env:4
 msgid "Provides a means to pass environment variables into the build process. This option is defined as a dictionary with key-value pairs where the key is the environment name and the value is the environment variable's value. This field is optional."
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-build-opts:2
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-build-opts:2
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-build-opts:2
 msgid "LIBFOO_BUILD_OPTS"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-build-opts:4
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-build-opts:4
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-build-opts:4
 msgid "Provides a means to pass command line options into the build process. This option can be defined as a dictionary of string pairs or a list with strings -- either way defined will generate argument values to include in the build event. This field is optional."
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-conf-defs:2
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-conf-defs:2
 msgid "LIBFOO_CONF_DEFS"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-conf-defs:4
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-conf-defs:4
 msgid "Provides a means to pass definitions into the configuration process. This option can is defined as a dictionary of string pairs. This field is optional."
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-conf-env:2
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-conf-env:2
 msgid "LIBFOO_CONF_ENV"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-conf-env:4
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-conf-env:4
 msgid "Provides a means to pass environment variables into the configuration process. This option is defined as a dictionary with key-value pairs where the key is the environment name and the value is the environment variable's value. This field is optional."
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-conf-opts:2
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-conf-opts:2
 msgid "LIBFOO_CONF_OPTS"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-conf-opts:4
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-conf-opts:4
 msgid "Provides a means to pass command line options into the configuration process. This option can be defined as a dictionary of string pairs or a list with strings -- either way defined will generate argument values to include in the configuration event. This field is optional."
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-install-defs:2
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-install-defs:2
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-install-defs:2
 msgid "LIBFOO_INSTALL_DEFS"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-install-defs:4
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-install-defs:4
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-install-defs:4
 msgid "Provides a means to pass definitions into the installation process. This option can is defined as a dictionary of string pairs. This field is optional."
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-install-env:2
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-install-env:2
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-install-env:2
 msgid "LIBFOO_INSTALL_ENV"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-install-env:4
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-install-env:4
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-install-env:4
 msgid "Provides a means to pass environment variables into the installation process. This option is defined as a dictionary with key-value pairs where the key is the environment name and the value is the environment variable's value. This field is optional."
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-install-opts:2
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-install-opts:2
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-install-opts:2
 msgid "LIBFOO_INSTALL_OPTS"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-install-opts:4
-#: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-install-opts:4
 #: ../.releng_cache/releng-tool/Documentation/developer-guide/packages-install-opts:4
 msgid "Provides a means to pass command line options into the installation process. This option can be defined as a dictionary of string pairs or a list with strings -- either way defined will generate argument values to include in the installation event. This field is optional."
 msgstr ""
@@ -1719,25 +1689,25 @@ msgstr ""
 msgid "Logs a debug message to standard out with a trailing new line. By default, debug messages will not be output to standard out unless the instance is configured with debugging enabled."
 msgstr ""
 
+#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.env.setEnvValue:0
+#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.ensureDirectoryExists:0
+#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.execute:0
+#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.generateTempDir:0
+#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.interimWorkingDirectory:0
+#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.pathCopy:0
+#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.pathExists:0
+#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.pathMove:0
+#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.pathRemove:0
+#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.touch:0
 #: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.log.debug:0
 #: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.log.err:0
 #: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.log.log:0
 #: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.log.note:0
-#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.pathCopy:0
-#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.env.setEnvValue:0
-#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.execute:0
-#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.pathExists:0
-#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.platform.exit:0
-#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.string.expand:0
-#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.ensureDirectoryExists:0
-#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.pathMove:0
-#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.pathRemove:0
-#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.generateTempDir:0
-#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.touch:0
-#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.interimWorkingDirectory:0
 #: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.log.success:0
 #: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.log.verbose:0
 #: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.log.warn:0
+#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.platform.exit:0
+#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.string.expand:0
 msgid "Parameters"
 msgstr ""
 
@@ -1809,18 +1779,18 @@ msgstr ""
 msgid "This call will attempt to copy a provided file or directory, defined by ``src`` into a destination file or directory defined by ``dst``. If ``src`` is a file, then ``dst`` is considered to be a file or directory; if ``src`` is a directory, ``dst`` is considered a target directory. If a target directory or target file's directory does not exist, it will be automatically created. In the event that a file or directory could not be copied, an error message will be output to standard error (unless ``quiet`` is set to ``True``). If ``critical`` is set to ``True`` and the specified file/directory could not be copied for any reason, this call will issue a system exit (``SystemExit``)."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.pathCopy:14
 #: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.env.setEnvValue:7
-#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.execute:39
-#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.pathExists:6
-#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.platform.exit:12
-#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.string.expand:15
 #: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.ensureDirectoryExists:9
+#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.execute:39
+#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.generateTempDir:9
+#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.interimWorkingDirectory:9
+#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.pathCopy:14
+#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.pathExists:6
 #: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.pathMove:16
 #: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.pathRemove:9
-#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.generateTempDir:9
 #: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.touch:7
-#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.interimWorkingDirectory:9
+#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.platform.exit:12
+#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.string.expand:15
 msgid "An example when using in the context of script helpers is as follows:"
 msgstr ""
 
@@ -1845,14 +1815,14 @@ msgstr ""
 msgid "whether or not to stop execution on failure"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.pathCopy:0
-#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.execute:0
-#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.pathExists:0
-#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.string.expand:0
 #: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.ensureDirectoryExists:0
+#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.execute:0
+#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.pathCopy:0
+#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.pathExists:0
 #: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.pathMove:0
 #: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.pathRemove:0
 #: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.touch:0
+#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.string.expand:0
 msgid "Returns"
 msgstr ""
 
@@ -1860,12 +1830,12 @@ msgstr ""
 msgid "``True`` if the copy has completed with no error; ``False`` if the copy has failed"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.pathCopy:0
 #: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.execute:0
-#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.platform.exit:0
-#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.pathMove:0
 #: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.generateTempDir:0
 #: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.interimWorkingDirectory:0
+#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.pathCopy:0
+#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.pathMove:0
+#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.platform.exit:0
 msgid "Raises"
 msgstr ""
 
@@ -1938,8 +1908,8 @@ msgstr ""
 msgid "environment variables to append for the process"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.execute:52
 #: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.ensureDirectoryExists:19
+#: ../.releng_cache/releng-tool/releng/__init__.py:docstring of releng.util.io.execute:52
 msgid "whether or not to suppress output (defaults to ``False``)"
 msgstr ""
 

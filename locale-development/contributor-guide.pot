@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2021 releng-tool
+# Copyright (C) 2022 releng-tool
 # This file is distributed under the same license as the releng-tool package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-02 01:01-0400\n"
+"POT-Creation-Date: 2022-08-10 23:57-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,7 +65,7 @@ msgid "Contributing"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/contributor-guide.rst:24
-msgid "Developers are free to submit contributions for this project. Developers wishing to contribute should consult this project's `CONTRIBUTING`_ document. A reminder that any contributions must be signed off with the `Developer Certificate of Origin`_."
+msgid "Developers are free to submit contributions for this project. Developers wishing to contribute should read this project's `CONTRIBUTING`_ document. A reminder that any contributions must be signed off with the `Developer Certificate of Origin`_."
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/contributor-guide.rst:29
@@ -117,7 +117,7 @@ msgid "Extensions"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/contributor-guide.rst:89
-msgid "Developers wishing to provide extensions to releng-tool should consult the API implementation found in this tool's repository (|releng_tool/api/__init__.py|_). Implementation in the API folder aims to be \"API safe\" -- there is a strong attempt to prevent the changing of classes, methods, etc. to prevent compatibility issues as both releng-tool and extensions (if any) evolve. A developer for a releng-tool project would register an extension to load using the ``extensions`` configuration option inside the project configuration (``releng``):"
+msgid "Developers wishing to provide extensions to releng-tool should read the API implementation found in this tool's repository (|releng_tool/api/__init__.py|_). Implementation in the API folder aims to be \"API safe\" -- there is a strong attempt to prevent the changing of classes, methods, etc. to prevent compatibility issues as both releng-tool and extensions (if any) evolve. A developer for a releng-tool project would register an extension to load using the ``extensions`` configuration option inside the project configuration (``releng``):"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/contributor-guide.rst:109
@@ -141,7 +141,7 @@ msgid "Improvements to this project's documentation (found inside ``Documentatio
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/contributor-guide.rst:148
-msgid "For users interested in translations for this project, please consult the following repositories:"
+msgid "For users interested in translations for this project, please see the following repositories:"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/contributor-guide.rst:0
