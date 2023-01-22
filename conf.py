@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# Copyright 2019-2021 releng-tool
+# Copyright 2019-2023 releng-tool
 
 from runpy import run_path
 import os
