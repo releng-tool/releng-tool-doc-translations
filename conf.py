@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Copyright 2019-2021 releng-tool
 
-from sphinx.util.pycompat import execfile_
+from runpy import run_path
 import os
 import sys
 
@@ -16,7 +16,9 @@ releng_tool_doc_dir = os.path.join(releng_tool_dir, 'Documentation')
 sys.path.insert(0, releng_tool_dir)
 
 # load releng-tool's sphinx configuration
-execfile_(os.path.join(releng_tool_doc_dir, 'conf.py'), globals())
+conf = os.path.join(releng_tool_doc_dir, 'conf.py')
+new_globals = run_path(conf, init_globals=globals())
+globals().update(new_globals)
 
 # localization options
 if 'RELENG_LOCALE_DIR' not in os.environ:
