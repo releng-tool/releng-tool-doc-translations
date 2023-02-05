@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Copyright 2019-2022 releng-tool
+# Copyright 2019-2023 releng-tool
 set -e
 
 # map of versions to documentation references
