@@ -1,0 +1,1077 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 releng-tool
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+# Translators:
+# James Knight <james.d.knight@live.com>, 2021
+msgid ""
+msgstr ""
+"Project-Id-Version:  releng-tool\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-12 00:11-0500\n"
+"PO-Revision-Date: 2021-11-29 00:10+0000\n"
+"Last-Translator: James Knight <james.d.knight@live.com>, 2021\n"
+"Language: zh\n"
+"Language-Team: Chinese (https://www.transifex.com/releng-"
+"tool/teams/119434/zh/)\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide.rst:2
+msgid "User guide"
+msgstr "用户指南"
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide.rst:4
+msgid ""
+"The following will outline the capabilities on using releng-tool with an "
+"already defined project. For details on building a releng-tool project, "
+"see the :doc:`developer's guide <developer-guide>`."
+msgstr ""
+"以下将概述将 releng-tool 与已定义项目一起使用的功能。有关构建 releng-tool 项目的详细信息，请参阅 "
+":doc:`开发人员指南 <developer-guide>` 。"
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/getting-started:2
+msgid "Getting started"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/getting-started:4
+msgid ""
+"Depending on the host and how releng-tool has been :doc:`installed "
+"<install>`, the tool can be either executed using the call ``releng-"
+"tool`` (if supported) or explicitly through a Python invoke ``python -m "
+"releng-tool``. This guide will assume the former option is available for "
+"use. If the alias command is not available on the host system, the latter"
+" call can be used instead."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/getting-started:10
+msgid ""
+"A releng-tool project will be defined by a ``releng`` configuration file "
+"along with one or more packages found inside a ``package/`` folder. This "
+"location can be referred to as the \"root directory\". When invoking "
+"``releng-tool``, the tool will look in the current working directory for "
+"project information to process. For example, if a project found inside "
+"``my-project`` with the single package ``package-a`` defined, the "
+"following output may be observed:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/getting-started:29
+msgid ""
+"On a successful execution, it is most likely that the releng-tool process"
+" will have an asset (or multiple) generated into a ``images/`` location; "
+"however, it is up to the developer of a releng-tool project to decide "
+"where generated files will be stored."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/getting-started:34
+msgid ""
+"If a user wishes to pass the directory of a project location via command "
+"line, the argument ``--root-dir`` can be used:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/getting-started:41
+msgid ""
+"For a complete list of actions and other argument options provided by the"
+" tool, the ``--help`` option can be used to show this information:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:2
+msgid "Arguments"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:4
+msgid ""
+"The command line can be used to specify a single action to perform or "
+"provide various options to configure the releng-tool process. Options can"
+" be provided before or after an action (if an explicit action is "
+"provided). By default, if a user does not specify an action, it is "
+"assumed that all steps are to be performed. An example of a user invoking"
+" a clean action is as follows:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:14
+msgid "The following outlines available actions:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:21
+msgid "``clean``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:23
+msgid ""
+"Clean (removes) a series of folders holding content such as extracted "
+"archives, built libraries and more. Images and downloaded assets/cache "
+"are not removed (see |ACTION_MRPROPER|_ for a more through all cleaning "
+"operation). This clean operation will remove files based off the "
+"configured output directory. If an output directory is provided (i.e. "
+"``--out-dir <dir>``) during a clean event, select folders inside this "
+"directory will be removed instead of the output directory (if any) found "
+"in the root directory."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:34
+msgid "``distclean``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:36
+msgid ""
+"Perform a more extreme pristine clean of the releng-tool project. This "
+"request removes the ``cache/``, ``dl/`` and ``output/`` directories found"
+" in the root directory or overridden by respective arguments, as well as "
+"any mode file flags which may be set. See also the |ACTION_CLEAN|_ or "
+"|ACTION_MRPROPER|_ actions."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:42
+msgid "``extract``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:44
+msgid "All packages will be processed up to the extraction phase (inclusive)."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:46
+msgid "``fetch``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:48
+msgid ""
+"All packages will be processed up to the fetch phase (inclusive; see also"
+" `offline builds`_)."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:51
+msgid "``init``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:53
+msgid "Initialize an empty root directory with a sample project."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:55
+msgid "``licenses``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:57
+msgid ""
+"A request to generate all license information for the project. Note that "
+"license information requires acquiring license documents from packages. "
+"Therefore, packages will be fetched/extracted if not already done."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:64
+msgid "``mrproper``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:66
+msgid ""
+"Perform a pristine clean of the releng-tool project. This request removes"
+" the ``output/`` directory found in the root directory or overridden by "
+"the ``--out-dir`` argument, as well as any mode file flags which may be "
+"set. The ``cache/`` and ``dl/`` directories will remain untouched. See "
+"also the |ACTION_CLEAN|_ or |ACTION_DISTCLEAN|_ actions."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:73
+msgid "``patch``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:75
+msgid "All packages will be processed up to the patch phase (inclusive)."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:79
+msgid "``sbom``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:81
+msgid ""
+"A request to generate a software build of materials (SBOM) for the "
+"project. By default, a releng-tool run will generate an SBOM file at the "
+"end of a run. This action can be used to generate an SBOM without "
+"requiring a build."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:86
+msgid "``<pkg>-build``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:88
+msgid ""
+"Performs the build stage for the package. On success, the specified "
+"package will have completed its build. If a package has any package "
+"dependencies, these dependencies will be processed before the specified "
+"package. If the provided package name does not exist, a notification will"
+" be generated."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:96
+msgid "``<pkg>-clean``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:98
+msgid ""
+"Cleans the build directory for package (if it exists). See also the "
+"|ACTION_PKG_DISTCLEAN|_ action."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:101
+msgid "``<pkg>-configure``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:103
+msgid ""
+"Performs the configure stage for the package. On success, the specified "
+"package will have completed its configuration stage. If a package has any"
+" package dependencies, these dependencies will be processed before the "
+"specified package. If the provided package name does not exist, a "
+"notification will be generated."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:111
+msgid "``<pkg>-distclean``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:113
+msgid ""
+"Perform a pristine clean of a releng-tool package. This request not only "
+"removes the build directory but also any cached file or directory "
+"associated with the package. See also the |ACTION_PKG_CLEAN|_ action."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:118
+msgid "``<pkg>-exec \"<cmd>\"``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:120
+msgid ""
+"Invokes a provided command in the package's build output directory. This "
+"package action can be useful for developers attempting to develop/debug a"
+" specific package, allowing an easy way to issue commands in a package's "
+"directory without having to manually venture to a package's output "
+"directory. Packages will need to be processed to at least the patch stage"
+" before a provided command is issued."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:128
+msgid "An example is as follows:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:134
+msgid "Package environment variables will be available for the invoked command."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:137
+msgid "``<pkg>-extract``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:139
+msgid ""
+"Performs the extraction stage for the package. On success, the specified "
+"package will have completed its extraction stage. If the provided package"
+" name does not exist, a notification will be generated."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:144
+msgid "``<pkg>-fetch``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:146
+msgid ""
+"Performs the fetch stage for the package. On success, the specified "
+"package stage will have completed its fetch stage. If the provided "
+"package name does not exist, a notification will be generated."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:151
+msgid "``<pkg>-install``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:153
+msgid ""
+"Performs the installation stage for the package. On success, the "
+"specified package will have completed its installation stage. If a "
+"package has any package dependencies, these dependencies will be "
+"processed before the specified package. If the provided package name does"
+" not exist, a notification will be generated."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:160
+msgid "``<pkg>-license``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:162
+msgid ""
+"A request to generate the license information for a specific package in a"
+" project. Note that license information requires acquiring license "
+"documents from the package itself. Therefore, the package will be "
+"fetched/extracted if not already done."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:167
+msgid "``<pkg>-patch``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:169
+msgid ""
+"Performs the patch stage for the package. On success, the specified "
+"package will have completed its patch stage. If the provided package name"
+" does not exist, a notification will be generated."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:173
+msgid "``<pkg>-rebuild``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:175
+msgid ""
+"Force a rebuild of a specific package. Once a package has been built, the"
+" package will not attempt to be built again. Invoking a rebuild request "
+"will tell releng-tool to re-invoke the build step again. This can be "
+"useful during times of development where a developer attempts to change a"
+" package definition or sources between build attempts. After completing a"
+" rebuild, releng-tool will perform the remaining stages of the package "
+"(i.e. the installation phase). Users wishing to perform only the rebuild "
+"stage are recommended to use ``<pkg>-rebuild-only`` instead."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:185
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:200
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:217
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:233
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:245
+msgid ""
+"If using this action, ensure `understanding rebuilds`_ has been read to "
+"understand this action's effect."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:188
+msgid "``<pkg>-rebuild-only``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:190
+msgid ""
+"Force a rebuild of a specific package. Once a package has been built, the"
+" package will not attempt to be built again. Invoking a rebuild request "
+"will tell releng-tool to re-invoke the build step again. This can be "
+"useful during times of development where a developer attempts to change a"
+" package definition or sources between build attempts. After completing a"
+" rebuild, releng-tool will stop and perform no other changes. Users "
+"wishing to perform a rebuild to the installation phase are recommended to"
+" use ``<pkg>-rebuild`` instead."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:203
+msgid "``<pkg>-reconfigure``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:205
+msgid ""
+"Force a re-configuration of a specific package. Once a package has been "
+"configured, the package will not attempt to configure it again. Invoking "
+"a re-configuration request will tell releng-tool to re-invoke the "
+"configuration step again. This can be useful during times of development "
+"where a developer attempts to change a package definition or sources "
+"between configuration attempts. After completing a re-configuration, "
+"releng-tool will perform the remaining stages of the package (i.e. all "
+"the way to the installation phase). Users wishing to perform only the re-"
+"configuration stage are recommended to use ``<pkg>-reconfigure-only`` "
+"instead."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:220
+msgid "``<pkg>-reconfigure-only``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:222
+msgid ""
+"Force a re-configuration of a specific package. Once a package has been "
+"configured, the package will not attempt to configure it again. Invoking "
+"a re-configuration request will tell releng-tool to re-invoke the "
+"configuration step again. This can be useful during times of development "
+"where a developer attempts to change a package definition or sources "
+"between configuration attempts. After completing a re-configuration, "
+"releng-tool will stop and perform no other changes. Users wishing to "
+"perform a re-configuration to the installation phase are recommended to "
+"use ``<pkg>-reconfigure`` instead."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:236
+msgid "``<pkg>-reinstall``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:238
+msgid ""
+"Force a re-installation of a specific package. Once a package has been "
+"installed, the package will not attempt to install it again. Invoking a "
+"re-installation request will tell releng-tool to re-invoke the "
+"installation step again. This can be useful during times of development "
+"where a developer attempts to change a package definition or sources "
+"between installation attempts."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:255
+msgid "The following outlines available options:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:260
+msgid "``--assets-dir <dir>``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:262
+msgid ""
+"Directory to hold cache and download folders instead of using a "
+"configured root directory."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:265
+msgid "This argument can be ignored if ``--cache-dir`` or ``--dl-dir`` are set."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:268
+msgid "``--cache-dir <dir>``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:270
+msgid ""
+"Directory for distributed version control cache information (defaults to "
+"``<root>/cache``)."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:273
+msgid "``--config <file>``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:275
+msgid "Configuration file to load (default: ``<root>/releng``)."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:277
+msgid "``--debug``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:279
+msgid "Show debug-related messages."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:281
+msgid "``-D``, ``--development [<mode>]``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:283
+msgid "Enables `development mode`_."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:285
+msgid "``--dl-dir <dir>``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:287
+msgid "Directory for download archives (defaults to ``<root>/dl``)."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:289
+msgid "``-F``, ``--force``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:291
+msgid "Triggers a forced request for the releng-tool invoke. This entails:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:293
+msgid "Packages will be processed as if a re-configuration request has been made."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:295
+msgid ""
+"If an explicit fetch request is made (``fetch`` or ``<pkg>-fetch``), any "
+"packages which cache to a file will have their cache files deleted to be "
+"re-fetched."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:299
+msgid "``-h``, ``--help``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:301
+msgid "Show this help."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:303
+msgid "``--images-dir <dir>``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:305
+msgid "Directory for image outputs (defaults to ``<root>/output/images``)."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:307
+msgid "``-j``, ``--jobs <jobs>``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:309
+msgid "Numbers of jobs to handle (default to ``0``; automatic)."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:311
+msgid "``-L``, ``--local-sources [[<pkg>@]<dir>]``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:313
+msgid "Enables `local-sources mode`_."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:315
+msgid ""
+"Without a directory provided, sources of internal packages will be looked"
+" for in the parent directory of the configured root directory. Users may "
+"use this argument multiple times to override the local-sources "
+"configuration. If a package-specific override is provided (a value "
+"prefixed with a package's name with an at sign (``@``)), sources for that"
+" package will be looked for inside the provided path."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:323
+msgid "``--nocolorout``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:325
+msgid "Explicitly disable colorized output."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:327
+msgid "``--out-dir <dir>``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:329
+msgid ""
+"Directory for output (builds, images, etc.; defaults to "
+"``<root>/output``)."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:332
+msgid "``--root-dir <dir>``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:334
+msgid ""
+"Directory to process a releng-tool project (defaults to the working "
+"directory)."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:337
+msgid "``--sbom-format <fmt>``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:339
+msgid ""
+"The format to use when generating a software build of materials (SBOM). "
+"Multiple formats can be provided (comma-separated)."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:346
+msgid "Type"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:346
+msgid "Value"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:348
+msgid "CSV"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:348
+msgid "``csv``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:349
+msgid "HTML"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:349
+msgid "``html``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:350
+msgid "JSON"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:350
+msgid "``json``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:351
+msgid "Text"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:351
+msgid "``text`` (default)"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:352
+msgid "XML"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:352
+msgid "``xml``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:355
+msgid "See also |ACTION_SBOM|_."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:357
+msgid "``--quirk <quirk-id>``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:359
+msgid ""
+"Allows specifying a runtime :ref:`quirk <quirks>` for the releng-tool "
+"process. This option can be used multiple times to apply multiple quirks."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:363
+msgid "``-V``, ``--verbose``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:365
+msgid "Show additional messages."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:367
+msgid "``--version``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:369
+msgid "Show releng-tool's version."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:371
+msgid "``--werror``, ``-Werror``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:373
+msgid "Treat warnings from releng-tool as errors."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/rebuilds:2
+msgid "Understanding rebuilds"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/rebuilds:4
+msgid ""
+"As packages are processed in order (based off of detected dependencies, "
+"if any), each package will go through their respective stages: fetching, "
+"extraction, patching, configuration, building and installation. While a "
+"package may not take advantage of each stage, the releng-tool will step "
+"through each stage to track its progress. Due to the vast number of ways "
+"a package can be defined, the ability for releng-tool to determine when a"
+" previously executed stage is \"stale\" is non-trivial. Instead of "
+"attempting to manage \"stale\" package stages, releng-tool leaves the "
+"responsibility to the builder to deal with these scenarios. This idea is "
+"important for developers to understand how it is possible to perform "
+"rebuilds of packages to avoid a full rebuild of the entire project."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/rebuilds:16
+msgid ""
+"Consider the following example: a project has three packages "
+"``module-a``, ``module-b`` and ``module-c`` which are C++-based. For this"
+" example, project ``module-b`` depends on ``module-a`` and project "
+"``module-c`` depends on ``module-b``; therefore, releng-tool will process"
+" packages in the order ``module-a -> module-b -> module-c``. In this "
+"example, the project is building until a failure is detected in package "
+"``module-c``:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/rebuilds:30
+msgid ""
+"A developer notices that it is due to an issue found in ``module-b``; "
+"however, instead of attempting to redo everything from a fresh start, the"
+" developer wishes to test the process by manually making the change in "
+"``module-b`` to complete the build process. The developer makes the "
+"change, re-invokes ``releng-tool`` but still notices the build error "
+"occurs:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/rebuilds:41
+msgid ""
+"The issue here is that since ``module-b`` has already been processed, "
+"none of the interim changes made will be available for ``module-c`` to "
+"use. To take advantage of the new implementation in ``module-b``, the "
+"builder can signal for the updated package to be rebuilt:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/rebuilds:51
+msgid ""
+"With ``module-b`` in a more desired state, a re-invoke of ``releng-tool``"
+" could allow ``module-c`` to be built."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/rebuilds:59
+msgid ""
+"This is a very simple example to consider, and attempts to rebuild can "
+"vary based on the packages, changes and languages used."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/tips:2
+msgid "Tips"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/tips:5
+msgid "Offline builds"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/tips:7
+msgid "A user can prepare for an offline build by using the ``fetch`` action:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/tips:13
+msgid ""
+"Package content will be downloaded into the respective ``dl/`` or "
+"``cache/`` folders. Future builds for the project should no longer need "
+"external access until these folders are removed."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/tips:18
+msgid "Parallel builds"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/tips:20
+msgid ""
+"A stage for a package (such as a build stage) can take advantage of "
+"multiple cores to perform the step. By default, releng-tool will attempt "
+"to run as many jobs for a stage equal to the amount of physical cores on "
+"the host system. The amount of jobs available for a stage can be "
+"configured using the ``--jobs`` argument. For example, if a user wishes "
+"to override the amount of jobs attempted for stages to two jobs, the "
+"following can be used:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/tips:31
+msgid ""
+"Note that a developer may restrict the amount of jobs allowed for a "
+"specific package if a package cannot support parallel processing."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/tips:35
+msgid "Privileged builds"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/tips:37
+msgid ""
+"It is never recommended to invoke a build with elevated (e.g. root) "
+"privileges. A builder invoking in an elevated environment runs the risk "
+"of a misconfigured releng-tool project dirtying or destroying the "
+"builder's host environment."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/tips:42
+msgid "License generation"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/tips:44
+msgid ""
+"At the end of a ``releng-tool`` invoke, the final stages will compile a "
+"list of package license information (if licenses are defined). If a user "
+"wishes to compile a project's list of license information without "
+"performing an entire build, the ``licenses`` action can be used:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/tips:53
+msgid ""
+"License information can then be found in the root directory's "
+"``<root>/licenses`` folder."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:2
+msgid "Advanced builder capabilities"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:7
+msgid "Development mode"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:9
+msgid ""
+"Development mode provides a way for a user to request to process packages"
+" against development versions of sources rather than using fixed "
+"versions. A package will typically target a stable release, either "
+"pointing to a specific archive to download or a specific tag to clone "
+"from. However, for some builds, a user may wish to build a specific "
+"package against their main development branch (e.g. the ``main`` branch "
+"of a Git repository) or a long-term stable release branch. Packages can "
+"be defined to target these specific revisions if running in development "
+"mode."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:18
+msgid ""
+"To enable development mode, invoking ``releng-tool`` with the "
+"``--development`` argument will enable the mode. Future calls to releng-"
+"tool for the project will use a development revision for packages where "
+"appropriate. For example:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:30
+msgid ""
+"Development mode is persisted through the use of a file flag in the root "
+"directory."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:33
+msgid ""
+"Consider the following example: a package defines multiple revisions to "
+"fetch sources from:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:45
+msgid ""
+"A build would normally use the ``1.2`` tag for this package. However, if "
+"an environment is configured to use the ``develop`` development mode:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:52
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:88
+msgid "This package would use the ``main`` branch instead."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:54
+msgid ""
+"Projects can also target specific sites based off the development mode. "
+"This can be useful if a package uses a built archive for a stable "
+"release, but having development sources fetched from a repository. For "
+"example:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:69
+msgid ""
+"In a normal execution, a tar.gz archive would be downloaded for the "
+"package. However, if an environment is configured to use the ``test`` "
+"development mode, sources will be fetched from the Git repository on the "
+"``main`` branch."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:73
+msgid ""
+"Simple development modes are also supported. Packages can use the "
+"``LIBFOO_DEVMODE_REVISION`` option to hint at a development revision to "
+"pull."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:81
+msgid ""
+"A build would normally use the ``v3.0`` tag for this package. However, if"
+" an environment is configured a non-explicit development mode:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:90
+msgid ""
+"A user can either disable development mode by performing a "
+"|ACTION_MRPROPER|_ or can manually remove the file flag."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:96
+msgid "Local-sources mode"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:100
+msgid ""
+"Clean events (such as ``releng-tool clean``) will not touch packages "
+"using sources found alongside the output directory"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:103
+msgid ""
+"Local-sources mode provides a way for a developer to build internal-"
+"flagged packages using sources found alongside the root directory (or a "
+"specific provided directory), instead of having releng-tool attempt to "
+"fetch them from remote instances. This is primarily for developers who "
+"desire to manually manage source content outside the releng-tool "
+"environment. Local-sources mode only works for internally flagged "
+"packaged. Consider the following example: a releng-tool project has a "
+"package called ``liba``. When releng-tool is invoked in normal "
+"configurations, the package will do fetching, extraction and patching to "
+"prepare the directory ``<root>/output/build/liba-<version>``. However, if"
+" a builder has configured the working root for local-sources mode, "
+"sources for ``liba`` will be used from the folder ``<root>/../liba`` "
+"instead."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:116
+msgid ""
+"When in local-sources mode, an internal package will skip the fetching, "
+"extraction and patching stages in order to prevent undesired manipulation"
+" of developer-prepared sources. Another consideration to note is the use "
+"of clean operators while in local-sources mode. Continuing with the above"
+" example, if a user invokes ``releng-tool liba-clean``, the operation "
+"will not remove the ``<root>/../liba`` folder. Responsibility to managing"
+" a clean ``liba`` package will be left with the user."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:124
+msgid ""
+"To enable local-sources mode, invoking ``releng-tool`` with the "
+"``--local-sources`` argument will enable the mode. Future calls to "
+"releng-tool for the project will use local sources for packages defined "
+"as internal packages. For example:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:138
+msgid ""
+"Local-sources mode is persisted through the use of a file flag in the "
+"root directory."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:141
+msgid ""
+"If a user provides a directory for the ``--local-sources`` argument, "
+"packages will be looked for in the provided folder instead of the parent "
+"of the configured root directory. For example:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:154
+msgid ""
+"In the above example, if a project had an internal package ``liba``, "
+"sources for ``liba`` will be used from the folder ``~/workdir/liba``."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:157
+msgid ""
+"Users can also provide package-specific overrides. If a user provides a "
+"path which is prefixed with a package's name and at sign (``@``), the "
+"sources for the provided package will be used from the respective folder:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:174
+msgid ""
+"In the above example, if a project had internal packages ``liba``, "
+"``libb`` and ``libc``, the following paths will be used:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:177
+msgid "Sources for ``liba`` will be used from the folder ``~/workdir/liba``,"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:178
+msgid ""
+"Sources for ``libb`` will be used from the folder ``/mnt/sources/libb``; "
+"and,"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:179
+msgid "Sources for ``libc`` will not be fetched locally."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:181
+msgid ""
+"A user can either disable local sources mode by performing a "
+"|ACTION_MRPROPER|_ or can manually remove the file flag."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:187
+msgid "Configuration overrides"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:189
+msgid ""
+"If a builder needs to (for example) override a tool location or package "
+"site, a user can define either environment options or setup a "
+"configuration override script ``releng-overrides``. It is never "
+"recommended to persist a configuration overrides file into a project's "
+"source repository."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:195
+msgid "Extraction tool overrides"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:197
+msgid ""
+"The ``override_extract_tools`` option inside a configuration override "
+"script allows a dictionary to be provided to map an extension type to an "
+"external tool to indicate which tool should be used for extraction. For "
+"example, when a ``.zip`` archive is being processed for extraction, "
+"releng-tool will internally extract the archive; however, a user may wish"
+" to override this tool with their own extraction utility. Consider the "
+"following example:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:210
+msgid ""
+"The ``{file}`` key will be replaced with the file to be extracted, and "
+"the ``{dir}`` key will be replaced where the contents should extract to."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:214
+msgid "Revision overrides"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:216
+msgid ""
+"The ``override_revisions`` option inside a configuration override script "
+"allows a dictionary to be provided to map a package name to a new "
+"revision value. Consider the following example: a project defines "
+"``module-a`` and ``module-b`` packages with package ``module-b`` "
+"depending on package ``module-a``. A developer may be attempting to tweak"
+" package ``module-b`` on the fly to test a new capabilities against the "
+"current stable version of ``module-a``; however, the developer does not "
+"want to explicitly change the revision inside package ``module-b``'s "
+"definition. To avoid this, an override can be used instead:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:231
+msgid ""
+"The above example shows that package ``module-b`` will fetch using a test"
+" branch instead of what is defined in the actual package definition."
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:235
+msgid "Site overrides"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:237
+msgid ""
+"The ``override_sites`` option inside a configuration override script "
+"allows a dictionary to be provided to map a package name to a new site "
+"value. There may be times where a host may not have access to a specific "
+"package site. To have a host to use a mirror location without having to "
+"adjust the package definition, the site override option can be used. For "
+"example, consider a package pulls from site "
+"``git@example.com:myproject.git``; however, the host ``example.com`` "
+"cannot be access from the host machine. If a mirror location has been "
+"setup at ``git@example.org:myproject.git``, the following override can be"
+" used:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:253
+msgid "Tool overrides"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:255
+msgid ""
+"Environment variables can be used to help override external tool invoked "
+"by the releng-tool process. For example, when invoking CMake-based "
+"projects, the tool ``cmake`` will be invoked; however, if a builder is "
+"running on CentOS and CMake v3.x is desired, the tool ``cmake3`` needs to"
+" be invoked instead. To configure this, an environment variable can be "
+"set to switch which tool to invoke. Consider the following example:"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:269
+msgid "Quirks"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:271
+msgid ""
+"releng-tool also provides a series of configuration quirks to deal with "
+"rare host environment scenarios where releng-tool may be experiencing "
+"issues. See :ref:`configuration quirks <quirks>` for more information."
+msgstr ""
+
