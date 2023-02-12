@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-12 00:11-0500\n"
+"POT-Creation-Date: 2023-02-12 10:58-0500\n"
 "PO-Revision-Date: 2021-11-29 00:10+0000\n"
 "Last-Translator: James Knight <james.d.knight@live.com>, 2021\n"
 "Language: zh\n"
@@ -42,7 +42,7 @@ msgid "Summary"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:2
-msgid "Development"
+msgid "0.15 (2023-02-12)"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/CHANGELOG.rst:4
