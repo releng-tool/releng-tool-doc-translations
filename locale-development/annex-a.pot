@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-12 00:11-0500\n"
+"POT-Creation-Date: 2023-05-07 15:31-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,18 +48,18 @@ msgstr ""
 msgid "Configuration options parsed by releng-tool for a package definition:"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:152
+#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:153
 msgid "Script helpers"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:154
+#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:155
 msgid "Functions available to scripts invoked by releng-tool or importable via ``from releng_tool import *``:"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:189
+#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:190
 msgid "Quirks"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:191
+#: ../.releng_cache/releng-tool/Documentation/annex-a.rst:192
 msgid "Quirk options used by releng-tool:"
 msgstr ""

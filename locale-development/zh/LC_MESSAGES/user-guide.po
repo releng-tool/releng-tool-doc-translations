@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-12 00:11-0500\n"
+"POT-Creation-Date: 2023-05-07 15:31-0400\n"
 "PO-Revision-Date: 2021-11-29 00:10+0000\n"
 "Last-Translator: James Knight <james.d.knight@live.com>, 2021\n"
 "Language: zh\n"
@@ -519,7 +519,7 @@ msgid "Numbers of jobs to handle (default to ``0``; automatic)."
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:311
-msgid "``-L``, ``--local-sources [[<pkg>@]<dir>]``"
+msgid "``-L``, ``--local-sources [[<pkg>:]<dir>]``"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:313
@@ -532,8 +532,9 @@ msgid ""
 " for in the parent directory of the configured root directory. Users may "
 "use this argument multiple times to override the local-sources "
 "configuration. If a package-specific override is provided (a value "
-"prefixed with a package's name with an at sign (``@``)), sources for that"
-" package will be looked for inside the provided path."
+"prefixed with a package's name with either a colon (``:``) or an at sign "
+"(``@``)), sources for that package will be looked for inside the provided"
+" path."
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:323
@@ -607,56 +608,72 @@ msgid "``json``"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:351
-msgid "Text"
+msgid "JSON (SPDX)"
 msgstr ""
 
 #: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:351
+msgid "``json-spdx``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:352
+msgid "RDP (SPDX)"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:352
+msgid "``rdp-spdx``"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:353
+msgid "Text"
+msgstr ""
+
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:353
 msgid "``text`` (default)"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:352
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:354
 msgid "XML"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:352
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:354
 msgid "``xml``"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:355
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:357
 msgid "See also |ACTION_SBOM|_."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:357
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:359
 msgid "``--quirk <quirk-id>``"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:359
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:361
 msgid ""
 "Allows specifying a runtime :ref:`quirk <quirks>` for the releng-tool "
 "process. This option can be used multiple times to apply multiple quirks."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:363
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:365
 msgid "``-V``, ``--verbose``"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:365
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:367
 msgid "Show additional messages."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:367
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:369
 msgid "``--version``"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:369
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:371
 msgid "Show releng-tool's version."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:371
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:373
 msgid "``--werror``, ``-Werror``"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:373
+#: ../.releng_cache/releng-tool/Documentation/user-guide/arguments:375
 msgid "Treat warnings from releng-tool as errors."
 msgstr ""
 
@@ -945,41 +962,42 @@ msgstr ""
 #: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:157
 msgid ""
 "Users can also provide package-specific overrides. If a user provides a "
-"path which is prefixed with a package's name and at sign (``@``), the "
-"sources for the provided package will be used from the respective folder:"
+"path which is prefixed with a package's name with either a colon (``:``) "
+"or at sign (``@``), the sources for the provided package will be used "
+"from the respective folder:"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:174
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:175
 msgid ""
 "In the above example, if a project had internal packages ``liba``, "
 "``libb`` and ``libc``, the following paths will be used:"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:177
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:178
 msgid "Sources for ``liba`` will be used from the folder ``~/workdir/liba``,"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:178
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:179
 msgid ""
 "Sources for ``libb`` will be used from the folder ``/mnt/sources/libb``; "
 "and,"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:179
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:180
 msgid "Sources for ``libc`` will not be fetched locally."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:181
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:182
 msgid ""
 "A user can either disable local sources mode by performing a "
 "|ACTION_MRPROPER|_ or can manually remove the file flag."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:187
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:188
 msgid "Configuration overrides"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:189
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:190
 msgid ""
 "If a builder needs to (for example) override a tool location or package "
 "site, a user can define either environment options or setup a "
@@ -988,11 +1006,11 @@ msgid ""
 "source repository."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:195
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:196
 msgid "Extraction tool overrides"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:197
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:198
 msgid ""
 "The ``override_extract_tools`` option inside a configuration override "
 "script allows a dictionary to be provided to map an extension type to an "
@@ -1003,17 +1021,17 @@ msgid ""
 "following example:"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:210
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:211
 msgid ""
 "The ``{file}`` key will be replaced with the file to be extracted, and "
 "the ``{dir}`` key will be replaced where the contents should extract to."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:214
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:215
 msgid "Revision overrides"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:216
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:217
 msgid ""
 "The ``override_revisions`` option inside a configuration override script "
 "allows a dictionary to be provided to map a package name to a new "
@@ -1026,17 +1044,17 @@ msgid ""
 "definition. To avoid this, an override can be used instead:"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:231
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:232
 msgid ""
 "The above example shows that package ``module-b`` will fetch using a test"
 " branch instead of what is defined in the actual package definition."
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:235
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:236
 msgid "Site overrides"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:237
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:238
 msgid ""
 "The ``override_sites`` option inside a configuration override script "
 "allows a dictionary to be provided to map a package name to a new site "
@@ -1050,11 +1068,11 @@ msgid ""
 " used:"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:253
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:254
 msgid "Tool overrides"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:255
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:256
 msgid ""
 "Environment variables can be used to help override external tool invoked "
 "by the releng-tool process. For example, when invoking CMake-based "
@@ -1064,11 +1082,11 @@ msgid ""
 "set to switch which tool to invoke. Consider the following example:"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:269
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:270
 msgid "Quirks"
 msgstr ""
 
-#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:271
+#: ../.releng_cache/releng-tool/Documentation/user-guide/advanced:272
 msgid ""
 "releng-tool also provides a series of configuration quirks to deal with "
 "rare host environment scenarios where releng-tool may be experiencing "
